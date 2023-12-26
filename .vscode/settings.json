@@ -1,0 +1,99 @@
+{
+    "editor.formatOnSave": true,  
+    "editor.defaultFormatter": "esbenp.prettier-vscode",   
+    "editor.codeActionsOnSave": {   
+      "source.fixAll.eslint": true   
+    },
+    "commit-message-editor.staticTemplate": [
+      "feat: Short description",
+      "",
+      "Message body",
+      "",
+      "Message footer"
+    ],
+    "commit-message-editor.dynamicTemplate": [
+      "{Type} : {Subject}",
+      "",
+      "{Body}",
+      "",
+      "{Footer}"
+    ],
+    "commit-message-editor.tokens": [
+      {
+        "label": "Type",
+        "name": "Type",
+        "type": "enum",
+        "description": "Type of changes",
+        "options": [
+          {
+            "label": "feat",
+            "value": "",
+            "description": "새로운 기능을 추가"
+          },
+          {
+            "label": "fix",
+            "description": "버그 수정"
+          },
+          {
+            "label": "design",
+            "description": "CSS 등 사용자 UI 디자인 변경"
+          },
+          {
+            "label": "style",
+            "description": "코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우"
+          },
+          {
+            "label": "refactor",
+            "description": "프로덕션 코드 리팩토링 "
+          },
+          {
+            "label": "comment",
+            "description": "필요한 주석 추가 및 변경"
+          },
+          {
+            "label": "docs",
+            "description": "문서 수정"
+          },
+          {
+            "label": "test",
+            "description": "테스트 코드, 리팩토링 테스트 코드 추가, 프로덕션 코드 변경 없음"
+          },
+          {
+            "label": "build",
+            "description": "빌드 업무 수정, 패키지 매니저 수정, 패키지 관리자 구성 등 업데이트, 프로덕션 코드 변경 없음"
+          },
+          {
+            "label": "rename",
+            "description": "파일 혹은 폴더명을 수정하거나 옮기는 작업만 수행한 경우"
+          },
+          {
+            "label": "remove",
+            "description": "파일을 삭제하는 작업만 수행한 경우"
+          }
+        ]
+      },
+      {
+        "label": "Subject",
+        "name": "Subject",
+        "type": "text",
+        "description": "- 제목은 50자 이내로 작성한다.\n- 마침표 및 특수기호는 사용하지 않는다.\n- 영문으로 작성하는 경우 첫글자는 대문자로 작성한다.\n- 영문으로 작성하는 경우 동사(원형)을 가장 앞에 명령어로 작성한다.\n- 과거시제는 사용하지 않는다.\n- 간결하고 요점적으로 즉, 개조식 구문으로 작성한다."
+      },
+      {
+        "label": "Body",
+        "name": "Body",
+        "type": "text",
+        "description": "- 최대한 상세히 작성한다.\n- 어떻게 변경했는지보다 무엇을, 왜 변경했는지 작성한다.",
+        "maxLines": 10,
+        "multiline": true,
+        "lines": 5
+      },
+      {
+        "label": "Closes",
+        "name": "Footer",
+        "type": "text",
+        "value": "Closes",
+        "description": "Footer - only Closes\n\n- 이슈 번호를 작성한다.\n- 이슈 트래커 유형은 `Closes`만 사용한다.\n- 여러 개의 이슈 번호는 쉼표(`,`)로 구분한다.\n- ex) `Closes #S09P21C205-001`\n",
+        "prefix": "Closes"
+      }
+    ]
+}
