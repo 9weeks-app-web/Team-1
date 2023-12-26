@@ -1,4 +1,13 @@
-:root {
+/* 폰트 import */
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+* {
+  /* 폰트 적용 - 스포카 한 산스 네오 */
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+}
+
+/* CSS 변수 정의 */
+:root { 
     /* Core */
     --gray-5: #F3F3F3;
     --gray-10: #E6E6E6;
