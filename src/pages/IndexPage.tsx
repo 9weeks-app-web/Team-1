@@ -1,6 +1,9 @@
+import fireStore from 'api/firestoreConfig';
 import React from 'react';
 
 function IndexPage() {
+	// firebase connect test
+	console.log(fireStore)
 	return (
 		<div>
 			<h1>Jeonny-BoilerPlate</h1>
