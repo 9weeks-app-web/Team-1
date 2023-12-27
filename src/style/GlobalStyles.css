@@ -1,9 +1,11 @@
+/* 기본 속성 reset */
+@import "reset.css";
 /* 폰트 import */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 * {
   /* 폰트 적용 - 스포카 한 산스 네오 */
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif'!important;
 }
 
 /* CSS 변수 정의 */
@@ -77,11 +79,11 @@
     --h1-line-height: var(--line-height);
     --h1-letter-spacing: var(--letter-spacing);
     --h1-paragraph-spacing: var(--paragraph-spacing);
-    --h1-font-size: 34;
+    --h1-font-size: 34px;
   
     --h2-font-family: var(--font-family);
     --h2-font-weight: var(--bold);
-    --h2-font-size: 30;
+    --h2-font-size: 30px;
     --h2-line-height: var(--line-height);
     --h2-letter-spacing: var(--letter-spacing);
     --h2-paragraph-spacing: var(--paragraph-spacing);
@@ -91,10 +93,10 @@
     --h3-line-height: var(--line-height);
     --h3-letter-spacing: var(--letter-spacing);
     --h3-paragraph-spacing: var(--paragraph-spacing);
-    --h3-font-size: 26;
+    --h3-font-size: 26px;
   
     --h4-font-family: var(--font-family);
-    --h4-font-size: 22;
+    --h4-font-size: 22px;
     --h4-line-height: var(--line-height);
     --h4-letter-spacing: var(--letter-spacing);
     --h4-paragraph-spacing: var(--paragraph-spacing);
@@ -102,20 +104,20 @@
   
     --h5-font-family: var(--font-family);
     --h5-font-weight: var(--medium);
-    --h5-font-size: 20;
+    --h5-font-size: 20px;
     --h5-line-height: var(--line-height);
     --h5-letter-spacing: var(--letter-spacing);
     --h5-paragraph-spacing: var(--paragraph-spacing);
   
     --h6-font-family: var(--font-family);
     --h6-font-weight: var(--medium);
-    --h6-font-size: 16;
+    --h6-font-size: 16px;
     --h6-line-height: var(--line-height);
     --h6-letter-spacing: var(--letter-spacing);
     --h6-paragraph-spacing: var(--paragraph-spacing);
   
     --badge-font-family: var(--font-family);
-    --badge-font-size: 12;
+    --badge-font-size: 12px;
     --badge-line-height: var(--line-height);
     --badge-letter-spacing: var(--letter-spacing);
     --badge-paragraph-spacing: var(--paragraph-spacing);
@@ -123,14 +125,14 @@
   
     --body-font-family: var(--font-family);
     --body-font-weight: var(--regular);
-    --body-font-size: 14;
+    --body-font-size: 14px;
     --body-line-height: var(--line-height);
     --body-letter-spacing: var(--letter-spacing);
     --body-paragraph-spacing: var(--paragraph-spacing);
   
     --CTA-font-family: var(--font-family);
     --CTA-font-weight: var(--bold);
-    --CTA-font-size: 16;
+    --CTA-font-size: 16px;
     --CTA-line-height: var(--line-height);
     --CTA-letter-spacing: var(--letter-spacing);
     --CTA-paragraph-spacing: var(--paragraph-spacing);
@@ -143,7 +145,7 @@
     --mentor-card: 16px;
     --chips-font-family: var(--font-family);
     --chips-font-weight: var(--bold);
-    --chips-font-size: 18;
+    --chips-font-size: 18px;
     --chips-line-height: var(--line-height);
     --chips-letter-spacing: var(--letter-spacing);
     --chips-paragraph-spacing: var(--paragraph-spacing);
@@ -153,63 +155,63 @@
     /* Mobile */
     --mobile-h1-font-family: var(--font-family);
     --mobile-h1-font-weight: var(--bold);
-    --mobile-h1-font-size: 30;
+    --mobile-h1-font-size: 30px;
     --mobile-h1-line-height: var(--line-height);
     --mobile-h1-letter-spacing: var(--letter-spacing);
     --mobile-h1-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-h2-font-family: var(--font-family);
     --mobile-h2-font-weight: var(--bold);
-    --mobile-h2-font-size: 26;
+    --mobile-h2-font-size: 26px;
     --mobile-h2-line-height: var(--line-height);
     --mobile-h2-letter-spacing: var(--letter-spacing);
     --mobile-h2-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-h3-font-family: var(--font-family);
     --mobile-h3-font-weight: var(--medium);
-    --mobile-h3-font-size: 24;
+    --mobile-h3-font-size: 24px;
     --mobile-h3-line-height: var(--line-height);
     --mobile-h3-letter-spacing: var(--letter-spacing);
     --mobile-h3-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-h4-font-family: var(--font-family);
     --mobile-h4-font-weight: var(--medium);
-    --mobile-h4-font-size: 20;
+    --mobile-h4-font-size: 20px;
     --mobile-h4-line-height: var(--line-height);
     --mobile-h4-letter-spacing: var(--letter-spacing);
     --mobile-h4-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-h5-font-family: var(--font-family);
     --mobile-h5-font-weight: var(--medium);
-    --mobile-h5-font-size: 18;
+    --mobile-h5-font-size: 18px;
     --mobile-h5-line-height: var(--line-height);
     --mobile-h5-letter-spacing: var(--letter-spacing);
     --mobile-h5-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-h6-font-family: var(--font-family);
     --mobile-h6-font-weight: var(--medium);
-    --mobile-h6-font-size: 16;
+    --mobile-h6-font-size: 16px;
     --mobile-h6-line-height: var(--line-height);
     --mobile-h6-letter-spacing: var(--letter-spacing);
     --mobile-h6-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-badge-font-family: var(--font-family);
     --mobile-badge-font-weight: var(--bold);
-    --mobile-badge-font-size: 12;
+    --mobile-badge-font-size: 12px;
     --mobile-badge-line-height: var(--line-height);
     --mobile-badge-letter-spacing: var(--letter-spacing);
     --mobile-badge-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-body-font-family: var(--font-family);
     --mobile-body-font-weight: var(--regular);
-    --mobile-body-font-size: 14;
+    --mobile-body-font-size: 14px;
     --mobile-body-line-height: var(--line-height);
     --mobile-body-letter-spacing: var(--letter-spacing);
     --mobile-body-paragraph-spacing: var(--paragraph-spacing);
   
     --mobile-CTA-font-family: var(--font-family);
     --mobile-CTA-font-weight: var(--bold);
-    --mobile-CTA-font-size: 16;
+    --mobile-CTA-font-size: 16px;
     --mobile-CTA-line-height: var(--line-height);
     --mobile-CTA-letter-spacing: var(--letter-spacing);
     --mobile-CTA-paragraph-spacing: var(--paragraph-spacing);
@@ -222,7 +224,7 @@
     --mobile-mentor-card: 12px;
     --mobile-chips-font-family: var(--font-family);
     --mobile-chips-font-weight: var(--bold);
-    --mobile-chips-font-size: 14;
+    --mobile-chips-font-size: 14px;
     --mobile-chips-line-height: var(--line-height);
     --mobile-chips-letter-spacing: var(--letter-spacing);
     --mobile-chips-paragraph-spacing: var(--paragraph-spacing);
