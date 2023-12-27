@@ -1,4 +1,5 @@
 import { IMentor } from "types/mentor";
+import { IPortfolioSummary } from "types/portfolio";
 
 export const DUMMY_MENTORS: IMentor[] = [
   {
@@ -40,5 +41,17 @@ export const DUMMY_MENTORS: IMentor[] = [
     profileImg: "david_kim_profileImg.jpg",
     introduction:
       "안녕하세요! UX/UI 디자이너로 일하는 David Kim입니다. 사용자 중심의 디자인에 대한 고민을 공유하고 싶어요.",
+  },
+];
+
+export const DUMMY_PORTFOLIO_SUMMARY: IPortfolioSummary[] = [
+  {
+    id: 1,
+    thumbnail: "https://example.com/thumbnail.jpg",
+    category: "UI/UX",
+    title: "Introduction to TypeScript",
+    views: 1000,
+    likes: 500,
+    isSfacpick: true,
   },
 ];
