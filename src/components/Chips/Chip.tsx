@@ -11,7 +11,7 @@ function Chip({ title, onClick }: IChipProps): JSX.Element {
 
   const handleClick = () => {
     onClick();
-    setIsClicked(true);
+    setIsClicked(!isClicked);
   };
   return (
     <>
