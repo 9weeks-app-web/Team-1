@@ -47,7 +47,7 @@ export const DUMMY_MENTORS: IMentor[] = [
 export const DUMMY_PORTFOLIO_SUMMARY: IPortfolioSummary[] = [
   {
     id: 1,
-    thumbnail: "https://example.com/thumbnail.jpg",
+    thumbnail: "",
     category: "UI/UX",
     title: "Introduction to TypeScript",
     views: 1000,
