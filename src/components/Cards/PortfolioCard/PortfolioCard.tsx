@@ -3,6 +3,7 @@ import { IPortfolioSummary } from "types/portfolio";
 import IconText from "components/IconText/IconText";
 import { convertToKNotation } from "utils/convertToKNotation";
 import Badge from "components/Badges/Badge/Badge";
+import Icon from "components/Icon/Icon";
 import Card from "../Card/Card";
 import "./style.css";
 
@@ -17,9 +18,7 @@ function PortfolioCard(props: IPortfolioCardProps) {
     <Card width="l">
       <div className="portfolio-container">
         {/* 스팩 인증 아이콘 */}
-        {portfolio.isVerified && (
-          <span className="material-symbols-outlined verified">verified</span>
-        )}
+        {portfolio.isVerified && <Icon className="verified" icon="verified" />}
 
         {/* 카드 내용 */}
         <img className="thumbnail" src={portfolio.thumbnail ?? ""} alt="" />

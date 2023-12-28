@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.css";
+import Icon from "components/Icon/Icon";
 
 interface IRecruitBadgeProps {
   nowCnt: number;
@@ -16,7 +17,7 @@ function RecruitBadge(props: IRecruitBadgeProps) {
 
   return (
     <div className={`recruit-badge-container ${isDone ? "done" : ""}`}>
-      <span className="material-symbols-outlined group-icon">group</span>
+      <Icon icon="group" className="group-icon" />
       {isDone ? (
         <span>모집완료</span>
       ) : (
