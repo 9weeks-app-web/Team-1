@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css";
+import Icon from "components/Icon/Icon";
 
 interface IIconTextProps {
   icon: string;
@@ -11,7 +12,7 @@ function IconText(props: IIconTextProps) {
 
   return (
     <div className="icon-text-container">
-      <span className="material-symbols-outlined">{icon}</span>
+      <Icon icon={icon} />
       <p>{text}</p>
     </div>
   );
