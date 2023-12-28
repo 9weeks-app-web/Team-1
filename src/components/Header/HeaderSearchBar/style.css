@@ -1,0 +1,27 @@
+.header-searchbar-container{
+    width: 368px;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 40px;
+    box-sizing: border-box;
+    /* 5 */
+    background-color: var(--background-5); 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    span {
+        color : var(--gray-50);
+        font-size: 20px;
+    }
+
+    input {
+        font-family: Spoqa Han Sans Neo;
+        width: 340px;
+        background: none;
+        display: flex;
+        height: fit-content;
+        border: none;
+        outline: none;
+    }
+}

@@ -1,0 +1,25 @@
+.header-service-nav-container {
+    line-height: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    li {
+        padding: 8px;
+        color: var(--gray-100);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.028px;
+
+        a {
+            color: var(--gray-100);
+            text-decoration: none;
+        }
+
+        a.unselected {
+            color: var(--gray-40);
+        }
+    }
+}
