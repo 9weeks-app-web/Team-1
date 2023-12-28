@@ -1,25 +1,50 @@
 .portfolio-container{
+    position : relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: flex-start;
+    min-width: 180px;
+    max-width: 345px;
     gap: 16px;
     
+    .verified {
+        position: absolute;
+        font-size: 44px;
+        top : 12px;
+        right: 13px;
+        color: var(--blue-100);
+
+    }
+
     .thumbnail {
-        width: 345px;
+        display: flex;
         height: 316px;
+        align-self: stretch;
+        align-items: center;
+        justify-content: flex-end;
         background: var(--gray-5);
         border-radius: 12px;
     }
 
     .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 16px;
+        align-self: stretch;
+
         .main{
             display: flex;
-            flex-direction: row;
             align-items: center;
+            gap: 12px;
+            align-self: stretch;
             
             .title {
-                font-weight: var(--h5-font-weight);
                 font-size: var(--h5-font-size);
+                font-weight: var(--h5-font-weight);
+                line-height: var(--h5-line-height);
+                letter-spacing: var(--h5-letter-spacing);
                 text-overflow: ellipsis;
                 overflow: hidden;
                 white-space: nowrap;

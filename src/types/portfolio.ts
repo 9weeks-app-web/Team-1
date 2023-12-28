@@ -5,7 +5,7 @@ export interface IPortfolioSummary {
   title: string;
   views: number;
   likes: number;
-  isSfacpick: boolean;
+  isVerified: boolean;
 }
 
 export interface IPortfolioDetail {
@@ -15,5 +15,5 @@ export interface IPortfolioDetail {
   title: string;
   views: number;
   likes: number;
-  isSfacpick: boolean;
+  isVerified: boolean;
 }
