@@ -38,8 +38,8 @@ body {
   --blue-90: #196AFF;
   --blue-100: #0059FF;
 
-  --ststem-red: #FF3333;
-  --ststem-green: #42DD57;
+  --red: #FF3333;
+  --green: #42DD57;
 
   --background-5: #F8F8F9;
   --background-50: #A9A9A9;
@@ -72,7 +72,21 @@ body {
   --bold: 700;
   --letter-spacing: 0.2%;
   --paragraph-spacing: 4px;
-  --chips-radius: 100%;
+
+  --card-default-color: var(--border-10);
+  --card-default-width: 1px;
+  --card-default-style: solid;
+  --card-hover-color: var(--blue-70);
+  --card-hover-width: 2px;
+  --card-hover-style: solid;
+
+  --root: 10px;
+  --round: 100%;
+  --radius-4px: calc(var(--root) * 0.4);
+  --radius-8px: calc(var(--root) * 0.8);
+  --radius-12px: calc(var(--root) * 1.2);
+  --radius-16px: calc(var(--root) * 1.6);
+  --radius-20px: calc(var(--root) * 2);
 
   /* Web */
   --h1-font-family: var(--font-family);
@@ -80,11 +94,11 @@ body {
   --h1-line-height: var(--line-height);
   --h1-letter-spacing: var(--letter-spacing);
   --h1-paragraph-spacing: var(--paragraph-spacing);
-  --h1-font-size: 34px;
+  --h1-font-size: calc(var(--root) * 2.8);
 
   --h2-font-family: var(--font-family);
   --h2-font-weight: var(--bold);
-  --h2-font-size: 30px;
+  --h2-font-size: calc(var(--root) * 2.4);
   --h2-line-height: var(--line-height);
   --h2-letter-spacing: var(--letter-spacing);
   --h2-paragraph-spacing: var(--paragraph-spacing);
@@ -94,10 +108,10 @@ body {
   --h3-line-height: var(--line-height);
   --h3-letter-spacing: var(--letter-spacing);
   --h3-paragraph-spacing: var(--paragraph-spacing);
-  --h3-font-size: 26px;
+  --h3-font-size: calc(var(--root) * 2);
 
   --h4-font-family: var(--font-family);
-  --h4-font-size: 22px;
+  --h4-font-size: calc(var(--root) * 1.8);
   --h4-line-height: var(--line-height);
   --h4-letter-spacing: var(--letter-spacing);
   --h4-paragraph-spacing: var(--paragraph-spacing);
@@ -105,65 +119,76 @@ body {
 
   --h5-font-family: var(--font-family);
   --h5-font-weight: var(--bold);
-  --h5-font-size: 20px;
+  --h5-font-size: calc(var(--root) * 1.6);
   --h5-line-height: var(--line-height);
   --h5-letter-spacing: var(--letter-spacing);
   --h5-paragraph-spacing: var(--paragraph-spacing);
 
   --h6-font-family: var(--font-family);
   --h6-font-weight: var(--bold);
-  --h6-font-size: 16px;
+  --h6-font-size: calc(var(--root) * 1.4);
   --h6-line-height: var(--line-height);
   --h6-letter-spacing: var(--letter-spacing);
   --h6-paragraph-spacing: var(--paragraph-spacing);
 
   --badge-font-family: var(--font-family);
   --badge-font-weight: var(--bold);
-  --badge-font-size: 12px;
+  --badge-font-size: calc(var(--root) * 1.2);
   --badge-line-height: var(--line-height);
   --badge-letter-spacing: var(--letter-spacing);
   --badge-paragraph-spacing: var(--paragraph-spacing);
 
   --body-font-family: var(--font-family);
   --body-font-weight: var(--regular);
-  --body-font-size: 14px;
+  --body-font-size: calc(var(--root) * 1.4);
   --body-line-height: var(--line-height);
   --body-letter-spacing: var(--letter-spacing);
   --body-paragraph-spacing: var(--paragraph-spacing);
+  --body-section-gap: calc(var(--root) * 7.2);
 
   --button-font-family: var(--font-family);
   --button-font-weight: var(--bold);
-  --button-font-size: 16px;
+  --button-font-size: calc(var(--root) * 1.6);
   --button-line-height: var(--line-height);
   --button-letter-spacing: var(--letter-spacing);
   --button-paragraph-spacing: var(--paragraph-spacing);
 
-  --section-gap: 72px;
-  --section-title-contents: 20px;
-  --portfolio-card: 12px;
-  --carousel-card: 12px;
-  --project-card: 16px;
-  --mentor-card: 16px;
+  --section-title-contents: calc(var(--root) * 2);
+
   --chips-font-family: var(--font-family);
   --chips-font-weight: var(--bold);
-  --chips-font-size: 18px;
+  --chips-font-size: calc(var(--root) * 1.5);
   --chips-line-height: var(--line-height);
   --chips-letter-spacing: var(--letter-spacing);
   --chips-paragraph-spacing: var(--paragraph-spacing);
 
-  --community-card: 16px;
+  --caption-font-family: var(--font-family);
+  --caption-font-weight: var(--regular);
+  --caption-font-size: calc(var(--root) * 1.2);
+  --caption-line-height: var(--line-height);
+  --caption-letter-spacing: var(--letter-spacing);
+  --caption-paragraph-spacing: var(--paragraph-spacing);
+  --caption-section-gap: calc(var(--root) * 2.4);
 
-  --placeholder-font-family: var(--font-family);
-  --placeholder-font-weight: var(--medium);
-  --placeholder-font-size: 15px;
-  --placeholder-line-height: var(--line-height);
-  --placeholder-letter-spacing: var(--letter-spacing);
-  --placeholder-paragraph-spacing: var(--paragraph-spacing);
+  --input-font-family: var(--font-family);
+  --input-font-weight: var(--regular);
+  --input-font-size: calc(var(--root) * 1.4);
+  --input-line-height: var(--line-height);
+  --input-letter-spacing: var(--letter-spacing);
+  --input-paragraph-spacing: var(--paragraph-spacing);
 
-  --body-footer-font-family: var(--font-family);
-  --body-footer-font-weight: var(--medium);
-  --body-footer-font-size: 13px;
-  --body-footer-line-height: var(--line-height);
-  --body-footer-letter-spacing: var(--letter-spacing);
-  --body-footer-paragraph-spacing: var(--paragraph-spacing);
+  --label-font-family: var(--font-family);
+  --label-font-weight: var(--medium);
+  --label-font-size: calc(var(--root) * 1.2);
+  --label-line-height: var(--line-height);
+  --label-letter-spacing: var(--letter-spacing);
+  --label-paragraph-spacing: var(--paragraph-spacing);
+
+  --overline-font-family: var(--font-family);
+  --overline-font-weight: var(--regular);
+  --overline-font-size: calc(var(--root) * 1.2);
+  --overline-line-height: var(--line-height);
+  --overline-letter-spacing: var(--letter-spacing);
+  --overline-paragraph-spacing: var(--paragraph-spacing);
+  --overline-section-gap: calc(var(--root) * 2.4);
 }
