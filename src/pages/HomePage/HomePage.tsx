@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import "./style.css";
-import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
-import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
 import { getExample } from "api/example";
 import SliderBanner from "components/SliderBanner/SliderBanner";
+import HomeAreaTitle from "components/HomeAreaTitle/HomeAreaTitle";
+import HomePortfolioList from "components/HomePortfolioList/HomePortfolioList";
 
 function HomePage() {
   useEffect(() => {
@@ -12,10 +12,15 @@ function HomePage() {
 
   return (
     <div className="homepage-container">
-      <SliderBanner />
-      {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
-        <PortfolioCard key={el.id} portfolio={el} />
-      ))}
+      <div className="homepage-slider-banner">
+        <SliderBanner />
+      </div>
+      <div className="homepage-contents">
+        <div>
+          <HomeAreaTitle text="오늘의 스팩폴리오 Pick!" />
+          <HomePortfolioList />
+        </div>
+      </div>
     </div>
   );
 }
