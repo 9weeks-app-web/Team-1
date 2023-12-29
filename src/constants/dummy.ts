@@ -55,6 +55,34 @@ export const DUMMY_PORTFOLIO_SUMMARY: IPortfolioSummary[] = [
     likes: 500,
     isVerified: true,
   },
+  {
+    id: 2,
+    thumbnail: "",
+    category: "UI/UX",
+    title: "Introduction to TypeScript Introduction to TypeScript",
+    views: 1000,
+    likes: 500,
+    isVerified: true,
+  },
+  {
+    id: 3,
+    thumbnail: "",
+    category: "UI/UX",
+    title: "Introduction to TypeScript Introduction to TypeScript",
+    views: 1000,
+    likes: 500,
+    isVerified: true,
+  },
+
+  {
+    id: 4,
+    thumbnail: "",
+    category: "UI/UX",
+    title: "Introduction to TypeScript Introduction to TypeScript",
+    views: 1000,
+    likes: 500,
+    isVerified: true,
+  },
 ];
 
 export const DUMMY_SLIDER_BANNERS: IBannerInfo[] = [
