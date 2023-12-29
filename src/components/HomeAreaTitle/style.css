@@ -1,0 +1,8 @@
+.home-area-title-container{
+    h1{
+        font-weight: var(--h1-font-weight);
+        line-height: var(--h1-line-height);
+        letter-spacing: var(--h1-letter-spacing);
+        font-size: var(--h1-font-size);
+    }
+}

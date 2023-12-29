@@ -64,15 +64,31 @@ body {
   --teal-100: #019898;
 
   --line-height: 140%;
-  --font-family: 'Spoqa Han Sans Neo';
+  --font-family: "Spoqa Han Sans Neo";
   --thin: 100;
   --light: 300;
   --regular: 400;
   --medium: 500;
   --bold: 700;
   --letter-spacing: 0.2%;
-  --paragraph-spacing: 4px;
-  --chips-radius: 100%;
+  --paragraph-spacing: 4;
+
+  --card-default-color: var(--border-10);
+  --card-default-width: 1;
+  --card-default-style: solid;
+
+  --card-hover-color: var(--blue-70);
+  --card-hover-width: 2;
+  --card-hover-style: solid;
+
+  --root: 10px;
+
+  --round: 100%;
+  --4px: calc(var(--root) * 0.4);
+  --8px: calc(var(--root) * 0.8);
+  --12px: calc(var(--root) * 1.2);
+  --16px: calc(var(--root) * 1.6);
+  --20px: calc(var(--root) * 2);
 
   /* Web */
   --h1-font-family: var(--font-family);
@@ -80,11 +96,11 @@ body {
   --h1-line-height: var(--line-height);
   --h1-letter-spacing: var(--letter-spacing);
   --h1-paragraph-spacing: var(--paragraph-spacing);
-  --h1-font-size: 34px;
+  --h1-font-size: calc(var(--root) * 2.8);
 
   --h2-font-family: var(--font-family);
   --h2-font-weight: var(--bold);
-  --h2-font-size: 30px;
+  --h2-font-size: calc(var(--root) * 2.4);
   --h2-line-height: var(--line-height);
   --h2-letter-spacing: var(--letter-spacing);
   --h2-paragraph-spacing: var(--paragraph-spacing);
@@ -94,10 +110,10 @@ body {
   --h3-line-height: var(--line-height);
   --h3-letter-spacing: var(--letter-spacing);
   --h3-paragraph-spacing: var(--paragraph-spacing);
-  --h3-font-size: 26px;
+  --h3-font-size: calc(var(--root) * 2);
 
   --h4-font-family: var(--font-family);
-  --h4-font-size: 22px;
+  --h4-font-size: calc(var(--root) * 1.8);
   --h4-line-height: var(--line-height);
   --h4-letter-spacing: var(--letter-spacing);
   --h4-paragraph-spacing: var(--paragraph-spacing);
@@ -105,65 +121,163 @@ body {
 
   --h5-font-family: var(--font-family);
   --h5-font-weight: var(--bold);
-  --h5-font-size: 20px;
+  --h5-font-size: calc(var(--root) * 1.6);
   --h5-line-height: var(--line-height);
   --h5-letter-spacing: var(--letter-spacing);
   --h5-paragraph-spacing: var(--paragraph-spacing);
 
   --h6-font-family: var(--font-family);
   --h6-font-weight: var(--bold);
-  --h6-font-size: 16px;
+  --h6-font-size: calc(var(--root) * 1.4);
   --h6-line-height: var(--line-height);
   --h6-letter-spacing: var(--letter-spacing);
   --h6-paragraph-spacing: var(--paragraph-spacing);
 
   --badge-font-family: var(--font-family);
-  --badge-font-weight: var(--bold);
-  --badge-font-size: 12px;
+  --badge-font-size: calc(var(--root) * 1.2);
   --badge-line-height: var(--line-height);
   --badge-letter-spacing: var(--letter-spacing);
   --badge-paragraph-spacing: var(--paragraph-spacing);
+  --badge-font-weight: var(--bold);
 
   --body-font-family: var(--font-family);
   --body-font-weight: var(--regular);
-  --body-font-size: 14px;
+  --body-font-size: calc(var(--root) * 1.4);
   --body-line-height: var(--line-height);
   --body-letter-spacing: var(--letter-spacing);
   --body-paragraph-spacing: var(--paragraph-spacing);
+  --body-section-gap: calc(var(--root) * 7.2);
 
   --button-font-family: var(--font-family);
   --button-font-weight: var(--bold);
-  --button-font-size: 16px;
+  --button-font-size: calc(var(--root) * 1.6);
   --button-line-height: var(--line-height);
   --button-letter-spacing: var(--letter-spacing);
   --button-paragraph-spacing: var(--paragraph-spacing);
 
-  --section-gap: 72px;
-  --section-title-contents: 20px;
-  --portfolio-card: 12px;
-  --carousel-card: 12px;
-  --project-card: 16px;
-  --mentor-card: 16px;
+  --section-title-contents: calc(var(--root) * 2);
+
   --chips-font-family: var(--font-family);
   --chips-font-weight: var(--bold);
-  --chips-font-size: 18px;
+  --chips-font-size: calc(var(--root) * 1.4);
   --chips-line-height: var(--line-height);
   --chips-letter-spacing: var(--letter-spacing);
   --chips-paragraph-spacing: var(--paragraph-spacing);
 
-  --community-card: 16px;
+  --detail-font-family: var(--font-family);
+  --detail-font-weight: var(--medium);
+  --detail-font-size: calc(var(--root) * 1.4);
+  --detail-line-height: var(--line-height);
+  --detail-letter-spacing: var(--letter-spacing);
+  --detail-paragraph-spacing: var(--paragraph-spacing);
+  --detail-color: var(--gray-80);
 
-  --placeholder-font-family: var(--font-family);
-  --placeholder-font-weight: var(--medium);
-  --placeholder-font-size: 15px;
-  --placeholder-line-height: var(--line-height);
-  --placeholder-letter-spacing: var(--letter-spacing);
-  --placeholder-paragraph-spacing: var(--paragraph-spacing);
+  --header-font-family: var(--font-family);
+  --header-font-weight: var(--bold);
+  --header-font-size: calc(var(--root) * 1.8);
+  --header-line-height: var(--line-height);
+  --header-letter-spacing: var(--letter-spacing);
+  --header-paragraph-spacing: var(--paragraph-spacing);
 
-  --body-footer-font-family: var(--font-family);
-  --body-footer-font-weight: var(--medium);
-  --body-footer-font-size: 13px;
-  --body-footer-line-height: var(--line-height);
-  --body-footer-letter-spacing: var(--letter-spacing);
-  --body-footer-paragraph-spacing: var(--paragraph-spacing);
+  --helper-font-family: var(--font-family);
+  --helper-font-weight: var(--regular);
+  --helper-font-size: calc(var(--root) * 1.2);
+  --helper-line-height: var(--line-height);
+  --helper-letter-spacing: var(--letter-spacing);
+  --helper-paragraph-spacing: var(--paragraph-spacing);
+
+  --input-font-family: var(--font-family);
+  --input-font-weight: var(--regular);
+  --input-font-size: calc(var(--root) * 1.4);
+  --input-line-height: var(--line-height);
+  --input-letter-spacing: var(--letter-spacing);
+  --input-paragraph-spacing: var(--paragraph-spacing);
+
+  --input-label-font-family: var(--font-family);
+  --input-label-font-weight: var(--medium);
+  --input-label-font-size: calc(var(--root) * 1.2);
+  --input-label-line-height: var(--line-height);
+  --input-label-letter-spacing: var(--letter-spacing);
+  --input-label-paragraph-spacing: var(--paragraph-spacing);
+  --input-label-color: var(--gray-70);
+
+  --nav-font-family: var(--font-family);
+  --nav-font-weight: var(--medium);
+  --nav-font-size: calc(var(--root) * 1.6);
+  --nav-line-height: var(--line-height);
+  --nav-letter-spacing: var(--letter-spacing);
+  --nav-paragraph-spacing: var(--paragraph-spacing);
+
+  --overline-font-family: var(--font-family);
+  --overline-font-weight: var(--regular);
+  --overline-font-size: calc(var(--root) * 1.2);
+  --overline-line-height: var(--line-height);
+  --overline-letter-spacing: var(--letter-spacing);
+  --overline-paragraph-spacing: var(--paragraph-spacing);
+
+  --subtitle1-font-family: var(--font-family);
+  --subtitle1-font-weight: var(--regular);
+  --subtitle1-font-size: calc(var(--root) * 1.6);
+  --subtitle1-line-height: var(--line-height);
+  --subtitle1-letter-spacing: var(--letter-spacing);
+  --subtitle1-paragraph-spacing: var(--paragraph-spacing);
+
+  --subtitle2-font-family: var(--font-family);
+  --subtitle2-font-weight: var(--medium);
+  --subtitle2-font-size: calc(var(--root) * 1.4);
+  --subtitle2-line-height: var(--line-height);
+  --subtitle2-letter-spacing: var(--letter-spacing);
+  --subtitle2-paragraph-spacing: var(--paragraph-spacing);
+
+  --tab-font-family: var(--font-family);
+  --tab-font-weight: var(--medium);
+  --tab-font-size: calc(var(--root) * 1.4);
+  --tab-line-height: var(--line-height);
+  --tab-letter-spacing: var(--letter-spacing);
+  --tab-paragraph-spacing: var(--paragraph-spacing);
+
+  --caption-font-family: var(--font-family);
+  --caption-font-weight: var(--regular);
+  --caption-font-size: calc(var(--root) * 1.2);
+  --caption-line-height: var(--line-height);
+  --caption-letter-spacing: var(--letter-spacing);
+  --caption-paragraph-spacing: var(--paragraph-spacing);
+
+  --button-icon-size: calc(var(--root) * 2);
+  --icon-size: calc(var(--root) * 2);
+  --icon-color: var(--gray-70);
+
+  --toolbar-height: calc(var(--root) * 4);
+  --appbar-height: calc(var(--root) * 5);
+  --appbar-sub-height: calc(var(--root) * 4);
+  --tabbar-height: calc(var(--root) * 4);
+  --bottomnav-height: calc(var(--root) * 4);
+
+  --elevation-0: 0 0 0 rgba(0, 0, 0, 0);
+  --elevation-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --elevation-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --elevation-3: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --elevation-4: 0 16px 24px rgba(0, 0, 0, 0.1);
+  --elevation-5: 0 24px 32px rgba(0, 0, 0, 0.1);
+
+  --duration-short: 200;
+  --duration-normal: 300;
+  --duration-long: 400;
+
+  --timing-function-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --timing-function-ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  --animation-bounce: cubic-bezier(0.4, 0.8, 0.6, 1.2);
+
+  --z-index-bottom: -1;
+  --z-index-base: 0;
+  --z-index-floating: 1;
+  --z-index-docked: 2;
+  --z-index-modal: 3;
+  --z-index-overlay: 4;
+  --z-index-appbar: 5;
+  --z-index-snackbar: 6;
+  --z-index-dialog: 7;
+  --z-index-tooltip: 8;
 }

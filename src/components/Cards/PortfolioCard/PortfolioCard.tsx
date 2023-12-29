@@ -17,6 +17,9 @@ function PortfolioCard(props: IPortfolioCardProps) {
   return (
     <Card width="l">
       <div className="portfolio-container">
+        {/* category 뱃지 */}
+        <Badge type="blue" text={portfolio.category} className="category" />
+
         {/* 스팩 인증 아이콘 */}
         {portfolio.isVerified && <Icon className="verified" icon="verified" />}
 
@@ -24,7 +27,6 @@ function PortfolioCard(props: IPortfolioCardProps) {
         <img className="thumbnail" src={portfolio.thumbnail ?? ""} alt="" />
         <div className="info">
           <div className="main">
-            <Badge type="blue" text={portfolio.category} />
             <p className="title">{portfolio.title}</p>
           </div>
           <div className="sub">

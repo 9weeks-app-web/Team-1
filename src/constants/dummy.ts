@@ -1,3 +1,4 @@
+import { IBannerInfo } from "types/home";
 import { IMentor } from "types/mentor";
 import { IPortfolioSummary } from "types/portfolio";
 
@@ -66,19 +67,48 @@ export const DUMMY_PORTFOLIO_SUMMARY: IPortfolioSummary[] = [
   {
     id: 3,
     thumbnail: "",
-    category: "기획",
+    category: "UI/UX",
     title: "Introduction to TypeScript Introduction to TypeScript",
-    views: 4440,
-    likes: 700,
+    views: 1000,
+    likes: 500,
     isVerified: true,
   },
+
   {
     id: 4,
     thumbnail: "",
-    category: "개발",
+    category: "UI/UX",
     title: "Introduction to TypeScript Introduction to TypeScript",
-    views: 7845,
-    likes: 800,
+    views: 1000,
+    likes: 500,
     isVerified: true,
+  },
+];
+
+export const DUMMY_SLIDER_BANNERS: IBannerInfo[] = [
+  {
+    id: 0,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 2,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 3,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 4,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 5,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
   },
 ];

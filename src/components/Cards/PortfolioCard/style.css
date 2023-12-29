@@ -4,21 +4,27 @@
     flex-direction: column;
     align-items: flex-start;
     min-width: 180px;
-    max-width: 345px;
+    max-width: 295px;
     gap: 16px;
     
     .verified {
         position: absolute;
-        font-size: 44px;
+        font-size: 32px;
         top : 12px;
-        right: 13px;
+        right: 12px;
         color: var(--blue-100);
 
     }
 
+    .category{
+        position: absolute;
+        top : 12px;
+        left: 12px;
+    }
+
     .thumbnail {
         display: flex;
-        height: 316px;
+        height: 295px;
         align-self: stretch;
         align-items: center;
         justify-content: flex-end;
