@@ -1,3 +1,104 @@
+body {
+    background: #F8F8F9;
+}
+.mypageAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1240px;
+    margin: auto;
+    height: auto;
+
+}
+.mypageAll h1 {
+    font-size: 2rem;
+}
 .mypage {
-    
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    border-radius: 2rem;
+}
+.mypageContainer {
+    background-color: transparent;
+    width: 900px;
+    height: auto;
+    flex-shrink: 0;
+    padding: 1rem;
+    font-size: 2rem;
+    border:none;
+    margin-left: 20px;
+}
+.info {
+    font-size: small;
+    padding: 2rem;
+}
+/*aside*/
+
+/*aside 끝*/
+  
+
+/*마이페이지 상세*/
+.myProfileTitle {
+    color: #1A1A1A;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+}
+
+.myProfileinfo {
+    padding: 20px;
+    background-color: #fff;
+    width: 875px;
+    height: 185px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #FFF;
+}
+.myProfileInfoTitle {
+    color: #1A1A1A;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.036px;
+    margin: 20px 0;
+}
+.myProfileInfoText {
+    color: #1A1A1A;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+    margin: 20px 0;
+
+}
+.myPfModifyBtn {
+    width: 116px;
+    height: 40px;
+    border-radius: 8px;
+    background: #0059FF;
+    border: none;
+    color: #FFF;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    float: right;
+}
+
+
+    /*아이콘들 */
+
+.setIcon {
+    margin-left: auto;
+    float: right;
 }

@@ -1,0 +1,49 @@
+.container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding-top: 116px;
+}
+
+.portfolio-card {
+  width: 1240px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* 카드 사이의 간격을 조절할 수 있습니다. */
+}
+
+.main-title {
+  width: 1240px;
+  height: 48px;
+  display: flex;
+  margin-top: 44px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.sub-title {
+  font-size: var(--h4-font-size);
+  font-weight: var(--bold);
+}
+
+.view-all {
+  display: flex;
+  width: 115px;
+  height: 48px;
+  text-align: center;
+  align-items: center;
+  font-size: var(--h6-font-size);
+  font-weight: var(--bold);
+  color: var(--gray-60);
+}
+
+.chip-section {
+  width: 1240px;
+  display: flex;
+  margin-bottom: 20px;
+  gap: 16px;
+}

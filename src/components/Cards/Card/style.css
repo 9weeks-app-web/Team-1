@@ -1,0 +1,19 @@
+.card-container {
+    display: flex;
+    flex-direction: column;
+    width: 345px;
+    height: fit-content;
+}
+
+.s-width {
+    width: 165px;
+}
+
+.m-width {
+    width: 176px;
+}
+
+.l-width {
+    width: 295px;
+}
+

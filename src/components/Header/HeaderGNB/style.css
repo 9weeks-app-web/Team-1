@@ -1,0 +1,48 @@
+.header-gnb-container{
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+    svg {
+        cursor: pointer;
+    }
+
+    ul {
+        display: flex;
+        gap: 8px;
+        
+        li {
+            width: 104px;
+            display: flex;
+            justify-content: center;
+            height: 40px;
+        }
+    
+        li a {
+            text-decoration: none;
+            color: var(--gray-40);
+            font-size: var(--button-font-size);
+            font-weight: var(--button-font-weight);
+            letter-spacing: var(--button-letter-spacing);
+            padding: 0 8px;
+        }
+
+        li a.active {
+            color: var(--blue-100);
+
+        }
+    }
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}

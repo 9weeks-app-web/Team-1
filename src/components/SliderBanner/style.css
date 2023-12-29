@@ -1,0 +1,28 @@
+.banner-container{
+}
+
+/* swiper lib 커스텀 */
+.swiper-slide{
+    width: 964px!important;
+    height: 260px;
+    background-color: var(--background-5);
+    border-radius: 12px;
+    
+    img {
+        width: 964px;
+        height: 260px;  
+        border-radius: 12px;
+    }
+}
+
+.swiper-slide-active{
+    height: 300px;
+
+    img {
+        height: 300px;
+    }
+}
+
+.swiper-wrapper{
+    align-items: center;
+}
