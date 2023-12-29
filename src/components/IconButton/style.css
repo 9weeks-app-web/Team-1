@@ -1,0 +1,13 @@
+.icon-button-contianer{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background : none;
+
+    /* 아이콘 크기 */
+    span {
+        cursor: pointer;
+        font-size: 28px;
+    }
+}

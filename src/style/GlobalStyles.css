@@ -1,7 +1,9 @@
+/* 기본 속성 reset */
+@import "reset.css";
 /* 폰트 import */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-* {
+body {
   /* 폰트 적용 - 스포카 한 산스 네오 */
   font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
@@ -9,37 +11,38 @@
 /* CSS 변수 정의 */
 :root {
   /* Core */
-  --gray-5: #f3f3f3;
-  --gray-10: #e6e6e6;
-  --gray-20: #cccccc;
-  --gray-30: #b3b3b3;
+  --gray-5: #F3F3F3;
+  --gray-10: #E6E6E6;
+  --gray-20: #CCCCCC;
+  --gray-30: #B3B3B3;
   --gray-40: #999999;
   --gray-50: #808080;
-  --gray-60: #4d4d4d;
-  --gray-70: #3e3e3e;
+  --gray-60: #666666;
+  --gray-70: #4D4D4D;
   --gray-80: #333333;
-  --gray-90: #1a1a1a;
+  --gray-90: #1A1A1A;
   --gray-100: #030303;
 
   --mono-white: #fff;
   --mono-black: #000;
 
-  --blue-5: #f5f8ff;
-  --blue-10: #e5eeff;
-  --blue-20: #ccdeff;
-  --blue-30: #b2cdff;
-  --blue-40: #99bdff;
-  --blue-50: #7facff;
-  --blue-60: #669bff;
-  --blue-70: #4c8bff;
-  --blue-80: #337aff;
-  --blue-90: #196aff;
-  --blue-100: #0059ff;
+  --blue-5: #F5F8FF;
+  --blue-10: #E5EEFF;
+  --blue-20: #CCDEFF;
+  --blue-30: #B2CDFF;
+  --blue-40: #99BDFF;
+  --blue-50: #7FACFF;
+  --blue-60: #669BFF;
+  --blue-70: #4C8BFF;
+  --blue-80: #337AFF;
+  --blue-90: #196AFF;
+  --blue-100: #0059FF;
 
-  --ststem-red: #ff3333;
-  --ststem-green: #42dd57;
+  --ststem-red: #FF3333;
+  --ststem-green: #42DD57;
 
-  --background-5: #f8f8f9;
+  --background-5: #F8F8F9;
+  --background-50: #A9A9A9;
   --background-100: #666666;
   --background-50-opacity: rgba(0, 0, 0, 0.3);
   --background-blue: var(--blue-5);
@@ -48,28 +51,28 @@
   --border-10: var(--gray-10);
   --border-blue: var(--blue-40);
 
-  --violet-20: #f0e3ff;
-  --violet-40: #e9a3ff;
-  --violet-100: #aa21d4;
+  --violet-20: #F0E3FF;
+  --violet-40: #E9A3FF;
+  --violet-100: #AA21D4;
 
-  --orange-20: #ffddc5;
-  --orange-40: #fea260;
-  --orange-100: #e75504;
+  --orange-20: #FFDDC5;
+  --orange-40: #FEA260;
+  --orange-100: #E75504;
 
-  --teal-20: #dbfffe;
-  --teal-40: #5ed7d7;
+  --teal-20: #DBFFFE;
+  --teal-40: #5ED7D7;
   --teal-100: #019898;
 
   --line-height: 140%;
-  --font-family: "Spoqa Han Sans Neo";
+  --font-family: 'Spoqa Han Sans Neo';
   --thin: 100;
   --light: 300;
   --regular: 400;
   --medium: 500;
   --bold: 700;
   --letter-spacing: 0.2%;
-  --paragraph-spacing: 4;
-  --chips: 100%;
+  --paragraph-spacing: 4px;
+  --chips-radius: 100%;
 
   /* Web */
   --h1-font-family: var(--font-family);
@@ -77,63 +80,63 @@
   --h1-line-height: var(--line-height);
   --h1-letter-spacing: var(--letter-spacing);
   --h1-paragraph-spacing: var(--paragraph-spacing);
-  --h1-font-size: 34;
+  --h1-font-size: 34px;
 
   --h2-font-family: var(--font-family);
   --h2-font-weight: var(--bold);
-  --h2-font-size: 30;
+  --h2-font-size: 30px;
   --h2-line-height: var(--line-height);
   --h2-letter-spacing: var(--letter-spacing);
   --h2-paragraph-spacing: var(--paragraph-spacing);
 
   --h3-font-family: var(--font-family);
-  --h3-font-weight: var(--medium);
+  --h3-font-weight: var(--bold);
   --h3-line-height: var(--line-height);
   --h3-letter-spacing: var(--letter-spacing);
   --h3-paragraph-spacing: var(--paragraph-spacing);
-  --h3-font-size: 26;
+  --h3-font-size: 26px;
 
   --h4-font-family: var(--font-family);
-  --h4-font-size: 22;
+  --h4-font-size: 22px;
   --h4-line-height: var(--line-height);
   --h4-letter-spacing: var(--letter-spacing);
   --h4-paragraph-spacing: var(--paragraph-spacing);
-  --h4-font-weight: var(--medium);
+  --h4-font-weight: var(--bold);
 
   --h5-font-family: var(--font-family);
-  --h5-font-weight: var(--medium);
-  --h5-font-size: 20;
+  --h5-font-weight: var(--bold);
+  --h5-font-size: 20px;
   --h5-line-height: var(--line-height);
   --h5-letter-spacing: var(--letter-spacing);
   --h5-paragraph-spacing: var(--paragraph-spacing);
 
   --h6-font-family: var(--font-family);
-  --h6-font-weight: var(--medium);
-  --h6-font-size: 16;
+  --h6-font-weight: var(--bold);
+  --h6-font-size: 16px;
   --h6-line-height: var(--line-height);
   --h6-letter-spacing: var(--letter-spacing);
   --h6-paragraph-spacing: var(--paragraph-spacing);
 
   --badge-font-family: var(--font-family);
-  --badge-font-size: 12;
+  --badge-font-weight: var(--bold);
+  --badge-font-size: 12px;
   --badge-line-height: var(--line-height);
   --badge-letter-spacing: var(--letter-spacing);
   --badge-paragraph-spacing: var(--paragraph-spacing);
-  --badge-font-weight: var(--bold);
 
   --body-font-family: var(--font-family);
   --body-font-weight: var(--regular);
-  --body-font-size: 14;
+  --body-font-size: 14px;
   --body-line-height: var(--line-height);
   --body-letter-spacing: var(--letter-spacing);
   --body-paragraph-spacing: var(--paragraph-spacing);
 
-  --CTA-font-family: var(--font-family);
-  --CTA-font-weight: var(--bold);
-  --CTA-font-size: 16;
-  --CTA-line-height: var(--line-height);
-  --CTA-letter-spacing: var(--letter-spacing);
-  --CTA-paragraph-spacing: var(--paragraph-spacing);
+  --button-font-family: var(--font-family);
+  --button-font-weight: var(--bold);
+  --button-font-size: 16px;
+  --button-line-height: var(--line-height);
+  --button-letter-spacing: var(--letter-spacing);
+  --button-paragraph-spacing: var(--paragraph-spacing);
 
   --section-gap: 72px;
   --section-title-contents: 20px;
@@ -143,89 +146,24 @@
   --mentor-card: 16px;
   --chips-font-family: var(--font-family);
   --chips-font-weight: var(--bold);
-  --chips-font-size: 18;
+  --chips-font-size: 18px;
   --chips-line-height: var(--line-height);
   --chips-letter-spacing: var(--letter-spacing);
   --chips-paragraph-spacing: var(--paragraph-spacing);
 
   --community-card: 16px;
 
-  /* Mobile */
-  --mobile-h1-font-family: var(--font-family);
-  --mobile-h1-font-weight: var(--bold);
-  --mobile-h1-font-size: 30;
-  --mobile-h1-line-height: var(--line-height);
-  --mobile-h1-letter-spacing: var(--letter-spacing);
-  --mobile-h1-paragraph-spacing: var(--paragraph-spacing);
+  --placeholder-font-family: var(--font-family);
+  --placeholder-font-weight: var(--medium);
+  --placeholder-font-size: 15px;
+  --placeholder-line-height: var(--line-height);
+  --placeholder-letter-spacing: var(--letter-spacing);
+  --placeholder-paragraph-spacing: var(--paragraph-spacing);
 
-  --mobile-h2-font-family: var(--font-family);
-  --mobile-h2-font-weight: var(--bold);
-  --mobile-h2-font-size: 26;
-  --mobile-h2-line-height: var(--line-height);
-  --mobile-h2-letter-spacing: var(--letter-spacing);
-  --mobile-h2-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-h3-font-family: var(--font-family);
-  --mobile-h3-font-weight: var(--medium);
-  --mobile-h3-font-size: 24;
-  --mobile-h3-line-height: var(--line-height);
-  --mobile-h3-letter-spacing: var(--letter-spacing);
-  --mobile-h3-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-h4-font-family: var(--font-family);
-  --mobile-h4-font-weight: var(--medium);
-  --mobile-h4-font-size: 20;
-  --mobile-h4-line-height: var(--line-height);
-  --mobile-h4-letter-spacing: var(--letter-spacing);
-  --mobile-h4-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-h5-font-family: var(--font-family);
-  --mobile-h5-font-weight: var(--medium);
-  --mobile-h5-font-size: 18;
-  --mobile-h5-line-height: var(--line-height);
-  --mobile-h5-letter-spacing: var(--letter-spacing);
-  --mobile-h5-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-h6-font-family: var(--font-family);
-  --mobile-h6-font-weight: var(--medium);
-  --mobile-h6-font-size: 16;
-  --mobile-h6-line-height: var(--line-height);
-  --mobile-h6-letter-spacing: var(--letter-spacing);
-  --mobile-h6-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-badge-font-family: var(--font-family);
-  --mobile-badge-font-weight: var(--bold);
-  --mobile-badge-font-size: 12;
-  --mobile-badge-line-height: var(--line-height);
-  --mobile-badge-letter-spacing: var(--letter-spacing);
-  --mobile-badge-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-body-font-family: var(--font-family);
-  --mobile-body-font-weight: var(--regular);
-  --mobile-body-font-size: 14;
-  --mobile-body-line-height: var(--line-height);
-  --mobile-body-letter-spacing: var(--letter-spacing);
-  --mobile-body-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-CTA-font-family: var(--font-family);
-  --mobile-CTA-font-weight: var(--bold);
-  --mobile-CTA-font-size: 16;
-  --mobile-CTA-line-height: var(--line-height);
-  --mobile-CTA-letter-spacing: var(--letter-spacing);
-  --mobile-CTA-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-section-gap: 34px;
-  --mobile-section-title-contents: 12px;
-  --mobile-portfolio-card: 8px;
-  --mobile-carousel-card: 8px;
-  --mobile-project-card: 12px;
-  --mobile-mentor-card: 12px;
-  --mobile-chips-font-family: var(--font-family);
-  --mobile-chips-font-weight: var(--bold);
-  --mobile-chips-font-size: 14;
-  --mobile-chips-line-height: var(--line-height);
-  --mobile-chips-letter-spacing: var(--letter-spacing);
-  --mobile-chips-paragraph-spacing: var(--paragraph-spacing);
-
-  --mobile-community-card: 12px;
+  --body-footer-font-family: var(--font-family);
+  --body-footer-font-weight: var(--medium);
+  --body-footer-font-size: 13px;
+  --body-footer-line-height: var(--line-height);
+  --body-footer-letter-spacing: var(--letter-spacing);
+  --body-footer-paragraph-spacing: var(--paragraph-spacing);
 }
