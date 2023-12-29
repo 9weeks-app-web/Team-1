@@ -14,13 +14,14 @@
   margin-bottom: 20px;
 }
 .form-div {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
 }
 .form-control {
   width: 655px;
   height: 75px;
-  margin: 10px;
+  margin-top: 15px;
+  font-size: 19px;
 }
 .form-btn {
   border: 0px;
@@ -62,11 +63,76 @@
   }
 }
 .form-naming {
+  font-size: 19px;
+}
+.title {
+  font-size: 22.98px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.telecom-btn {
+  border: 1px solid #d6dadf;
+  font-size: 17.95px;
+  width: 153px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d6dadf;
+  background-color: white;
+}
+.telecom-div {
+  display: flex;
+  gap: 14px;
+}
+.telecom-btn:hover {
+  cursor: pointer;
+}
+.active {
+  border: 1px solid blue;
+  color: blue;
+}
+.form-control-phone {
+  width: 490px;
+  height: 75px;
+  margin-top: 15px;
+  font-size: 19px;
+}
+.phone-verify-btn {
+  width: 156px;
+  height: 75px;
+  margin-left: 5px;
+  background-color: black;
+  color: white;
+}
+.checkmark-circle-active {
+  width: 37px; /* 원하는 크기 설정 */
+  height: 37px; /* 원하는 크기 설정 */
+  border-radius: 50%; /* 원형 모양 */
+  background-color: green; /* 배경색 */
+  color: white; /* 체크 표시 색상 */
   display: flex;
   justify-content: center;
-  margin-right: 100px;
+  align-items: center;
+  font-size: 20px; /* 체크 표시 크기 */
 }
-.container {
-  width: 700px;
-  border: 1px solid black;
+.checkmark-circle {
+  width: 37px; /* 원하는 크기 설정 */
+  height: 37px; /* 원하는 크기 설정 */
+  border-radius: 50%; /* 원형 모양 */
+  background-color: #d9d9d9; /* 배경색 */
+}
+
+.checkmark-circle-active::after {
+  content: "✔"; /* 체크 표시 */
+}
+.agree-div {
+  display: flex;
+  font-size: 19px;
+  margin-top: 15px;
+  gap: 20px;
+}
+.checkmark-circle-active:hover,
+.checkmark-circle:hover {
+  cursor: pointer;
 }
