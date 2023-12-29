@@ -6,7 +6,7 @@ function HomePage() {
   // firebase connect test
   console.log(fireStore);
 
-  return <div className="container">홈</div>;
+  return <div className="container">홈!!!</div>;
 }
 
 export default HomePage;
