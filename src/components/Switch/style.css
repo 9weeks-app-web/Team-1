@@ -6,7 +6,7 @@
   
   .switchPublic, .switchPrivate {
     position: absolute;
-    top: 5px;
+    top: 8px;
     color: #fff;
     font-family: Spoqa Han Sans Neo;
     font-size: 12px;
@@ -20,7 +20,7 @@
   }
   
   .switchPublic {
-    left: 15px;
+    left: 17px;
   }
   
   .switchPrivate {

@@ -34,7 +34,7 @@ function HeaderGNB() {
         <IconButton icon="notifications" onClick={() => alert("ㅎㅇ")} />
         <IconButton icon="forum" onClick={() => alert("ㅎㅇ")} />
         {/* TODO : 로그인 여부에 따라 다른 컴포넌트 렌더링 */}
-        <IconButton icon="account_circle" onClick={() => alert("ㅎㅇ")} />
+        <IconButton icon="account_circle" onClick={() => navigate("/mypage")} />
       </div>
     </div>
   );

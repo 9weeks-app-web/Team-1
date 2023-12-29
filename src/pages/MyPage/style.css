@@ -9,7 +9,7 @@ body {
     width: 1240px;
     margin: auto;
     height: auto;
-
+    
 }
 .mypageAll h1 {
     font-size: 2rem;
@@ -17,9 +17,9 @@ body {
 .mypage {
     display: flex;
     justify-content: center;
-    margin: auto;
     height: auto;
     border-radius: 2rem;
+    margin-top: 9rem;
 }
 .mypageContainer {
     background-color: transparent;
@@ -48,6 +48,7 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 33.6px */
+    margin-bottom: 20px;
     letter-spacing: 0.048px;
 }
 
