@@ -2,6 +2,7 @@ span{
     display: block;
 }
 .recruit-badge-container{
+    position: relative;
     width: fit-content;
     padding: 8px 12px 8px 36px;
     border-radius: 100px;
