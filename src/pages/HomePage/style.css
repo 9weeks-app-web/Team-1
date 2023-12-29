@@ -1,3 +1,6 @@
-.container {
+.homepage-container {
+    position: relative;
     padding : 116px 0 0 0;
+    width: 1240px;
+    margin: 0 auto;
 }
