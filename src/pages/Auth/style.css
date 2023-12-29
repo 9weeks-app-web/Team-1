@@ -1,0 +1,72 @@
+.is-invalid {
+  border-color: red;
+}
+.invalid-feedback {
+  color: red;
+}
+.center {
+  display: flex;
+  justify-content: center;
+}
+.login-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.form-div {
+  display: flex;
+  justify-content: center;
+}
+.form-control {
+  width: 655px;
+  height: 75px;
+  margin: 10px;
+}
+.form-btn {
+  border: 0px;
+  background-color: #d9d9d9;
+}
+.form-btn:hover {
+  cursor: pointer;
+}
+.auth-link {
+  /* width: 1000px; */
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  gap: 170px;
+}
+.sns-text {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+.sns-btn-div {
+  gap: 20px;
+}
+.sns-btn {
+  border-radius: 100%;
+  border: 0px;
+  height: 50px;
+  width: 50px;
+  background-color: #d9d9d9;
+}
+.sns-btn:hover {
+  cursor: pointer;
+}
+@media (max-width: 700px) {
+  .auth-link {
+    flex-direction: column; /* 좌우 정렬에서 상하 정렬로 변경 */
+    align-items: center; /* 상하 중앙 정렬 */
+    gap: 10px; /* 요소 간 간격 조정 */
+  }
+}
+.form-naming {
+  display: flex;
+  justify-content: center;
+  margin-right: 100px;
+}
+.container {
+  width: 700px;
+  border: 1px solid black;
+}
