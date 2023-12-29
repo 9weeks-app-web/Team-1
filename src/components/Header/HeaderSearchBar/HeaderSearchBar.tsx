@@ -23,9 +23,13 @@ function HeaderSearchBar() {
         placeholder="원하는 커뮤니티, 작업물, 프로젝트 검색"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        onKeyUp={(e) => {
+          if (e.key === "Enter") {
+            search();
+          }
+        }}
       />
       {query && <IconButton icon="close" onClick={reset} />}
-      <IconButton icon="search" onClick={search} />
     </div>
   );
 }
