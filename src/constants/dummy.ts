@@ -1,3 +1,4 @@
+import { IBannerInfo } from "types/home";
 import { IMentor } from "types/mentor";
 import { IPortfolioSummary } from "types/portfolio";
 
@@ -53,5 +54,33 @@ export const DUMMY_PORTFOLIO_SUMMARY: IPortfolioSummary[] = [
     views: 1000,
     likes: 500,
     isVerified: true,
+  },
+];
+
+export const DUMMY_SLIDER_BANNERS: IBannerInfo[] = [
+  {
+    id: 0,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 2,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 3,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 4,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
+  },
+  {
+    id: 5,
+    imgSrc: "https://picsum.photos/964/300",
+    link: "https://naver.com",
   },
 ];
