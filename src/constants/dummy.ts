@@ -58,9 +58,9 @@ export const DUMMY_PORTFOLIO_SUMMARY: IPortfolioSummary[] = [
   {
     id: 2,
     thumbnail: "",
-    category: "UI/UX",
+    category: "디자인",
     title: "Introduction to TypeScript Introduction to TypeScript",
-    views: 1000,
+    views: 12240,
     likes: 500,
     isVerified: true,
   },

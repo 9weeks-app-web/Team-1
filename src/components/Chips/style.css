@@ -1,9 +1,7 @@
 .chip {
-  /* display: flex; */
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0.5rem 1rem;
-  align-items: center;
   border: 0;
   border-radius: 6.25rem;
   background: var(--blue-5);
@@ -14,7 +12,6 @@
 }
 
 .chip-clicked {
-  /* display: flex; */
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0.5rem 1rem;
