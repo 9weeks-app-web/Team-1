@@ -88,10 +88,7 @@
 .telecom-btn:hover {
   cursor: pointer;
 }
-.active {
-  border: 1px solid blue;
-  color: blue;
-}
+
 .form-control-phone {
   width: 490px;
   height: 75px;
