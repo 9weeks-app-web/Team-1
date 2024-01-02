@@ -17,7 +17,7 @@ function MentorCard(props: IMentorCardProps) {
         <div className="info">
           <p className="name">{mentor.name}</p>
           <p className="occupation">{mentor.occupation}</p>
-          <p className="introduction">{mentor.introduction}</p>
+          <p className="introduction twoLineEllipsis">{mentor.introduction}</p>
         </div>
       </div>
     </Card>

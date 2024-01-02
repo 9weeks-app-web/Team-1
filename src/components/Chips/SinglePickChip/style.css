@@ -1,5 +1,6 @@
 .chip {
   /* display: flex; */
+  font-family: Spoqa Han Sans Neo;
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 0.5rem 1rem;
@@ -14,6 +15,7 @@
 }
 
 .chip-clicked {
+  font-family: Spoqa Han Sans Neo;
   /* display: flex; */
   overflow: hidden;
   text-overflow: ellipsis;
