@@ -1,0 +1,96 @@
+body {
+    background-color: #fff ;
+}
+.chatting {
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+    margin: auto;
+    height: auto;
+}
+.chatting h1 {
+    font-size: 2rem;
+    margin-top: 10rem;
+    float: left;
+    color: #030303;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+}
+
+.chatContainer {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    margin-top: 2rem;
+    width: 1240px;
+    height: 850px;
+    border-top: 1px solid #D2D2D2;
+
+}
+.chattingList {
+    background-color: transparent;
+    width: 422px;
+    height: 850px;
+    border-right: 1px solid #D2D2D2;
+    overflow-x: auto;
+    overflow-x: hidden;
+}
+.chattingList::-webkit-scrollbar-button {
+    display: none;
+}
+
+.chatting::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+}
+
+.chatting::-webkit-scrollbar-thumb {
+    background-color: #ccc; 
+    border-radius: 10px;
+}
+
+.chatting::-webkit-scrollbar {
+    width: 8px;
+}
+
+.unreadMsg {
+    margin: 50px 0 20px 220px;
+    color: #999;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.03px;
+    text-align: center;
+
+}
+
+
+#unreadMsgCheck {
+    width: 18px;
+    height: 16px;
+}
+
+.chattingRoom {
+    background-color: transparent;
+    width: 808px;
+    height: auto;
+    flex-shrink: 0;
+    font-size: 2rem;
+    border:none;
+    display: flex;
+    box-sizing: border-box; 
+    padding: 20px; 
+}
+
+.chattingRoom svg {
+    width: 808px;
+    margin: 15rem 0;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; 
+}

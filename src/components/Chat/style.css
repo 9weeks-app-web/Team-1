@@ -1,0 +1,125 @@
+.chatList {
+    width: 421px;
+    height: 92px;
+    flex-shrink: 0;
+    border: 1px solid #D2D2D2;
+    display: flex;
+    flex-direction: row;
+}
+.userProfile {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.03px;
+  }
+  
+  .listUserPreview {
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+  }
+  .listUserText {
+  }
+  
+  .listUserName {
+  }
+  
+  .listLastTime {
+  }
+  
+  .msgPreview {
+    margin-left: auto;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-left: 15px;
+
+  }
+  
+  .listNewMsgCount {
+    background-color: #7FACFF;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin-left: 120px; /* Adjust as needed */
+    font-weight: 600;
+  }
+  
+/*채팅룸헤더*/
+.chattingRoomHeader {
+    height: 75px;
+}
+
+/* 채팅룸 */
+.chattingRoomMsg {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    height: 585px;
+  }
+  
+  .sentBubble {
+    align-self: flex-end;
+    display: inline-flex;
+    margin: 5px; 
+    padding: 9px 15px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px 0px;
+    background: #E5EEFF;
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.03px;
+  }
+  
+  .recievedBubble {
+    align-self: flex-start; 
+    display: inline-flex;
+    margin: 5px; 
+    padding: 9px 15px; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 30px;
+    background: #B2CDFF;
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%;
+    letter-spacing: 0.032px;
+  }
+    
+  .chattingRoomInput {
+    
+  }
+  
+  .chattingRoomInput input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 740px;
+    height: 130px;
+
+
+  }
+  
