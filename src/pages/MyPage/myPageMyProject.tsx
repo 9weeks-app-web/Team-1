@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./style.css";
-import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
-import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
 
 function MyPageMyProject() {
   const [selectedTab, setSelectedTab] = useState("progress");
@@ -32,11 +30,7 @@ function MyPageMyProject() {
         {selectedTab === "progress" && (
           <div>
             {" "}
-            <div className="portfolio-progress">
-              {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
-                <PortfolioCard key={el.id} portfolio={el} />
-              ))}
-            </div>
+            <div className="portfolio-progress" />
           </div>
         )}
         {selectedTab === "completed" && <div>완료된 프로젝트</div>}

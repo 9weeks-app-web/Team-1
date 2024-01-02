@@ -1,3 +1,20 @@
+.mypageWrapper{
+    background: var(--background-5);    
+}
+
+.mypageAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1240px;
+    margin: auto;
+    height: auto;
+    
+}
+.mypageAll h1 {
+    font-size: 2rem;
+}
 .mypage {
 <<<<<<< Updated upstream
     

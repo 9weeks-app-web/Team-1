@@ -1,0 +1,30 @@
+span{
+    display: block;
+}
+
+.recruit-badge-container{
+    height: 24px;
+    position: relative;
+    width: fit-content;
+    padding: 0 12px 0 36px;
+    border-radius: 100px;
+    font-size: var(--badge-font-size);
+    letter-spacing: var(--badge-letter-spacing);
+    font-weight: var(--badge-font-weight);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--teal-20);
+    color: var(--teal-100);
+}
+
+.group-icon {
+    position: absolute;
+    left: 12px;
+    font-size: 20px;
+}
+.done {
+    background-color: var(--gray-20);
+    color: var(--gray-60);
+}

@@ -1,232 +1,287 @@
+/* 기본 속성 reset */
+@import "Reset.css";
+
+/* 자주 사용하는 클래스 분리 */
+@import "Classes.css";
+
 /* 폰트 import */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
-* {
+body {
   /* 폰트 적용 - 스포카 한 산스 네오 */
-  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
+  font-family: "Spoqa Han Sans Neo", "sans-serif";
 }
 
 /* CSS 변수 정의 */
-:root { 
-    /* Core */
-    --gray-5: #F3F3F3;
-    --gray-10: #E6E6E6;
-    --gray-20: #CCCCCC;
-    --gray-30: #B3B3B3;
-    --gray-40: #999999;
-    --gray-50: #808080;
-    --gray-60: #4D4D4D;
-    --gray-70: #3e3e3e;
-    --gray-80: #333333;
-    --gray-90: #1A1A1A;
-    --gray-100: #030303;
-  
-    --mono-white: #fff;
-    --mono-black: #000;
-  
-    --blue-5: #F5F8FF;
-    --blue-10: #E5EEFF;
-    --blue-20: #CCDEFF;
-    --blue-30: #B2CDFF;
-    --blue-40: #99BDFF;
-    --blue-50: #7FACFF;
-    --blue-60: #669BFF;
-    --blue-70: #4C8BFF;
-    --blue-80: #337AFF;
-    --blue-90: #196AFF;
-    --blue-100: #0059FF;
-  
-    --ststem-red: #FF3333;
-    --ststem-green: #42DD57;
-  
-    --background-5: #F8F8F9;
-    --background-100: #666666;
-    --background-50-opacity: rgba(0, 0, 0, 0.3);
-    --background-blue: var(--blue-5);
-  
-    --border-5: var(--gray-5);
-    --border-10: var(--gray-10);
-    --border-blue: var(--blue-40);
-  
-    --violet-20: #F0E3FF;
-    --violet-40: #E9A3FF;
-    --violet-100: #AA21D4;
-  
-    --orange-20: #FFDDC5;
-    --orange-40: #FEA260;
-    --orange-100: #E75504;
-  
-    --teal-20: #DBFFFE;
-    --teal-40: #5ED7D7;
-    --teal-100: #019898;
-  
-    --line-height: 140%;
-    --font-family: 'Spoqa Han Sans Neo';
-    --thin: 100;
-    --light: 300;
-    --regular: 400;
-    --medium: 500;
-    --bold: 700;
-    --letter-spacing: 0.2%;
-    --paragraph-spacing: 4;
-    --chips: 100%;
-  
-    /* Web */
-    --h1-font-family: var(--font-family);
-    --h1-font-weight: var(--bold);
-    --h1-line-height: var(--line-height);
-    --h1-letter-spacing: var(--letter-spacing);
-    --h1-paragraph-spacing: var(--paragraph-spacing);
-    --h1-font-size: 34;
-  
-    --h2-font-family: var(--font-family);
-    --h2-font-weight: var(--bold);
-    --h2-font-size: 30;
-    --h2-line-height: var(--line-height);
-    --h2-letter-spacing: var(--letter-spacing);
-    --h2-paragraph-spacing: var(--paragraph-spacing);
-  
-    --h3-font-family: var(--font-family);
-    --h3-font-weight: var(--medium);
-    --h3-line-height: var(--line-height);
-    --h3-letter-spacing: var(--letter-spacing);
-    --h3-paragraph-spacing: var(--paragraph-spacing);
-    --h3-font-size: 26;
-  
-    --h4-font-family: var(--font-family);
-    --h4-font-size: 22;
-    --h4-line-height: var(--line-height);
-    --h4-letter-spacing: var(--letter-spacing);
-    --h4-paragraph-spacing: var(--paragraph-spacing);
-    --h4-font-weight: var(--medium);
-  
-    --h5-font-family: var(--font-family);
-    --h5-font-weight: var(--medium);
-    --h5-font-size: 20;
-    --h5-line-height: var(--line-height);
-    --h5-letter-spacing: var(--letter-spacing);
-    --h5-paragraph-spacing: var(--paragraph-spacing);
-  
-    --h6-font-family: var(--font-family);
-    --h6-font-weight: var(--medium);
-    --h6-font-size: 16;
-    --h6-line-height: var(--line-height);
-    --h6-letter-spacing: var(--letter-spacing);
-    --h6-paragraph-spacing: var(--paragraph-spacing);
-  
-    --badge-font-family: var(--font-family);
-    --badge-font-size: 12;
-    --badge-line-height: var(--line-height);
-    --badge-letter-spacing: var(--letter-spacing);
-    --badge-paragraph-spacing: var(--paragraph-spacing);
-    --badge-font-weight: var(--bold);
-  
-    --body-font-family: var(--font-family);
-    --body-font-weight: var(--regular);
-    --body-font-size: 14;
-    --body-line-height: var(--line-height);
-    --body-letter-spacing: var(--letter-spacing);
-    --body-paragraph-spacing: var(--paragraph-spacing);
-  
-    --CTA-font-family: var(--font-family);
-    --CTA-font-weight: var(--bold);
-    --CTA-font-size: 16;
-    --CTA-line-height: var(--line-height);
-    --CTA-letter-spacing: var(--letter-spacing);
-    --CTA-paragraph-spacing: var(--paragraph-spacing);
-  
-    --section-gap: 72px;
-    --section-title-contents: 20px;
-    --portfolio-card: 12px;
-    --carousel-card: 12px;
-    --project-card: 16px;
-    --mentor-card: 16px;
-    --chips-font-family: var(--font-family);
-    --chips-font-weight: var(--bold);
-    --chips-font-size: 18;
-    --chips-line-height: var(--line-height);
-    --chips-letter-spacing: var(--letter-spacing);
-    --chips-paragraph-spacing: var(--paragraph-spacing);
-  
-    --community-card: 16px;
-  
-    /* Mobile */
-    --mobile-h1-font-family: var(--font-family);
-    --mobile-h1-font-weight: var(--bold);
-    --mobile-h1-font-size: 30;
-    --mobile-h1-line-height: var(--line-height);
-    --mobile-h1-letter-spacing: var(--letter-spacing);
-    --mobile-h1-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-h2-font-family: var(--font-family);
-    --mobile-h2-font-weight: var(--bold);
-    --mobile-h2-font-size: 26;
-    --mobile-h2-line-height: var(--line-height);
-    --mobile-h2-letter-spacing: var(--letter-spacing);
-    --mobile-h2-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-h3-font-family: var(--font-family);
-    --mobile-h3-font-weight: var(--medium);
-    --mobile-h3-font-size: 24;
-    --mobile-h3-line-height: var(--line-height);
-    --mobile-h3-letter-spacing: var(--letter-spacing);
-    --mobile-h3-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-h4-font-family: var(--font-family);
-    --mobile-h4-font-weight: var(--medium);
-    --mobile-h4-font-size: 20;
-    --mobile-h4-line-height: var(--line-height);
-    --mobile-h4-letter-spacing: var(--letter-spacing);
-    --mobile-h4-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-h5-font-family: var(--font-family);
-    --mobile-h5-font-weight: var(--medium);
-    --mobile-h5-font-size: 18;
-    --mobile-h5-line-height: var(--line-height);
-    --mobile-h5-letter-spacing: var(--letter-spacing);
-    --mobile-h5-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-h6-font-family: var(--font-family);
-    --mobile-h6-font-weight: var(--medium);
-    --mobile-h6-font-size: 16;
-    --mobile-h6-line-height: var(--line-height);
-    --mobile-h6-letter-spacing: var(--letter-spacing);
-    --mobile-h6-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-badge-font-family: var(--font-family);
-    --mobile-badge-font-weight: var(--bold);
-    --mobile-badge-font-size: 12;
-    --mobile-badge-line-height: var(--line-height);
-    --mobile-badge-letter-spacing: var(--letter-spacing);
-    --mobile-badge-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-body-font-family: var(--font-family);
-    --mobile-body-font-weight: var(--regular);
-    --mobile-body-font-size: 14;
-    --mobile-body-line-height: var(--line-height);
-    --mobile-body-letter-spacing: var(--letter-spacing);
-    --mobile-body-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-CTA-font-family: var(--font-family);
-    --mobile-CTA-font-weight: var(--bold);
-    --mobile-CTA-font-size: 16;
-    --mobile-CTA-line-height: var(--line-height);
-    --mobile-CTA-letter-spacing: var(--letter-spacing);
-    --mobile-CTA-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-section-gap: 34px;
-    --mobile-section-title-contents: 12px;
-    --mobile-portfolio-card: 8px;
-    --mobile-carousel-card: 8px;
-    --mobile-project-card: 12px;
-    --mobile-mentor-card: 12px;
-    --mobile-chips-font-family: var(--font-family);
-    --mobile-chips-font-weight: var(--bold);
-    --mobile-chips-font-size: 14;
-    --mobile-chips-line-height: var(--line-height);
-    --mobile-chips-letter-spacing: var(--letter-spacing);
-    --mobile-chips-paragraph-spacing: var(--paragraph-spacing);
-  
-    --mobile-community-card: 12px;
-  }
-  
+:root {
+  /* Core */
+  --gray-5: #F3F3F3;
+  --gray-10: #E6E6E6;
+  --gray-20: #CCCCCC;
+  --gray-30: #B3B3B3;
+  --gray-40: #999999;
+  --gray-50: #808080;
+  --gray-60: #666666;
+  --gray-70: #4D4D4D;
+  --gray-80: #333333;
+  --gray-90: #1A1A1A;
+  --gray-100: #030303;
+
+  --mono-white: #fff;
+  --mono-black: #000;
+
+  --blue-5: #F5F8FF;
+  --blue-10: #E5EEFF;
+  --blue-20: #CCDEFF;
+  --blue-30: #B2CDFF;
+  --blue-40: #99BDFF;
+  --blue-50: #7FACFF;
+  --blue-60: #669BFF;
+  --blue-70: #4C8BFF;
+  --blue-80: #337AFF;
+  --blue-90: #196AFF;
+  --blue-100: #0059FF;
+
+  --ststem-red: #FF3333;
+  --ststem-green: #42DD57;
+
+  --background-5: #F8F8F9;
+  --background-50: #A9A9A9;
+  --background-100: #666666;
+  --background-50-opacity: rgba(0, 0, 0, 0.3);
+  --background-blue: var(--blue-5);
+
+  --border-5: var(--gray-5);
+  --border-10: var(--gray-10);
+  --border-blue: var(--blue-40);
+
+  --violet-20: #F0E3FF;
+  --violet-40: #E9A3FF;
+  --violet-100: #AA21D4;
+
+  --orange-20: #FFDDC5;
+  --orange-40: #FEA260;
+  --orange-100: #E75504;
+
+  --teal-20: #DBFFFE;
+  --teal-40: #5ED7D7;
+  --teal-100: #019898;
+
+  --line-height: 140%;
+  --font-family: "Spoqa Han Sans Neo";
+  --thin: 100;
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+  --letter-spacing: 0.2%;
+  --paragraph-spacing: 4;
+
+  --card-default-color: var(--border-10);
+  --card-default-width: 1;
+  --card-default-style: solid;
+
+  --card-hover-color: var(--blue-70);
+  --card-hover-width: 2;
+  --card-hover-style: solid;
+
+  --root: 10px;
+
+  --round: 100%;
+  --4px: calc(var(--root) * 0.4);
+  --8px: calc(var(--root) * 0.8);
+  --12px: calc(var(--root) * 1.2);
+  --16px: calc(var(--root) * 1.6);
+  --20px: calc(var(--root) * 2);
+
+  /* Web */
+  --h1-font-family: var(--font-family);
+  --h1-font-weight: var(--bold);
+  --h1-line-height: var(--line-height);
+  --h1-letter-spacing: var(--letter-spacing);
+  --h1-paragraph-spacing: var(--paragraph-spacing);
+  --h1-font-size: calc(var(--root) * 2.8);
+
+  --h2-font-family: var(--font-family);
+  --h2-font-weight: var(--bold);
+  --h2-font-size: calc(var(--root) * 2.4);
+  --h2-line-height: var(--line-height);
+  --h2-letter-spacing: var(--letter-spacing);
+  --h2-paragraph-spacing: var(--paragraph-spacing);
+
+  --h3-font-family: var(--font-family);
+  --h3-font-weight: var(--bold);
+  --h3-line-height: var(--line-height);
+  --h3-letter-spacing: var(--letter-spacing);
+  --h3-paragraph-spacing: var(--paragraph-spacing);
+  --h3-font-size: calc(var(--root) * 2);
+
+  --h4-font-family: var(--font-family);
+  --h4-font-size: calc(var(--root) * 1.8);
+  --h4-line-height: var(--line-height);
+  --h4-letter-spacing: var(--letter-spacing);
+  --h4-paragraph-spacing: var(--paragraph-spacing);
+  --h4-font-weight: var(--bold);
+
+  --h5-font-family: var(--font-family);
+  --h5-font-weight: var(--bold);
+  --h5-font-size: calc(var(--root) * 1.6);
+  --h5-line-height: var(--line-height);
+  --h5-letter-spacing: var(--letter-spacing);
+  --h5-paragraph-spacing: var(--paragraph-spacing);
+
+  --h6-font-family: var(--font-family);
+  --h6-font-weight: var(--bold);
+  --h6-font-size: calc(var(--root) * 1.4);
+  --h6-line-height: var(--line-height);
+  --h6-letter-spacing: var(--letter-spacing);
+  --h6-paragraph-spacing: var(--paragraph-spacing);
+
+  --badge-font-family: var(--font-family);
+  --badge-font-size: calc(var(--root) * 1.2);
+  --badge-line-height: var(--line-height);
+  --badge-letter-spacing: var(--letter-spacing);
+  --badge-paragraph-spacing: var(--paragraph-spacing);
+  --badge-font-weight: var(--bold);
+
+  --body-font-family: var(--font-family);
+  --body-font-weight: var(--regular);
+  --body-font-size: calc(var(--root) * 1.4);
+  --body-line-height: var(--line-height);
+  --body-letter-spacing: var(--letter-spacing);
+  --body-paragraph-spacing: var(--paragraph-spacing);
+  --body-section-gap: calc(var(--root) * 7.2);
+
+  --button-font-family: var(--font-family);
+  --button-font-weight: var(--bold);
+  --button-font-size: calc(var(--root) * 1.6);
+  --button-line-height: var(--line-height);
+  --button-letter-spacing: var(--letter-spacing);
+  --button-paragraph-spacing: var(--paragraph-spacing);
+
+  --section-title-contents: calc(var(--root) * 2);
+
+  --chips-font-family: var(--font-family);
+  --chips-font-weight: var(--bold);
+  --chips-font-size: calc(var(--root) * 1.4);
+  --chips-line-height: var(--line-height);
+  --chips-letter-spacing: var(--letter-spacing);
+  --chips-paragraph-spacing: var(--paragraph-spacing);
+
+  --detail-font-family: var(--font-family);
+  --detail-font-weight: var(--medium);
+  --detail-font-size: calc(var(--root) * 1.4);
+  --detail-line-height: var(--line-height);
+  --detail-letter-spacing: var(--letter-spacing);
+  --detail-paragraph-spacing: var(--paragraph-spacing);
+  --detail-color: var(--gray-80);
+
+  --header-font-family: var(--font-family);
+  --header-font-weight: var(--bold);
+  --header-font-size: calc(var(--root) * 1.8);
+  --header-line-height: var(--line-height);
+  --header-letter-spacing: var(--letter-spacing);
+  --header-paragraph-spacing: var(--paragraph-spacing);
+
+  --helper-font-family: var(--font-family);
+  --helper-font-weight: var(--regular);
+  --helper-font-size: calc(var(--root) * 1.2);
+  --helper-line-height: var(--line-height);
+  --helper-letter-spacing: var(--letter-spacing);
+  --helper-paragraph-spacing: var(--paragraph-spacing);
+
+  --input-font-family: var(--font-family);
+  --input-font-weight: var(--regular);
+  --input-font-size: calc(var(--root) * 1.4);
+  --input-line-height: var(--line-height);
+  --input-letter-spacing: var(--letter-spacing);
+  --input-paragraph-spacing: var(--paragraph-spacing);
+
+  --input-label-font-family: var(--font-family);
+  --input-label-font-weight: var(--medium);
+  --input-label-font-size: calc(var(--root) * 1.2);
+  --input-label-line-height: var(--line-height);
+  --input-label-letter-spacing: var(--letter-spacing);
+  --input-label-paragraph-spacing: var(--paragraph-spacing);
+  --input-label-color: var(--gray-70);
+
+  --nav-font-family: var(--font-family);
+  --nav-font-weight: var(--medium);
+  --nav-font-size: calc(var(--root) * 1.6);
+  --nav-line-height: var(--line-height);
+  --nav-letter-spacing: var(--letter-spacing);
+  --nav-paragraph-spacing: var(--paragraph-spacing);
+
+  --overline-font-family: var(--font-family);
+  --overline-font-weight: var(--regular);
+  --overline-font-size: calc(var(--root) * 1.2);
+  --overline-line-height: var(--line-height);
+  --overline-letter-spacing: var(--letter-spacing);
+  --overline-paragraph-spacing: var(--paragraph-spacing);
+
+  --subtitle1-font-family: var(--font-family);
+  --subtitle1-font-weight: var(--regular);
+  --subtitle1-font-size: calc(var(--root) * 1.6);
+  --subtitle1-line-height: var(--line-height);
+  --subtitle1-letter-spacing: var(--letter-spacing);
+  --subtitle1-paragraph-spacing: var(--paragraph-spacing);
+
+  --subtitle2-font-family: var(--font-family);
+  --subtitle2-font-weight: var(--medium);
+  --subtitle2-font-size: calc(var(--root) * 1.4);
+  --subtitle2-line-height: var(--line-height);
+  --subtitle2-letter-spacing: var(--letter-spacing);
+  --subtitle2-paragraph-spacing: var(--paragraph-spacing);
+
+  --tab-font-family: var(--font-family);
+  --tab-font-weight: var(--medium);
+  --tab-font-size: calc(var(--root) * 1.4);
+  --tab-line-height: var(--line-height);
+  --tab-letter-spacing: var(--letter-spacing);
+  --tab-paragraph-spacing: var(--paragraph-spacing);
+
+  --caption-font-family: var(--font-family);
+  --caption-font-weight: var(--regular);
+  --caption-font-size: calc(var(--root) * 1.2);
+  --caption-line-height: var(--line-height);
+  --caption-letter-spacing: var(--letter-spacing);
+  --caption-paragraph-spacing: var(--paragraph-spacing);
+
+  --button-icon-size: calc(var(--root) * 2);
+  --icon-size: calc(var(--root) * 2);
+  --icon-color: var(--gray-70);
+
+  --toolbar-height: calc(var(--root) * 4);
+  --appbar-height: calc(var(--root) * 5);
+  --appbar-sub-height: calc(var(--root) * 4);
+  --tabbar-height: calc(var(--root) * 4);
+  --bottomnav-height: calc(var(--root) * 4);
+
+  --elevation-0: 0 0 0 rgba(0, 0, 0, 0);
+  --elevation-1: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --elevation-2: 0 4px 8px rgba(0, 0, 0, 0.1);
+  --elevation-3: 0 8px 16px rgba(0, 0, 0, 0.1);
+  --elevation-4: 0 16px 24px rgba(0, 0, 0, 0.1);
+  --elevation-5: 0 24px 32px rgba(0, 0, 0, 0.1);
+
+  --duration-short: 200;
+  --duration-normal: 300;
+  --duration-long: 400;
+
+  --timing-function-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --timing-function-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --timing-function-ease-out: cubic-bezier(0, 0, 0.2, 1);
+
+  --animation-bounce: cubic-bezier(0.4, 0.8, 0.6, 1.2);
+
+  --z-index-bottom: -1;
+  --z-index-base: 0;
+  --z-index-floating: 1;
+  --z-index-docked: 2;
+  --z-index-modal: 3;
+  --z-index-overlay: 4;
+  --z-index-appbar: 5;
+  --z-index-snackbar: 6;
+  --z-index-dialog: 7;
+  --z-index-tooltip: 8;
+}

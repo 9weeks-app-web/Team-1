@@ -1,0 +1,42 @@
+.mentorcard-container{
+    width: 188px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    text-align: center;
+    padding: 24px;
+    border-radius: 16px;
+    border: 1px solid var(--gray-20);
+    box-sizing: border-box;
+
+    .profile-img {
+        width: 140px;
+        height: 140px;
+        background: var(--gray-20);
+        border-radius: 100px;
+    }
+
+    .info {
+        width: 140px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        font-size: var(--body-font-size);
+
+        .name {
+            font-size: var(--h4-font-size);
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .occupation{
+            color: var(--gray-50);
+        }
+
+        .introduction {
+           
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.badge-container{
+    box-sizing: border-box;
+    position: relative;
+    width: fit-content;
+    height: 24px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-size: var(--badge-font-size);
+    line-height: var(--badge-line-height);
+    letter-spacing: var(--badge-letter-spacing);
+    font-weight: var(--badge-font-weight);
+}
+
+.blue {
+    background-color: var(--blue-10);
+    color: var(--blue-100);
+}
+
+.teal {
+    background-color: var(--teal-20);
+    color: var(--teal-100);
+}
+
+.violet {
+    background-color: var(--violet-20);
+    color: var(--violet-100);
+}
+
+.orange {
+    background-color: var(--orange-20);
+    color: var(--orange-100);
+}

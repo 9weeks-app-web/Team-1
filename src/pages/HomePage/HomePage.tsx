@@ -1,12 +1,57 @@
-import React from "react";
-import fireStore from "api/firestoreConfig";
+import React, { useEffect } from "react";
 import "./style.css";
+import { getExample } from "api/example";
+import SliderBanner from "components/Banner/SliderBanner/SliderBanner";
+import HomeAreaTitle from "components/home/HomeAreaTitle/HomeAreaTitle";
+import HomePortfolioList from "components/home/HomePortfolioList/HomePortfolioList";
+import HomeProjectList from "components/home/HomeProjectList/HomeProjectList";
+import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";
+import HomeMentorList from "components/home/HomeMentorList/HomeMentorList";
+import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
 
 function HomePage() {
-  // firebase connect test
-  console.log(fireStore);
+  useEffect(() => {
+    getExample("key").then((res) => console.log(res));
+  }, []);
 
-  return <div className="container">홈</div>;
+  return (
+    <div className="homepage-container">
+      <div className="homepage-slider-banner">
+        <SliderBanner />
+      </div>
+      <div className="homepage-contents">
+        {/* 오늘의 스팩폴리오 */}
+        <div className="section">
+          <HomeAreaTitle text="오늘의 스팩폴리오 Pick!" />
+          <HomePortfolioList />
+        </div>
+
+        {/* 핫한 프로젝트 모집 공고 */}
+        <div className="section">
+          <HomeAreaTitle text="핫한 프로젝트 모집 공고" />
+          <HomeProjectList />
+        </div>
+
+        {/* 이벤트 배너 */}
+        <div className="section">
+          <HomeAreaTitle text="스펙 업! 을 위한 네트워킹 이벤트" />
+          <EventSliderBanner />
+        </div>
+
+        {/* 지금 뜨는 커뮤니티 게시글 */}
+        <div className="section">
+          <HomeAreaTitle text="지금 뜨는 커뮤니티 게시글" />
+          <HomeCommunityList />
+        </div>
+
+        {/* 인기 멘토 */}
+        <div className="section">
+          <HomeAreaTitle text="인기 멘토" />
+          <HomeMentorList />
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default HomePage;
