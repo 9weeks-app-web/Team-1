@@ -1,0 +1,15 @@
+.event-slider-banner {
+    width: 100%;
+
+    /* swiper lib 커스텀 */
+    .swiper-slide {
+        width: 527px;
+        height: 296px;
+        background-color: var(--background-5);
+        border-radius: 12px;
+
+        img{
+            border-radius: 12px;
+        }
+    }
+}

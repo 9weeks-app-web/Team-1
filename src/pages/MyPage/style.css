@@ -1,6 +1,7 @@
-body {
-    background: #F8F8F9;
+.mypageWrapper{
+    background: var(--background-5);    
 }
+
 .mypageAll {
     display: flex;
     justify-content: center;

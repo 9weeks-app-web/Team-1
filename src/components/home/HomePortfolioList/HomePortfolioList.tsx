@@ -22,6 +22,7 @@ function HomePortfolioList() {
           isActive={category === "기획"}
         />
       </div>
+
       <CardGrid columnGap="cg-16" rowGap="rg-32">
         {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
           <PortfolioCard key={el.id} portfolio={el} />

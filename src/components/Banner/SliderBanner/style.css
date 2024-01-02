@@ -1,8 +1,9 @@
 .banner-container{
 }
 
+.main-slider-banner{
 /* swiper lib 커스텀 */
-.swiper-slide{
+.swiper-slide {
     width: 964px!important;
     height: 260px;
     background-color: var(--background-5);
@@ -25,4 +26,5 @@
 
 .swiper-wrapper{
     align-items: center;
+}
 }

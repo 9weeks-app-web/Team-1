@@ -6,6 +6,7 @@ export interface IPortfolioSummary {
   views: number;
   likes: number;
   isVerified: boolean;
+  writer: IProfile;
 }
 
 export interface IPortfolioDetail {
@@ -16,4 +17,10 @@ export interface IPortfolioDetail {
   views: number;
   likes: number;
   isVerified: boolean;
+}
+
+export interface IProfile {
+  id: number;
+  name: string;
+  profileImg: string;
 }

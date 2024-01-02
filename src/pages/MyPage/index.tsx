@@ -14,14 +14,16 @@ function MyPage() {
   };
 
   return (
-    <div className="mypageAll">
-      <div className="mypage">
-        <Aside onMenuChange={handleMenuChange} />
-        <div className="mypageContainer">
-          {selectedMenu === "myPageMyProfile" && <MyPageMyProfile />}
-          {selectedMenu === "myPageMyProject" && <MyPageMyProject />}
-          {selectedMenu === "myPageMyPost" && <MyPageMyPost />}
-          {selectedMenu === "myPageMyLike" && <MyPageMyLike />}
+    <div className="mypageWrapper">
+      <div className="mypageAll">
+        <div className="mypage">
+          <Aside onMenuChange={handleMenuChange} />
+          <div className="mypageContainer">
+            {selectedMenu === "myPageMyProfile" && <MyPageMyProfile />}
+            {selectedMenu === "myPageMyProject" && <MyPageMyProject />}
+            {selectedMenu === "myPageMyPost" && <MyPageMyPost />}
+            {selectedMenu === "myPageMyLike" && <MyPageMyLike />}
+          </div>
         </div>
       </div>
     </div>

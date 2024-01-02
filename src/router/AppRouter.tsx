@@ -6,6 +6,7 @@ import Login from "pages/Auth/Login";
 import Register from "pages/Auth/Register";
 import MyPage from "pages/MyPage";
 import Header from "components/Header";
+import Footer from "components/Footer/Footer";
 
 function AppRouter() {
   return (
@@ -18,6 +19,7 @@ function AppRouter() {
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

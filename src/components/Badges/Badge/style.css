@@ -1,7 +1,9 @@
 .badge-container{
+    box-sizing: border-box;
     position: relative;
     width: fit-content;
-    padding: 8px 12px;
+    height: 24px;
+    padding: 4px 12px;
     border-radius: 100px;
     font-size: var(--badge-font-size);
     line-height: var(--badge-line-height);
