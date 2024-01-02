@@ -3,13 +3,14 @@ import CardGrid from "components/CardGrid/CardGrid";
 import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
 import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
 import SinglePickChip from "components/Chips/SinglePickChip/SinglePickChip";
+import "./style.css";
 
 function HomePortfolioList() {
   const [category, setCategory] = useState("");
 
   return (
     <>
-      <div>
+      <div className="portfolio-list-category-selector">
         {/* TODO : 상수 배열로 분리하기 */}
         <SinglePickChip
           title="디자인"

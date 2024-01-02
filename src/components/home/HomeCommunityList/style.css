@@ -5,7 +5,7 @@
 
     .category-selector{
         display: flex;
-        gap: 16px;
+        gap: 12px;
     }
 
     .home-postcard-list{
