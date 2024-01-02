@@ -18,7 +18,7 @@ function SliderBanner() {
       }}
       modules={[Autoplay]}
       loop
-      className="mySwiper"
+      className="mySwiper main-slider-banner"
     >
       {DUMMY_SLIDER_BANNERS.map((el) => (
         <SwiperSlide key={el.id}>
