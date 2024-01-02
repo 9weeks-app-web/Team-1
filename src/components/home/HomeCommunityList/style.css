@@ -1,0 +1,17 @@
+.home-community-list-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .category-selector{
+        display: flex;
+        gap: 16px;
+    }
+
+    .home-postcard-list{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}
