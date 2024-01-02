@@ -1,44 +1,55 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
-import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import "./style.css";
-import fireStore from "api/firestoreConfig";
-import { collection, getDocs } from "firebase/firestore";
+import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import { auth, GoogleAuthProvider } from "../../api/fireauthConfig";
+import logo from "../../assets/img/SfacLogo.svg";
 
 function Login() {
-  //   const fireBaseTest = async () => {
-  //     try {
-  //       // Firestore에 새 문서 추가
-  //       await addDoc(collection(fireStore, "your-collection-name"), {
-  //         email: "123@123",
-  //         password: "123123",
-  //       });
-  //       console.log("Document successfully written!");
-  //     } catch (error) {
-  //       console.error("Error writing document: ", error);
-  //     }
-  //   };
+  const navi = useNavigate();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        // Firestore에서 데이터 가져오기
-        const querySnapshot = await getDocs(
-          collection(fireStore, "your-collection-name"),
-        );
-        const dataList = querySnapshot.docs.map((doc) => ({
-          id: doc.id,
-          ...doc.data(),
-        }));
-        console.log(dataList);
-      } catch (error) {
-        console.error("Error fetching data: ", error);
+  const login = async (email: string, password: string) => {
+    try {
+      const userCredential = await signInWithEmailAndPassword(
+        auth,
+        email,
+        password,
+      );
+      if (userCredential.user.email) {
+        localStorage.setItem("email", userCredential.user.email);
       }
-    };
-    fetchData();
-    // fireBaseTest();
-  }, []);
+      if (userCredential.user.displayName) {
+        localStorage.setItem("displayName", userCredential.user.displayName);
+      }
+      navi("/");
+      return userCredential.user;
+    } catch (error) {
+      console.error("Login Error", error);
+      alert("로그인에 실패하였습니다.");
+      return "login error";
+    }
+  };
+
+  const googleProvider = new GoogleAuthProvider();
+
+  const signInWithGoogle = async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider);
+      const { user } = result;
+      if (user.email) {
+        localStorage.setItem("email", user.email);
+      }
+      if (user.displayName) {
+        localStorage.setItem("displayName", user.displayName);
+      }
+      navi("/");
+    } catch (error) {
+      console.error("Google Sign In Error", error);
+      alert("로그인에 실패하였습니다.");
+    }
+  };
 
   const validationSchema = Yup.object().shape({
     email: Yup.string()
@@ -47,15 +58,25 @@ function Login() {
     password: Yup.string().required("필수 입력입니다."),
   });
 
+  const onClickSubmit = (e: any) => {
+    console.log(e);
+    const result = login(e.email, e.password);
+    console.log(result);
+  };
+
+  const onClickGoogle = () => {
+    signInWithGoogle();
+  };
+
   return (
     <div className="container">
-      <span className="login-logo">로고</span>
+      <span className="login-logo">
+        <img src={logo} alt="로고이미지" />
+      </span>
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}
-        onSubmit={(a: any) => {
-          console.log(a);
-        }}
+        onSubmit={onClickSubmit}
       >
         {({ errors, touched, values }) => (
           <Form className="">
@@ -117,7 +138,7 @@ function Login() {
         <span>SNS 연동 로그인</span>
       </div>
       <div className="center sns-btn-div">
-        <button type="button" className="sns-btn">
+        <button type="button" className="sns-btn" onClick={onClickGoogle}>
           구글
         </button>
         <button type="button" className="sns-btn">
