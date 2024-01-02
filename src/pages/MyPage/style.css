@@ -1,5 +1,8 @@
+.mypageWrapper{
+    background: var(--background-5);    
+}
+
 .mypageAll {
-    background: #F8F8F9;
     display: flex;
     justify-content: center;
     align-items: center;
