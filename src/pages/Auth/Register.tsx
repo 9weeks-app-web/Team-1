@@ -2,6 +2,9 @@ import { ErrorMessage, Field, Form, Formik } from "formik";
 import React, { useEffect, useState } from "react";
 import * as Yup from "yup";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
+import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
+import { auth } from "../../api/fireauthConfig";
 
 function Register() {
   const [selectedTelecom, setSelectedTelecom] = useState("");
@@ -22,7 +25,29 @@ function Register() {
       [Yup.ref("password")],
       "패스워드가 일치하지 않습니다.",
     ),
+    name: Yup.string().required("필수 입력입니다."),
   });
+
+  const [view, setView] = useState(false);
+
+  const navi = useNavigate();
+
+  const register = async (email: any, password: any, displayName: string) => {
+    try {
+      const userCredential = await createUserWithEmailAndPassword(
+        auth,
+        email,
+        password,
+      );
+      await updateProfile(userCredential.user, { displayName });
+      navi("/");
+      return userCredential.user;
+    } catch (error) {
+      console.error("Signup Error", error);
+      alert("회원가입에 실패하였습니다.");
+      return "에러";
+    }
+  };
 
   const updateAllAgreeBasedOnDetails = () => {
     if (
@@ -44,295 +69,531 @@ function Register() {
     agreeUniqueIdentifierProcessing,
   ]);
 
+  const initUser = {
+    email: "",
+    password: "",
+    name: "",
+    phone: "",
+  };
+
+  const [user, setUser] = useState(initUser);
+
+  const onClickSubmit = (e: any) => {
+    console.log("a");
+    // const { email, password, name, phone } = e;
+    setUser(e);
+    setView(true);
+    console.log(user);
+  };
+
+  const [displayName, setDisplayName] = useState("");
+
+  const onClickRegister = () => {
+    console.log(user);
+    register(user.email, user.password, displayName);
+  };
+
+  const [checkbox1, setCheckbox1] = useState(true);
+  const [checkbox2, setCheckbox2] = useState(true);
+  const [checkbox3, setCheckbox3] = useState(true);
+  const [checkbox4, setCheckbox4] = useState(true);
+  const [checkbox5, setCheckbox5] = useState(true);
+  const [checkbox6, setCheckbox6] = useState(true);
+  const [checkbox7, setCheckbox7] = useState(true);
+  const [checkbox8, setCheckbox8] = useState(true);
+  const [checkbox9, setCheckbox9] = useState(true);
+  const [checkbox10, setCheckbox10] = useState(true);
+
   return (
     <div>
       <div className="container">
-        <div className="center title">
+        <div className="auth-center register-title">
           <span>회원가입</span>
         </div>
         <table className="center form-table">
           <tbody>
             <tr>
               <td>
-                <Formik
-                  initialValues={{
-                    email: "",
-                    password: "",
-                    rePassword: "",
-                    name: "",
-                    phone: "",
-                    verificationCode: "",
-                  }}
-                  validationSchema={validationSchema}
-                  onSubmit={(a: any) => {
-                    console.log(a);
-                  }}
-                >
-                  {({ errors, touched }) => (
-                    <Form className="">
-                      <div className="form-naming">이름</div>
-                      <div className="form-div">
-                        <Field
-                          type="text"
-                          name="name"
-                          className={`form-control form-control-user mb-3" +
+                {!view ? (
+                  <Formik
+                    initialValues={{
+                      email: "",
+                      password: "",
+                      rePassword: "",
+                      name: "",
+                      phone: "",
+                      verificationCode: "",
+                    }}
+                    validationSchema={validationSchema}
+                    onSubmit={onClickSubmit}
+                  >
+                    {({ errors, touched }) => (
+                      <Form className="">
+                        <div className="form-naming">이름</div>
+                        <div className="form-div">
+                          <Field
+                            type="text"
+                            name="name"
+                            className={`form-control form-control-user mb-3" +
               ${errors.email && touched.email ? " is-invalid" : ""}`}
-                          placeholder="이름"
-                        />
-                      </div>
-                      <div className="form-div">
-                        <ErrorMessage
-                          name="name"
-                          component="div"
-                          className="invalid-feedback"
-                        />
-                      </div>
-                      <div className="form-naming">이메일</div>
-                      <div className="form-div">
-                        <Field
-                          type="email"
-                          name="email"
-                          className={`form-control form-control-user mb-3" +
+                            placeholder="이름"
+                          />
+                        </div>
+                        <div className="form-div">
+                          <ErrorMessage
+                            name="name"
+                            component="div"
+                            className="invalid-feedback"
+                          />
+                        </div>
+                        <div className="form-naming">이메일</div>
+                        <div className="form-div">
+                          <Field
+                            type="email"
+                            name="email"
+                            className={`form-control form-control-user mb-3" +
               ${errors.password && touched.password ? " is-invalid" : ""}`}
-                          placeholder="이메일"
-                        />
-                      </div>
-                      <div className="form-div">
-                        <ErrorMessage
-                          name="email"
-                          component="div"
-                          className="invalid-feedback"
-                        />
-                      </div>
-                      <div className="form-naming">비밀번호</div>
-                      <div className="form-div">
-                        <Field
-                          type="password"
-                          name="password"
-                          className={`form-control form-control-user mb-3" +
+                            placeholder="이메일"
+                          />
+                        </div>
+                        <div className="form-div">
+                          <ErrorMessage
+                            name="email"
+                            component="div"
+                            className="invalid-feedback"
+                          />
+                        </div>
+                        <div className="form-naming">비밀번호</div>
+                        <div className="form-div">
+                          <Field
+                            type="password"
+                            name="password"
+                            className={`form-control form-control-user mb-3" +
               ${errors.password && touched.password ? " is-invalid" : ""}`}
-                          placeholder="비밀번호"
-                        />
-                      </div>
-                      <div className="form-div">
-                        <ErrorMessage
-                          name="password"
-                          component="div"
-                          className="invalid-feedback"
-                        />
-                      </div>
-                      <div className="form-naming">비밀번호 확인</div>
-                      <div className="form-div">
-                        <Field
-                          type="password"
-                          name="rePassword"
-                          className={`form-control form-control-user mb-3" +
+                            placeholder="비밀번호"
+                          />
+                        </div>
+                        <div className="form-div">
+                          <ErrorMessage
+                            name="password"
+                            component="div"
+                            className="invalid-feedback"
+                          />
+                        </div>
+                        <div className="form-naming">비밀번호 확인</div>
+                        <div className="form-div">
+                          <Field
+                            type="password"
+                            name="rePassword"
+                            className={`form-control form-control-user mb-3" +
               ${errors.password && touched.password ? " is-invalid" : ""}`}
-                          placeholder="비밀번호 확인"
-                        />
-                      </div>
-                      <div className="form-div">
-                        <ErrorMessage
-                          name="rePassword"
-                          component="div"
-                          className="invalid-feedback"
-                        />
-                      </div>
-                      <div className="form-naming">휴대폰 인증</div>
-                      <div className="telecom-div">
-                        <button
-                          type="button"
-                          className={`telecom-btn  ${
-                            selectedTelecom === "SKT" ? "active" : ""
-                          }`}
-                          onClick={() => {
-                            setSelectedTelecom("SKT");
-                          }}
-                        >
-                          SKT
-                        </button>
-                        <button
-                          type="button"
-                          className={`telecom-btn  ${
-                            selectedTelecom === "KT" ? "active" : ""
-                          }`}
-                          onClick={() => {
-                            setSelectedTelecom("KT");
-                          }}
-                        >
-                          KT
-                        </button>
-                        <button
-                          type="button"
-                          className={`telecom-btn  ${
-                            selectedTelecom === "LG" ? "active" : ""
-                          }`}
-                          onClick={() => {
-                            setSelectedTelecom("LG");
-                          }}
-                        >
-                          LG U+
-                        </button>
-                        <button
-                          type="button"
-                          className={`telecom-btn  ${
-                            selectedTelecom === "orther" ? "active" : ""
-                          }`}
-                          onClick={() => {
-                            setSelectedTelecom("orther");
-                          }}
-                        >
-                          알뜰폰
-                        </button>
-                      </div>
-                      <div className="form-div">
-                        <Field
-                          type="number"
-                          name="phone"
-                          className={`form-control-phone form-control-user mb-3" +
-              ${errors.password && touched.password ? " is-invalid" : ""}`}
-                          placeholder="휴대폰 번호"
-                        />
-                        <button
-                          type="button"
-                          className="phone-verify-btn"
-                          onClick={() => {
-                            console.log("a");
-                          }}
-                        >
-                          인증 요청
-                        </button>
-                      </div>
-                      <div className="form-div">
-                        <ErrorMessage
-                          name="phone"
-                          component="div"
-                          className="invalid-feedback"
-                        />
-                      </div>
-                      <div className="form-div">
-                        <Field
-                          type="text"
-                          name="verificationCode"
-                          className={`form-control form-control-user mb-3" +
-              ${errors.password && touched.password ? " is-invalid" : ""}`}
-                          placeholder="인증 번호"
-                        />
-                      </div>
-                      <div className="form-div">
-                        <ErrorMessage
-                          name="verificationCode"
-                          component="div"
-                          className="invalid-feedback"
-                        />
-                      </div>
-                      <div className="agree-div">
-                        <div
-                          role="button"
-                          className={
-                            allAgree
-                              ? "checkmark-circle-active"
-                              : "checkmark-circle"
-                          }
-                          onClick={() => {
-                            if (!allAgree) {
-                              setAgreePersonalInfoCollection(true);
-                              setAgreeUniqueIdentifierProcessing(true);
-                              setAgreeServiceTerms(true);
-                              setAgreeTelecomTerms(true);
-                            } else {
-                              setAgreePersonalInfoCollection(false);
-                              setAgreeServiceTerms(false);
-                              setAgreeTelecomTerms(false);
-                              setAgreeUniqueIdentifierProcessing(false);
+                            placeholder="비밀번호 확인"
+                          />
+                        </div>
+                        <div className="form-div">
+                          <ErrorMessage
+                            name="rePassword"
+                            component="div"
+                            className="invalid-feedback"
+                          />
+                        </div>
+                        <div className="form-naming">휴대폰 인증</div>
+                        <div className="telecom-div">
+                          <button
+                            type="button"
+                            className={`telecom-btn  ${
+                              selectedTelecom === "SKT" ? "telecom-active" : ""
+                            }`}
+                            onClick={() => {
+                              setSelectedTelecom("SKT");
+                            }}
+                          >
+                            SKT
+                          </button>
+                          <button
+                            type="button"
+                            className={`telecom-btn  ${
+                              selectedTelecom === "KT" ? "telecom-active" : ""
+                            }`}
+                            onClick={() => {
+                              setSelectedTelecom("KT");
+                            }}
+                          >
+                            KT
+                          </button>
+                          <button
+                            type="button"
+                            className={`telecom-btn  ${
+                              selectedTelecom === "LG" ? "telecom-active" : ""
+                            }`}
+                            onClick={() => {
+                              setSelectedTelecom("LG");
+                            }}
+                          >
+                            LG U+
+                          </button>
+                          <button
+                            type="button"
+                            className={`telecom-btn  ${
+                              selectedTelecom === "orther"
+                                ? "telecom-active"
+                                : ""
+                            }`}
+                            onClick={() => {
+                              setSelectedTelecom("orther");
+                            }}
+                          >
+                            알뜰폰
+                          </button>
+                        </div>
+                        <div className="form-div">
+                          <Field
+                            type="number"
+                            name="phone"
+                            className={`form-control-phone form-control-user mb-3" +
+              ${errors.phone && touched.phone ? " is-invalid" : ""}`}
+                            placeholder="휴대폰 번호"
+                          />
+                          <button
+                            type="button"
+                            className="phone-verify-btn"
+                            onClick={() => {
+                              console.log("a");
+                              setView(true);
+                            }}
+                          >
+                            인증 요청
+                          </button>
+                        </div>
+                        <div className="form-div">
+                          <ErrorMessage
+                            name="phone"
+                            component="div"
+                            className="invalid-feedback"
+                          />
+                        </div>
+                        <div className="form-div">
+                          <Field
+                            type="text"
+                            name="verificationCode"
+                            className={`form-control form-control-user mb-3" +
+              ${
+                errors.verificationCode && touched.verificationCode
+                  ? " is-invalid"
+                  : ""
+              }`}
+                            placeholder="인증 번호"
+                          />
+                        </div>
+                        <div className="form-div">
+                          <ErrorMessage
+                            name="verificationCode"
+                            component="div"
+                            className="invalid-feedback"
+                          />
+                        </div>
+                        <div className="agree-div">
+                          <div
+                            role="button"
+                            className={
+                              allAgree
+                                ? "checkmark-circle-active"
+                                : "checkmark-circle"
                             }
-                            setAllAgree(!allAgree);
-                          }}
-                          tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
-                          aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
-                        />
-                        <div>본인인증 약관 전체동의 (필수)</div>
-                      </div>
-                      <div className="agree-div">
+                            onClick={() => {
+                              if (!allAgree) {
+                                setAgreePersonalInfoCollection(true);
+                                setAgreeUniqueIdentifierProcessing(true);
+                                setAgreeServiceTerms(true);
+                                setAgreeTelecomTerms(true);
+                              } else {
+                                setAgreePersonalInfoCollection(false);
+                                setAgreeServiceTerms(false);
+                                setAgreeTelecomTerms(false);
+                                setAgreeUniqueIdentifierProcessing(false);
+                              }
+                              setAllAgree(!allAgree);
+                            }}
+                            tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
+                            aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
+                          />
+                          <div>본인인증 약관 전체동의 (필수)</div>
+                        </div>
+                        <div className="agree-div">
+                          <div
+                            role="button"
+                            className={
+                              agreePersonalInfoCollection
+                                ? "checkmark-circle-active"
+                                : "checkmark-circle"
+                            }
+                            onClick={() => {
+                              setAgreePersonalInfoCollection(
+                                !agreePersonalInfoCollection,
+                              );
+                            }}
+                            tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
+                            aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
+                          />
+                          <div>개인정보 수집 이용 동의</div>
+                        </div>
+                        <div className="agree-div">
+                          <div
+                            role="button"
+                            className={
+                              agreeUniqueIdentifierProcessing
+                                ? "checkmark-circle-active"
+                                : "checkmark-circle"
+                            }
+                            onClick={() => {
+                              setAgreeUniqueIdentifierProcessing(
+                                !agreeUniqueIdentifierProcessing,
+                              );
+                            }}
+                            tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
+                            aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
+                          />
+                          <div>고유식별 정보처리 동의</div>
+                        </div>
+                        <div className="agree-div">
+                          <div
+                            role="button"
+                            className={
+                              agreeTelecomTerms
+                                ? "checkmark-circle-active"
+                                : "checkmark-circle"
+                            }
+                            onClick={() => {
+                              setAgreeTelecomTerms(!agreeTelecomTerms);
+                            }}
+                            tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
+                            aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
+                          />
+                          <div>통신사 이용약관 동의</div>
+                        </div>
+                        <div className="agree-div">
+                          <div
+                            role="button"
+                            className={
+                              agreeServiceTerms
+                                ? "checkmark-circle-active"
+                                : "checkmark-circle"
+                            }
+                            onClick={() => {
+                              setAgreeServiceTerms(!agreeServiceTerms);
+                            }}
+                            tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
+                            aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
+                          />
+                          <div>서비스 이용약관 동의</div>
+                        </div>
+                        <div className="form-div">
+                          <button
+                            type="submit"
+                            disabled={!allAgree}
+                            className="form-control form-btn"
+                          >
+                            다음
+                          </button>
+                        </div>
+                      </Form>
+                    )}
+                  </Formik>
+                ) : (
+                  <div>
+                    <div className="form-div">
+                      <div className="form-naming">닉네임</div>
+                      <input
+                        type="text"
+                        className="form-control form-control-user mb-3"
+                        placeholder="닉네임"
+                        onChange={(e: any) => {
+                          setDisplayName(e.target.value);
+                        }}
+                        value={displayName}
+                      />
+                      <div className="form-naming">관심 분야</div>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox1(!checkbox1);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
                         <div
-                          role="button"
                           className={
-                            agreePersonalInfoCollection
-                              ? "checkmark-circle-active"
-                              : "checkmark-circle"
+                            checkbox1
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
                           }
-                          onClick={() => {
-                            setAgreePersonalInfoCollection(
-                              !agreePersonalInfoCollection,
-                            );
-                          }}
-                          tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
-                          aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
                         />
-                        <div>개인정보 수집 이용 동의</div>
+                        서비스 기획
                       </div>
-                      <div className="agree-div">
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox2(!checkbox2);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
                         <div
-                          role="button"
                           className={
-                            agreeUniqueIdentifierProcessing
-                              ? "checkmark-circle-active"
-                              : "checkmark-circle"
+                            checkbox2
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
                           }
-                          onClick={() => {
-                            setAgreeUniqueIdentifierProcessing(
-                              !agreeUniqueIdentifierProcessing,
-                            );
-                          }}
-                          tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
-                          aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
                         />
-                        <div>고유식별 정보처리 동의</div>
+                        UI/UX
                       </div>
-                      <div className="agree-div">
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox3(!checkbox3);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
                         <div
-                          role="button"
                           className={
-                            agreeTelecomTerms
-                              ? "checkmark-circle-active"
-                              : "checkmark-circle"
+                            checkbox3
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
                           }
-                          onClick={() => {
-                            setAgreeTelecomTerms(!agreeTelecomTerms);
-                          }}
-                          tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
-                          aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
                         />
-                        <div>통신사 이용약관 동의</div>
+                        영상/모션그래픽
                       </div>
-                      <div className="agree-div">
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox4(!checkbox4);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
                         <div
-                          role="button"
                           className={
-                            agreeServiceTerms
-                              ? "checkmark-circle-active"
-                              : "checkmark-circle"
+                            checkbox4
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
                           }
-                          onClick={() => {
-                            setAgreeServiceTerms(!agreeServiceTerms);
-                          }}
-                          tabIndex={0} // 키보드 포커스를 위한 tabIndex 추가
-                          aria-label="체크마크" // 스크린 리더를 위한 aria-label 추가
                         />
-                        <div>서비스 이용약관 동의</div>
+                        편집 디자인
                       </div>
-                      <div className="form-div">
-                        <button
-                          type="submit"
-                          disabled={!allAgree}
-                          className="form-control form-btn"
-                        >
-                          다음
-                        </button>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox5(!checkbox5);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <div
+                          className={
+                            checkbox5
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
+                          }
+                        />
+                        타이포그래피
                       </div>
-                    </Form>
-                  )}
-                </Formik>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox6(!checkbox6);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <div
+                          className={
+                            checkbox6
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
+                          }
+                        />
+                        서비스 기획
+                      </div>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox7(!checkbox7);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <div
+                          className={
+                            checkbox7
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
+                          }
+                        />
+                        편집 디자인
+                      </div>
+                      <div className="form-naming">제안 허용</div>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox8(!checkbox8);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <div
+                          className={
+                            checkbox8
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
+                          }
+                        />
+                        채용 제안
+                      </div>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox9(!checkbox9);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <div
+                          className={
+                            checkbox9
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
+                          }
+                        />
+                        의견 제안
+                      </div>
+                      <div
+                        className="agree-div"
+                        onClick={() => {
+                          setCheckbox10(!checkbox10);
+                        }}
+                        role="button"
+                        tabIndex={0}
+                      >
+                        <div
+                          className={
+                            checkbox10
+                              ? "checkmark-square"
+                              : "checkmark-square-active"
+                          }
+                        />
+                        프로젝트 제안
+                      </div>
+                      <button
+                        type="button"
+                        className="form-control form-control-user mb-3"
+                        onClick={onClickRegister}
+                      >
+                        완료
+                      </button>
+                    </div>
+                  </div>
+                )}
               </td>
             </tr>
           </tbody>

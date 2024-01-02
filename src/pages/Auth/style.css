@@ -4,7 +4,7 @@
 .invalid-feedback {
   color: red;
 }
-.center {
+.auth-center {
   display: flex;
   justify-content: center;
 }
@@ -12,6 +12,7 @@
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .form-div {
   /* display: flex; */
@@ -22,6 +23,7 @@
   height: 75px;
   margin-top: 15px;
   font-size: 19px;
+  margin-bottom: 15px;
 }
 .form-btn {
   border: 0px;
@@ -35,7 +37,8 @@
   display: flex;
   justify-content: center;
   font-size: 12px;
-  gap: 170px;
+  gap: 300px;
+  margin-top: 30px;
 }
 .sns-text {
   margin-top: 50px;
@@ -64,8 +67,10 @@
 }
 .form-naming {
   font-size: 19px;
+  margin-top: 15px;
 }
-.title {
+.register-title {
+  margin-top: 20px;
   font-size: 22.98px;
   font-weight: bold;
   margin-bottom: 15px;
@@ -81,17 +86,19 @@
   color: #d6dadf;
   background-color: white;
 }
+.telecom-active {
+  border: 1px solid blue;
+  color: blue;
+}
 .telecom-div {
   display: flex;
   gap: 14px;
+  margin-top: 10px;
 }
 .telecom-btn:hover {
   cursor: pointer;
 }
-.active {
-  border: 1px solid blue;
-  color: blue;
-}
+
 .form-control-phone {
   width: 490px;
   height: 75px;
@@ -122,6 +129,24 @@
   border-radius: 50%; /* 원형 모양 */
   background-color: #d9d9d9; /* 배경색 */
 }
+.checkmark-square-active {
+  width: 25px; /* 원하는 크기 설정 */
+  height: 25px; /* 원하는 크기 설정 */
+  background-color: green; /* 배경색 */
+  color: white; /* 체크 표시 색상 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; /* 체크 표시 크기 */
+}
+.checkmark-square {
+  width: 25px; /* 원하는 크기 설정 */
+  height: 25px; /* 원하는 크기 설정 */
+  background-color: #d9d9d9; /* 배경색 */
+}
+.checkmark-square-active::after {
+  content: "✔"; /* 체크 표시 */
+}
 
 .checkmark-circle-active::after {
   content: "✔"; /* 체크 표시 */
@@ -134,5 +159,9 @@
 }
 .checkmark-circle-active:hover,
 .checkmark-circle:hover {
+  cursor: pointer;
+}
+
+.agree-div:hover {
   cursor: pointer;
 }
