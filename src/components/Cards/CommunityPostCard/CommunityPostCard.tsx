@@ -27,7 +27,9 @@ function CommunityPostCard(props: ICommunityPostCardProps) {
         </div>
         <div className="post-card-category oneLineEllipsis">
           {post.category.length &&
-            post.category.map((el) => <Badge text={el} type="orange" />)}
+            post.category.map((el) => (
+              <Badge key={el} text={el} type="orange" />
+            ))}
         </div>
       </div>
     </Card>
