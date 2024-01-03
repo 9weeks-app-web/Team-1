@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import SliderBanner from "components/Banner/SliderBanner/SliderBanner";
-import HomeAreaTitle from "components/home/HomeAreaTitle/HomeAreaTitle";
+import HomeAreaTitle from "components/home/AreaTitle/AreaTitle";
 import HomePortfolioList from "components/home/HomePortfolioList/HomePortfolioList";
 import HomeProjectList from "components/home/HomeProjectList/HomeProjectList";
 import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";

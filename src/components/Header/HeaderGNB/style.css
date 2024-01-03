@@ -1,3 +1,6 @@
+.MuiAvatar-root > * {
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+}
 .header-gnb-container{
     height: 40px;
     line-height: 40px;
