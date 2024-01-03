@@ -16,9 +16,7 @@
     font-size: 2rem;
 }
 .mypage {
-<<<<<<< Updated upstream
     
-=======
     display: flex;
     justify-content: center;
     height: auto;
@@ -111,5 +109,4 @@
 .setIcon {
     margin-left: auto;
     float: right;
->>>>>>> Stashed changes
 }

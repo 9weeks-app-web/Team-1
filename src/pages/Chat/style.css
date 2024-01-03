@@ -1,17 +1,16 @@
-body {
-    background-color: #fff ;
-}
+
 .chatting {
     display: flex;
     flex-direction: column;
     width: 1240px;
     margin: auto;
     height: auto;
+    margin-bottom: 5rem;
 }
 .chatting h1 {
     font-size: 2rem;
     margin-top: 10rem;
-    float: left;
+    float: left; 
     color: #030303;
     font-family: Spoqa Han Sans Neo;
     font-size: 24px;
@@ -19,6 +18,26 @@ body {
     font-weight: 700;
     line-height: 140%; /* 33.6px */
     letter-spacing: 0.048px;
+}
+.chattingRoomBag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 808px;
+    flex-direction: column;
+
+}
+
+
+.chattingRoomText {
+    color: #999;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 21px */
+    letter-spacing: 0.03px;
+    
 }
 
 .chatContainer {
@@ -87,10 +106,3 @@ body {
     padding: 20px; 
 }
 
-.chattingRoom svg {
-    width: 808px;
-    margin: 15rem 0;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; 
-}

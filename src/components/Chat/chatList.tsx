@@ -1,44 +1,32 @@
 import React from "react";
 import "./style.css";
+import ChatUserProfile from "./chatUserProfile";
 
 interface ChatListProps {
   onChatSelect: (chatId: string) => void;
+  chatData: Array<{
+    chatId: string;
+    userName: string;
+    lastTime: string;
+    previewMessage: string;
+    newMsgCount: number;
+  }>;
 }
 
-export function ChatList({ onChatSelect }: ChatListProps) {
-  const handleSelectChat = (chatId: string) => {
-    onChatSelect(chatId);
-  };
-
+export function ChatList({ onChatSelect, chatData }: ChatListProps) {
   return (
     <div className="chatList">
-      <div
-        className="userProfile"
-        onClick={() => handleSelectChat("someChatId")}
-        role="button"
-        tabIndex={0}
-        onKeyDown={(e) => {
-          if (e.key === "Enter") handleSelectChat("someChatId");
-        }}
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="61"
-          height="60"
-          viewBox="0 0 61 60"
-          fill="none"
-        >
-          <ellipse cx="30.1378" cy="30" rx="30.0714" ry="30" fill="#D9D9D9" />
-        </svg>
-        <div className="listUserText">
-          <div className="listUserPreview">
-            <span className="listUserName">채팅유저</span>
-            <span className="listLastTime">10분 전</span>
-          </div>
-          <div className="msgPreview">메세지 미리보기 내용</div>
-        </div>
-        <div className="listNewMsgCount">1</div>
-      </div>
+      {chatData.map((chat) => (
+        <ChatUserProfile
+          key={chat.chatId}
+          chatId={chat.chatId}
+          userName={chat.userName}
+          lastTime={chat.lastTime}
+          previewMessage={chat.previewMessage}
+          newMsgCount={chat.newMsgCount}
+          onChatSelect={onChatSelect}
+        />
+      ))}
     </div>
   );
 }

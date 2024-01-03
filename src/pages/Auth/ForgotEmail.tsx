@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function ForgotEmail() {
   return <div>ForgotEmail</div>;
