@@ -2,14 +2,12 @@ import React from "react";
 import "./style.css";
 import PageLayout from "components/layout/PageLayout/PageLayout";
 
-function PortfolioPage() {
+function CommunityPage() {
   return (
     <PageLayout>
-      <div className="portfolio-page-content">
-        <div className="section">gd</div>
-      </div>
+      <div className="community-page-contents">gd</div>
     </PageLayout>
   );
 }
 
-export default PortfolioPage;
+export default CommunityPage;

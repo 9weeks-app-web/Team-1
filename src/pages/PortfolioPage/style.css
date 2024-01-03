@@ -1,49 +1,24 @@
-.container {
-  width: 100vw;
+.portfolio-page-container {
+  min-height: calc(100vh - 116px);
+  position: relative;
+  padding : 116px 0 84px 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 0;
-  padding-top: 116px;
+  gap: 44px;
 }
 
-.portfolio-card {
+.portfolio-page-content {
+  position: relative;
   width: 1240px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px; /* 카드 사이의 간격을 조절할 수 있습니다. */
-}
-
-.main-title {
-  width: 1240px;
-  height: 48px;
-  display: flex;
+  margin: 0 auto;
   margin-top: 44px;
-  margin-bottom: 20px;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-}
-
-.sub-title {
-  font-size: var(--h4-font-size);
-  font-weight: var(--bold);
-}
-
-.view-all {
   display: flex;
-  width: 115px;
-  height: 48px;
-  text-align: center;
-  align-items: center;
-  font-size: var(--h6-font-size);
-  font-weight: var(--bold);
-  color: var(--gray-60);
-}
+  flex-direction: column;
+  gap: 72px;
 
-.chip-section {
-  width: 1240px;
-  display: flex;
-  margin-bottom: 20px;
-  gap: 16px;
+  .section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+  }
 }

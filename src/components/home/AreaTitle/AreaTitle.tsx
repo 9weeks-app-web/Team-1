@@ -3,17 +3,17 @@ import "./style.css";
 import { useNavigate } from "react-router-dom";
 import Icon from "components/Icon/Icon";
 
-interface IHomeAreaTitleProps {
+interface IAreaTitleProps {
   text: string;
   renderViewAll?: boolean;
   viewAllUrl?: string;
 }
-function HomeAreaTitle(props: IHomeAreaTitleProps) {
+function AreaTitle(props: IAreaTitleProps) {
   const { text, renderViewAll, viewAllUrl = "" } = props;
   const navigate = useNavigate();
 
   return (
-    <div className="home-area-title-container">
+    <div className="area-title-container">
       <h1>{text}</h1>
       {renderViewAll && (
         <button
@@ -29,4 +29,4 @@ function HomeAreaTitle(props: IHomeAreaTitleProps) {
   );
 }
 
-export default HomeAreaTitle;
+export default AreaTitle;

@@ -38,7 +38,7 @@ function HomeCommunityList() {
       </div>
       <div className="home-postcard-list">
         {DUMMY_POSTS.map((el) => (
-          <CommunityPostCard post={el} />
+          <CommunityPostCard post={el} key={el.id} />
         ))}
       </div>
     </div>

@@ -5,12 +5,12 @@
     height: 24px;
     padding: 4px 12px;
     border-radius: 100px;
-    font-size: var(--badge-font-size);
-    line-height: var(--badge-line-height);
-    letter-spacing: var(--badge-letter-spacing);
-    font-weight: var(--badge-font-weight);
-    background-color: var(--blue-10);
-    color: var(--blue-100);
+    font-size: 12px;
+    font-style: normal;
+    line-height: 140%; /* 16.8px */
+    letter-spacing: 0.024px;
+    background-color: var(--blue-100);
+    color: var(--mono-white);
 
     .mentee {
 

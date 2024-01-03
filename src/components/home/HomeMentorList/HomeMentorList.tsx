@@ -7,7 +7,7 @@ function HomeMentorList() {
   return (
     <div className="montor-list">
       {DUMMY_MENTORS.map((el) => (
-        <MentorCard mentor={el} />
+        <MentorCard key={el.id} mentor={el} />
       ))}
     </div>
   );

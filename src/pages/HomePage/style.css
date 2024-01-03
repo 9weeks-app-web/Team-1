@@ -1,17 +1,20 @@
 .homepage-container {
+    min-height: calc(100vh - 200px);
     position: relative;
     padding : 116px 0 84px 0;
     display: flex;
     flex-direction: column;
     gap: 44px;
-    
 }
 
-.homepage-slider-banner {}
+.homepage-slider-banner {
+    margin-top: 44px;
+}
 
 .homepage-contents {
     width: 1240px;
     margin: 0 auto;
+    margin-top: 72px;
     display: flex;
     flex-direction: column;
     gap: 72px;
