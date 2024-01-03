@@ -7,6 +7,8 @@ import Register from "pages/Auth/Register";
 import MyPage from "pages/MyPage";
 import Header from "components/Header";
 import Footer from "components/Footer/Footer";
+import ProjectPage from "pages/ProjectPage/ProjectPage";
+import CommunityPage from "pages/CommunityPage/CommunityPage";
 
 function AppRouter() {
   return (
@@ -18,6 +20,8 @@ function AppRouter() {
         <Route path="/register" element={<Register />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/community" element={<CommunityPage />} />
+        <Route path="/project" element={<ProjectPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
