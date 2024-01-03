@@ -4,11 +4,13 @@ import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import "./style.css";
 import { signInWithEmailAndPassword, signInWithPopup } from "firebase/auth";
+import useUser from "hooks/useUser";
 import { auth, GoogleAuthProvider } from "../../api/fireauthConfig";
 import logo from "../../assets/img/SfacLogo.svg";
 
 function Login() {
   const navi = useNavigate();
+  const { refetchUser } = useUser();
 
   const login = async (email: string, password: string) => {
     try {
@@ -23,6 +25,7 @@ function Login() {
       if (userCredential.user.displayName) {
         localStorage.setItem("displayName", userCredential.user.displayName);
       }
+      refetchUser();
       navi("/");
       return userCredential.user;
     } catch (error) {
@@ -44,6 +47,7 @@ function Login() {
       if (user.displayName) {
         localStorage.setItem("displayName", user.displayName);
       }
+      refetchUser();
       navi("/");
     } catch (error) {
       console.error("Google Sign In Error", error);
