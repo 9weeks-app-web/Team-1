@@ -1,6 +1,5 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./style.css";
-import { getExample } from "api/example";
 import SliderBanner from "components/Banner/SliderBanner/SliderBanner";
 import HomeAreaTitle from "components/home/HomeAreaTitle/HomeAreaTitle";
 import HomePortfolioList from "components/home/HomePortfolioList/HomePortfolioList";
@@ -10,10 +9,6 @@ import HomeMentorList from "components/home/HomeMentorList/HomeMentorList";
 import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
 
 function HomePage() {
-  useEffect(() => {
-    getExample("key").then((res) => console.log(res));
-  }, []);
-
   return (
     <div className="homepage-container">
       <div className="homepage-slider-banner">

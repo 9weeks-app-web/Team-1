@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import CardGrid from "components/CardGrid/CardGrid";
 import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
-import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
 import SinglePickChip from "components/Chips/SinglePickChip/SinglePickChip";
 import "./style.css";
+import usePortfolio from "hooks/usePortfolio";
+import { IPortfolioSummary } from "types/portfolio";
 
 function HomePortfolioList() {
   const [category, setCategory] = useState("");
+  const { results } = usePortfolio();
 
   return (
     <>
@@ -25,7 +27,7 @@ function HomePortfolioList() {
       </div>
 
       <CardGrid columnGap="cg-16" rowGap="rg-32">
-        {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
+        {results[0]?.data?.data.map((el: IPortfolioSummary) => (
           <PortfolioCard key={el.id} portfolio={el} />
         ))}
       </CardGrid>
