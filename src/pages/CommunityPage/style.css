@@ -1,5 +1,14 @@
-.community-page-container{
-    min-height: calc(100vh - 116px);
-    position: relative;
-    padding : 116px 0 84px 0;
+.community-page-contents {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+    .section{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 }

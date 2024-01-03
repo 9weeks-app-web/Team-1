@@ -7,10 +7,11 @@ import HomeProjectList from "components/home/HomeProjectList/HomeProjectList";
 import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";
 import HomeMentorList from "components/home/HomeMentorList/HomeMentorList";
 import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
+import PageLayout from "components/layout/PageLayout/PageLayout";
 
 function HomePage() {
   return (
-    <div className="homepage-container">
+    <PageLayout>
       <div className="homepage-slider-banner">
         <SliderBanner />
       </div>
@@ -61,7 +62,7 @@ function HomePage() {
           <HomeMentorList />
         </div>
       </div>
-    </div>
+    </PageLayout>
   );
 }
 

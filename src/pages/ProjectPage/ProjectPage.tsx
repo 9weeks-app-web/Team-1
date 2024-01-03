@@ -6,10 +6,11 @@ import ProjectCard from "components/Cards/ProjectCard/ProjectCard";
 import { DUMMY_PROJECTS } from "constants/dummy";
 import SelectorGroup from "components/project/SelectorGroup/SelectorGroup";
 import FloatingButton from "components/FloatingButton/FloatingButton";
+import PageLayout from "components/layout/PageLayout/PageLayout";
 
 function ProjectPage() {
   return (
-    <div className="project-page-container">
+    <PageLayout>
       <FloatingButton />
       <div className="project-page-content">
         <div className="section">
@@ -30,7 +31,7 @@ function ProjectPage() {
           </CardGrid>
         </div>
       </div>
-    </div>
+    </PageLayout>
   );
 }
 

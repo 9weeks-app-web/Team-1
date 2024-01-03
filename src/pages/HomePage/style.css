@@ -5,15 +5,16 @@
     display: flex;
     flex-direction: column;
     gap: 44px;
-    
 }
 
-.homepage-slider-banner {}
+.homepage-slider-banner {
+    margin-top: 44px;
+}
 
 .homepage-contents {
     width: 1240px;
     margin: 0 auto;
-    margin-top: 44px;
+    margin-top: 72px;
     display: flex;
     flex-direction: column;
     gap: 72px;
