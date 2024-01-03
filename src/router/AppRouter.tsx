@@ -8,6 +8,7 @@ import MyPage from "pages/MyPage";
 import Header from "components/Header";
 import Chat from "pages/Chat";
 import Footer from "components/Footer/Footer";
+import Community from "pages/Community";
 
 function AppRouter() {
   return (
@@ -20,6 +21,7 @@ function AppRouter() {
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/chat" element={<Chat />} />
+        <Route path="/community" element={<Community />} />
       </Routes>
       <Footer />
     </BrowserRouter>

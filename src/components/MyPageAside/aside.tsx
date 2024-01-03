@@ -5,7 +5,7 @@ type AsideProps = {
   onMenuChange: (menu: string) => void;
 };
 
-function Aside({ onMenuChange }: AsideProps) {
+function MyPageAside({ onMenuChange }: AsideProps) {
   return (
     <aside className="mypageAside">
       <div className="myProfileSec">
@@ -53,4 +53,4 @@ function Aside({ onMenuChange }: AsideProps) {
   );
 }
 
-export default Aside;
+export default MyPageAside;
