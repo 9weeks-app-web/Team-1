@@ -1,8 +1,22 @@
 .home-area-title-container{
+    display: flex;
+    justify-content: space-between;
+
     h1{
         font-weight: var(--h1-font-weight);
         line-height: var(--h1-line-height);
         letter-spacing: var(--h1-letter-spacing);
         font-size: var(--h1-font-size);
+    }
+
+    .view-all-button {
+        border: none;
+        background: none;
+        color: var(--gray-60);
+        font-size: 16px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
     }
 }
