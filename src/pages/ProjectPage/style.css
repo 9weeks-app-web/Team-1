@@ -6,3 +6,19 @@
     flex-direction: column;
     gap: 44px;
 }
+
+.project-page-content {
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+
+    .section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
