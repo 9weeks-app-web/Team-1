@@ -315,6 +315,57 @@ export const DUMMY_PROJECTS: IProject[] = [
   },
 ];
 
+export const DUMMY_HOT_PROJECTS: IProject[] = [
+  {
+    id: 1,
+    title: "Project One",
+    description: "This is the description for Project One.",
+    category: "Web Development",
+    views: 1200,
+    likes: 350,
+    deadline: "2024-02-15",
+    nowPeopleCnt: 8,
+    maxPeopleCnt: 10,
+    thumbnail: "https://picsum.photos/298/150",
+  },
+  {
+    id: 2,
+    title: "Project Two",
+    description: "Description for Project Two.",
+    category: "Mobile App Development",
+    views: 800,
+    likes: 200,
+    deadline: "2024-03-10",
+    nowPeopleCnt: 5,
+    maxPeopleCnt: 8,
+    thumbnail: "https://picsum.photos/298/150",
+  },
+  {
+    id: 3,
+    title: "Project Three",
+    description: "Project Three is all about...",
+    category: "Data Science",
+    views: 1500,
+    likes: 450,
+    deadline: "2024-04-05",
+    nowPeopleCnt: 12,
+    maxPeopleCnt: 15,
+    thumbnail: "https://picsum.photos/298/150",
+  },
+  {
+    id: 4,
+    title: "Project Four",
+    description: "A unique project with...",
+    category: "Machine Learning",
+    views: 600,
+    likes: 120,
+    deadline: "2024-05-20",
+    nowPeopleCnt: 6,
+    maxPeopleCnt: 10,
+    thumbnail: "https://picsum.photos/298/150",
+  },
+];
+
 export const DUMMY_POSTS: IPostSummary[] = [
   {
     id: 1,

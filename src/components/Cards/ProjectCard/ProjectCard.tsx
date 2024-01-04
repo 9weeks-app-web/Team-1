@@ -12,6 +12,7 @@ interface IProjectCardProps {
 
 function ProjectCard(props: IProjectCardProps) {
   const { project } = props;
+
   return (
     <Card width="m">
       <div className="project-card-container">
