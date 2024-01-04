@@ -87,7 +87,7 @@ function Login() {
                 placeholder="이메일"
               />
             </div>
-            <span className="login-field-title">비밀번호</span>
+            <span className="login-field-title-pwd">비밀번호</span>
             <div className="form-div">
               <ErrorMessage
                 name="email"

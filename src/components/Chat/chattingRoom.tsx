@@ -65,7 +65,14 @@ function ChattingRoom({ chatId }: ChattingRoomProps) {
       </div>
 
       <div className="chattingRoomInput">
-        <input type="text" placeholder="메세지를 입력해주세요" />
+        <div className="textareaContainer">
+          <textarea placeholder="메세지를 입력해주세요" />
+          <div className="textareaFooter">
+            <button type="button" className="sendMsgBtn">
+              전송
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );

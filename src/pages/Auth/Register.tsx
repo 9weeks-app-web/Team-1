@@ -108,7 +108,12 @@ function Register() {
     <div>
       <div className="container">
         <div className="auth-center register-title">
-          <span>회원가입</span>
+          <span className="login-title">
+            회원가입
+            <span className="login-subtitle">
+              지금 스팩폴리오에 가입해서 다양한 혜택을 누리세요
+            </span>
+          </span>
         </div>
         <table className="center form-table">
           <tbody>

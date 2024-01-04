@@ -3,7 +3,7 @@ import HomePage from "pages/HomePage/HomePage";
 import PortfolioPage from "pages/PortfolioPage/PortfoiloPage";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "pages/Auth/Login";
-import Register from "pages/Auth/Register";
+import RegisterSelect from "pages/Auth/registerSelect";
 import MyPage from "pages/MyPage";
 import Header from "components/Header";
 import Chat from "pages/Chat";
@@ -17,7 +17,7 @@ function AppRouter() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        <Route path="/register" element={<RegisterSelect />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/chat" element={<Chat />} />
