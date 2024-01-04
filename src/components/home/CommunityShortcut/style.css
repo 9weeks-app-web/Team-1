@@ -1,0 +1,44 @@
+.community-shortcut-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.shortcut-card {
+  width: 610px;
+  height: 150px;
+  border-radius: 12px;
+  background: #e5eeff;
+  padding: 40px 52px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100%;
+
+  .shortcut-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .title {
+      color: #000;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 33.6px */
+      letter-spacing: 0.048px;
+    }
+
+    .description {
+      color: #000;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 140%; /* 28px */
+      letter-spacing: 0.04px;
+    }
+  }
+}

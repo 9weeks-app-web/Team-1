@@ -4,4 +4,6 @@ export interface IMentor {
   occupation: "UX/UI" | "디자인" | "개발"; // 직군
   profileImg: string; // 프로필 사진
   introduction: string; // 소개
+  career: string; // 경력
+  rating: number;
 }

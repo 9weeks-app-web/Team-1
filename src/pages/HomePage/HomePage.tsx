@@ -6,8 +6,9 @@ import HomePortfolioList from "components/home/HomePortfolioList/HomePortfolioLi
 import HomeProjectList from "components/home/HomeProjectList/HomeProjectList";
 import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";
 import HomeMentorList from "components/home/HomeMentorList/HomeMentorList";
-import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
+// import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
 import PageLayout from "components/layout/PageLayout/PageLayout";
+import CommunityShortcut from "components/home/CommunityShortcut/CommunityShortcut";
 
 function HomePage() {
   return (
@@ -53,7 +54,8 @@ function HomePage() {
             renderViewAll
             viewAllUrl="/community"
           />
-          <HomeCommunityList />
+          <CommunityShortcut />
+          {/* <HomeCommunityList /> */}
         </div>
 
         {/* 인기 멘토 */}
