@@ -4,16 +4,22 @@ import { IProject } from "types/project";
 import IconText from "components/IconText/IconText";
 import { convertToKNotation } from "utils/convertToKNotation";
 import RecruitBadge from "components/Badges/RecruitBadge/RecruitBadge";
+import { useNavigate } from "react-router-dom";
 
 interface IProjectBigCardProps {
   project: IProject;
 }
 function ProjectBigCard(props: IProjectBigCardProps) {
   const { project } = props;
+  const navigate = useNavigate();
 
   return (
     <div className="hot-project-list">
-      <div className="big-card">
+      <div
+        className="big-card"
+        role="presentation"
+        onClick={() => navigate(`/project/${project.id}`)}
+      >
         <img className="big-card-thumbnail" src={project.thumbnail} alt="" />
         <div className="big-card-info-container">
           <div className="big-card-badge">

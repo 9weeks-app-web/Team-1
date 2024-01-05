@@ -4,9 +4,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
-import { DUMMY_SLIDER_BANNERS } from "constants/dummy";
+import useBanners from "hooks/useBanners";
+import { IBannerInfo } from "types/home";
 
 function SliderBanner() {
+  const sliderBanners = useBanners().results[0].data?.data;
+
   return (
     <Swiper
       slidesPerView="auto"
@@ -20,7 +23,7 @@ function SliderBanner() {
       loop
       className="mySwiper main-slider-banner"
     >
-      {DUMMY_SLIDER_BANNERS.map((el) => (
+      {sliderBanners?.map((el: IBannerInfo) => (
         <SwiperSlide key={el.id}>
           <a href={el.link} target="_blank" rel="noreferrer">
             <img src={el.imgSrc} alt="" />

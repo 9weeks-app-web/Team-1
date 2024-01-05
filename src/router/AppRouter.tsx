@@ -10,6 +10,7 @@ import Footer from "components/Footer/Footer";
 import ProjectPage from "pages/ProjectPage/ProjectPage";
 import CommunityPage from "pages/CommunityPage/CommunityPage";
 import RecruitPage from "pages/RecruitPage/RecruitPage";
+import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 
 function AppRouter() {
   return (
@@ -22,7 +23,10 @@ function AppRouter() {
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/community" element={<CommunityPage />} />
-        <Route path="/project" element={<ProjectPage />} />
+        <Route path="/project">
+          <Route path="" element={<ProjectPage />} />
+          <Route path=":id" element={<ProjectDetailPage />} />
+        </Route>
         <Route path="/recruit" element={<RecruitPage />} />
       </Routes>
       <Footer />

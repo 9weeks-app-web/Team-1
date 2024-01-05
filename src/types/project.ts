@@ -10,3 +10,7 @@ export interface IProject {
   maxPeopleCnt: number;
   thumbnail: string;
 }
+
+export interface IProjectDetail extends IProject {
+  writer: string;
+}

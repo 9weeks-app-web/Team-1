@@ -3,6 +3,7 @@ import { IProject } from "types/project";
 import RecruitBadge from "components/Badges/RecruitBadge/RecruitBadge";
 import IconText from "components/IconText/IconText";
 import { convertToKNotation } from "utils/convertToKNotation";
+import { useNavigate } from "react-router-dom";
 import Card from "../Card/Card";
 import "./style.css";
 
@@ -12,10 +13,15 @@ interface IProjectCardProps {
 
 function ProjectCard(props: IProjectCardProps) {
   const { project } = props;
+  const navigate = useNavigate();
 
   return (
     <Card width="m">
-      <div className="project-card-container">
+      <div
+        role="presentation"
+        onClick={() => navigate(`/project/${project.id}`)}
+        className="project-card-container"
+      >
         <img
           className="project-card-thumbnail"
           src={project.thumbnail}

@@ -1,4 +1,5 @@
 .project-row-card {
+  cursor: pointer;
   width: 664px;
   height: 190px;
   background: #fff;
