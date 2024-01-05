@@ -13,12 +13,7 @@ b {
 }
 
 .project-detail-inner {
-  width: 850px;
-}
-
-.project-detail-aside {
-  width: 350px;
-  border: 1px solid red;
+  width: 840px;
 }
 
 .project-detail-section1 {
@@ -93,13 +88,13 @@ b {
 
 .project-detail-introduce {
   .image {
-    width: 850px;
+    width: 840px;
     height: 500px;
     border-radius: 8px;
   }
 
   .pre {
-    max-width: 850px;
+    max-width: 840px;
     width: 100%;
     min-height: 500px;
     white-space: pre-wrap; /* pre tag내에 word wrap */
@@ -195,4 +190,69 @@ b {
 .flex-column {
   display: flex;
   flex-direction: column;
+}
+
+/* 사이드바 */
+.project-detail-aside {
+  position: sticky;
+  top: 116px;
+  height: fit-content;
+  border-radius: 8px;
+  background: #f3f3f3;
+  width: 340px;
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aside-section {
+  border-radius: 8px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+}
+
+.aside-section-title {
+  color: #1a1a1a;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.032px;
+}
+
+.hot-project-list {
+  padding: 8px 0;
+}
+
+.member-card {
+  gap: 16px;
+
+  .ranking-number {
+    color: #0059ff;
+
+    font-family: Spoqa Han Sans Neo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.04px;
+  }
+  img {
+    width: 56px;
+    height: 56px;
+    border-radius: 100px;
+  }
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.color-gray {
+  color: var(--gray-60);
 }

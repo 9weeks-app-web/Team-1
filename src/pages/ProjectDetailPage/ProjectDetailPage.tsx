@@ -276,7 +276,181 @@ function ProjectDetailPage() {
             </div>
           </div>
         </div>
-        <aside className="project-detail-aside">사이드</aside>
+
+        {/* 사이드바 */}
+        <aside className="project-detail-aside">
+          <div className="aside-section">
+            <p className="aside-section-title">핫한 프로젝트 모집 공고</p>
+
+            {/* 프로젝트 모집 한장 */}
+            <div className="flex-column gap-8 hot-project-list">
+              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+
+              <div className="flex-row justify-between">
+                <span className="flex-row">
+                  <Icon icon="account_circle" />
+                  고승호
+                </span>
+                <div className="flex-row gap-8">
+                  <IconText icon="favorite" text="50" />
+                  <IconText icon="chat_bubble" text="50" />
+                </div>
+              </div>
+            </div>
+            {/* 프로젝트 모집 한장 */}
+            <div className="flex-column gap-8 hot-project-list">
+              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+
+              <div className="flex-row justify-between">
+                <span className="flex-row">
+                  <Icon icon="account_circle" />
+                  고승호
+                </span>
+                <div className="flex-row gap-8">
+                  <IconText icon="favorite" text="50" />
+                  <IconText icon="chat_bubble" text="50" />
+                </div>
+              </div>
+            </div>
+            {/* 프로젝트 모집 한장 */}
+            <div className="flex-column gap-8 hot-project-list">
+              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+
+              <div className="flex-row justify-between">
+                <span className="flex-row">
+                  <Icon icon="account_circle" />
+                  고승호
+                </span>
+                <div className="flex-row gap-8">
+                  <IconText icon="favorite" text="50" />
+                  <IconText icon="chat_bubble" text="50" />
+                </div>
+              </div>
+            </div>
+            {/* 프로젝트 모집 한장 */}
+            <div className="flex-column gap-8 hot-project-list">
+              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+
+              <div className="flex-row justify-between">
+                <span className="flex-row">
+                  <Icon icon="account_circle" />
+                  고승호
+                </span>
+                <div className="flex-row gap-8">
+                  <IconText icon="favorite" text="50" />
+                  <IconText icon="chat_bubble" text="50" />
+                </div>
+              </div>
+            </div>
+            {/* 프로젝트 모집 한장 */}
+            <div className="flex-column gap-8 hot-project-list">
+              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+
+              <div className="flex-row justify-between">
+                <span className="flex-row">
+                  <Icon icon="account_circle" />
+                  고승호
+                </span>
+                <div className="flex-row gap-8">
+                  <IconText icon="favorite" text="50" />
+                  <IconText icon="chat_bubble" text="50" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* 이번 주 베스트 팀원 */}
+          <div className="aside-section">
+            <p className="aside-section-title">이번 주 BEST 팀원 🏆</p>
+
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">1</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 김민지짱짱</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UX 리서처 | 미들(4~8년)</p>
+              </div>
+            </div>
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">2</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 바쁜 다람쥐</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UI 디자이너 | 주니어 (1~3년)</p>
+              </div>
+            </div>
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">3</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 배고픈 오징어</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">광고 기획자 | 시니어 (9년~)</p>
+              </div>
+            </div>
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">4</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 오크리스탈</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UX 리서처 | 주니어 (1~3년)</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 이번 주 베스트 멘토 */}
+          <div className="aside-section">
+            <p className="aside-section-title">이번 주 BEST 멘토 🏆</p>
+
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">1</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 김나영</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UX 리서처 | 미들(4~8년)</p>
+              </div>
+            </div>
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">2</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 고승호</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UI 디자이너 | 주니어 (1~3년)</p>
+              </div>
+            </div>
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">3</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 나준택</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UX 리서처 | 시니어 (9년~)</p>
+              </div>
+            </div>
+            {/* 베스트 팀원 한장 */}
+            <div className="flex-row member-card">
+              <span className="ranking-number">4</span>
+              <img src="https://picsum.photos/48/48" alt="" />
+              <div className="flex-column gap-4">
+                <p>🏆 이경서</p>
+                <p>⭐️ 5.0</p>
+                <p className="color-gray">UX 리서처 | 주니어 (1~3년)</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
     </PageLayout>
   );
