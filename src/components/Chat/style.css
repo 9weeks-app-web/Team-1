@@ -1,8 +1,8 @@
 .chatList {
-    width: 420px;
+    width: 438px;
     height: 120px;
     flex-shrink: 0;
-    border: 1px solid #D2D2D2;
+    border-top: 1px solid #D2D2D2;
     display: flex;
     flex-direction: column;
 }
@@ -11,134 +11,124 @@
 .chatListFilter {
   width: 420px;
   display: inline-flex;
-  height: 120px;
   align-items: center;
   gap: 15px;
-  flex-shrink: 0;    
-  margin: 10px;
+  flex-shrink: 0;   
+  margin-top: 20px; 
 }
 .unSelectedFilter {
-  width: 86px;
-  height: 27px;
-  flex-shrink: 0;
-  border: 1px solid #808080;
-  color: #808080;
-  border-radius: 5px;
+  height: 38px;
+  padding: 8px 16px;
+  align-items: center;    
+  color: #999;
+  border-radius: 100px;
+  background: #F3F3F3;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
 }
 /*필터 선택*/
 .selectedFilter {
-  width: 86px;
-  height: 27px;
-  border: 1px solid #0059FF;
-  color: #0059FF;
+  height: 38px;
+  padding: 8px 16px;
+  background: #196AFF;
+  color: #fff;
   border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 100px;
 
 }
 
 /*채팅방리스트 유저 프로필*/
 .userProfile {
-  width: 420px;
-  height: 120px;
-  padding: 20px 20px 20px 10px;
   display: flex;
+  width: 430px;
+  height: 108px auto;
+  padding: 24px;
   align-items: center;
-  color: #000;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
+  gap: 12px;
   border-bottom: 1px solid #ccc;
+  box-sizing: border-box; 
   }
   .userProfile:active {
   background-color: #F5F8FF;
-  }
-  .profileBadge {
-    display: flex;
-    width: 55px;
-    height: 20px;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-    border-radius: 100px;
-    background: #0059FF;
-    color: #FFF;
-    font-family: Spoqa Han Sans Neo;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%;
-    letter-spacing: 0.024px;
-    position: absolute;
-    margin: 80px 10px 0 10px;
   }
  
   .listUserPreview {
     flex-grow: 1; 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 20px;
     align-items: center;
     width: 297px;
-    margin-left: 15px;
   }
   /*리스트 폰트 스타일*/
   .listUserPreview .listUserName {
     color: #000;
     font-family: Spoqa Han Sans Neo;
-    font-size: 15px;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 21px */
-    letter-spacing: 0.03px;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.036px;  
   }
   .listLastTime {
-    color: #000;
+    color: #666;
     font-family: Spoqa Han Sans Neo;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-
-  }
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+    }
 /*채팅방 리스트의 메세지 미리보기 단락 (둘째 줄)*/
   .listUserPreviewMsg {
     width: 297px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     margin: 5px 0 0 0;
   }
   .msgPreview {
-    margin-left: auto;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-left: 15px;
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
   }
   
   .listNewMsgCount {
-    background-color: #0059FF;
+    border-radius: 100px;
+    background: #F33;
     color: #fff;
-    width: 30px;
-    height: 30px;
     display: flex;
+    padding: 3px 10px;
     justify-content: center;
     align-items: center;
-    border-radius: 20px;
-    font-weight: 600;
-    font-size: 13px;
+    margin-left: 8px;
+    font-size: 12px;
+    line-height: 140%;
+
   }
   /*채팅방 리스트 텍스트 크기 정렬*/
   .listUserText {
-    width: 297px;
-    height: 50px;
+    width: 245px;
     align-items: center;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    flex: 1 0 0;
   }
   
 

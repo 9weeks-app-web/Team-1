@@ -9,6 +9,7 @@ import Header from "components/Header";
 import Chat from "pages/Chat";
 import Footer from "components/Footer/Footer";
 import Community from "pages/Community";
+import Register from "pages/Auth/Register";
 
 function AppRouter() {
   return (
@@ -18,6 +19,7 @@ function AppRouter() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterSelect />} />
+        <Route path="/registerform" element={<Register />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/chat" element={<Chat />} />

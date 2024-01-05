@@ -32,15 +32,13 @@ function ChatUserProfile({
         if (e.key === "Enter") handleSelectChat();
       }}
     >
-      <span className="profileBadge">badge</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        width="80"
-        height="80"
-        viewBox="0 0 61 60"
+        height="60"
+        viewBox="0 0 66 66"
         fill="none"
       >
-        <ellipse cx="30.1378" cy="30" rx="30.0714" ry="30" fill="#D9D9D9" />
+        <ellipse cx="32.3" cy="32.3" rx="32.3" ry="32.3" fill="#D9D9D9" />
       </svg>
       <div className="listUserText">
         <div className="listUserPreview">
@@ -49,9 +47,9 @@ function ChatUserProfile({
         </div>
         <div className="listUserPreviewMsg">
           <div className="msgPreview">{previewMessage}</div>
-          <div className="listNewMsgCount">{newMsgCount}</div>
         </div>
       </div>
+      <div className="listNewMsgCount">{newMsgCount}</div>
     </div>
   );
 }

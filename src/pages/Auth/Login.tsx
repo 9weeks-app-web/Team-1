@@ -69,7 +69,9 @@ function Login() {
 
   return (
     <div className="container">
-      <span className="login-title">로그인</span>
+      <div className="auth-title">
+        <span className="login-title">로그인</span>
+      </div>
       <Formik
         initialValues={{ email: "", password: "" }}
         validationSchema={validationSchema}

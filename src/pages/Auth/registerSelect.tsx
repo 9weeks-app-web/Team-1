@@ -1,15 +1,16 @@
 import React from "react";
 import "./style.css";
+import { Link } from "react-router-dom";
 
 function RegisterSelect() {
   return (
     <div className="container">
-      <span className="login-title">
-        회원가입
+      <div className="auth-title">
+        <span className="login-title">회원가입</span>
         <span className="login-subtitle">
           지금 스팩폴리오에 가입해서 다양한 혜택을 누리세요.
         </span>
-      </span>
+      </div>
       <div className="center sns-btn-div">
         <button type="button" className="sns-btn-kakao">
           <svg
@@ -72,6 +73,19 @@ function RegisterSelect() {
         <hr />
         또는
         <hr />
+      </span>
+      <div className="form-div">
+        <Link to="/registerform">
+          <button type="submit" className="form-control register-btn">
+            이메일로 가입하기
+          </button>
+        </Link>
+      </div>
+      <span className="resigterGroup">
+        <span>회원이신가요?</span>
+        <span className="resigterBtn">
+          <Link to="/login">로그인 하기</Link>
+        </span>
       </span>
     </div>
   );

@@ -9,16 +9,15 @@ const loadMessagesForChat = async (chatId: string) => {
   return [
     {
       id: 1,
-      text: `안녕하세요 이거슨 나! ${chatId}`,
-      sender: "me",
+      text: `${chatId} :안녕하세요 `,
+      sender: "User1",
     },
-    { id: 1, text: "이거슨 김유저.", sender: "User1" },
+    { id: 1, text: "안녕하세요.", sender: "me" },
     {
       id: 1,
-      text: `이거슨 나고! ${chatId}`,
-      sender: "me",
+      text: "어떤 팀원을 구하시나요?",
+      sender: "User1",
     },
-    { id: 1, text: "이거슨 이유저.", sender: "User1" },
   ];
 };
 

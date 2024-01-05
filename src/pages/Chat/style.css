@@ -5,19 +5,6 @@
     width: 1240px;
     margin: auto;
     height: auto;
-    margin-bottom: 5rem;
-}
-.chatting h1 {
-    font-size: 2rem;
-    margin-top: 10rem;
-    float: left; 
-    color: #030303;
-    font-family: Spoqa Han Sans Neo;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 140%; /* 33.6px */
-    letter-spacing: 0.048px;
 }
 .chattingRoomBag {
     display: flex;
@@ -44,7 +31,7 @@
     display: flex;
     justify-content: center;
     height: auto;
-    margin-top: 2rem;
+    margin-top: 7.3rem;
     width: 1240px;
     height: 850px;
     border-top: 1px solid #D2D2D2;
@@ -52,7 +39,7 @@
 }
 .chattingList {
     background-color: transparent;
-    width: 422px;
+    width: 436px;
     height: 850px;
     border-right: 1px solid #D2D2D2;
     overflow-x: auto;
@@ -61,7 +48,45 @@
 .chattingList::-webkit-scrollbar-button {
     display: none;
 }
+.chatlistHeaderTitle {
+    margin-bottom: 20px;
+}
+.chatlistHeaderTitle h2 {
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+}
+.searchChatlist {
+    display: flex;
+    width: 320px;
+    height: 40px;
+    padding: 0px 16px;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: 40px;
+    border: 1px solid #E6E6E6;
+    padding-left: 30px;
 
+
+  }
+  .input-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .input-container svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  
 .chatting::-webkit-scrollbar-track {
     background-color: #f0f0f0;
 }
@@ -88,6 +113,15 @@
 
 }
 
+.chatlistHeader {
+    padding: 20px 24px;
+
+}
+.chatlistHeaderTitle {
+    display: flex;
+    justify-content: space-between;
+
+}
 
 #unreadMsgCheck {
     width: 18px;
@@ -105,4 +139,4 @@
     box-sizing: border-box; 
     padding: 20px; 
 }
-
+ 
