@@ -1,11 +1,11 @@
 import React from "react";
-import { IMentor } from "types/mentor";
+import { IMember } from "types/mentor";
 import MentoringBadge from "components/Badges/MentoringBadge/MentoringBadge";
 import "./style.css";
 import Icon from "components/Icon/Icon";
 
 interface IMentorCardProps {
-  mentor: IMentor;
+  mentor: IMember;
 }
 
 function MentorCard(props: IMentorCardProps) {
@@ -14,7 +14,7 @@ function MentorCard(props: IMentorCardProps) {
   return (
     <div className="mentorcard-container">
       <div className="mentorcard-badge">
-        <MentoringBadge isMentee={false} />
+        <MentoringBadge isMentor={mentor.isMentor} />
       </div>
       <div>
         <div className="mentor-name">{mentor.name}</div>

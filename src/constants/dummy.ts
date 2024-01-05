@@ -1,10 +1,10 @@
 import { IPostSummary } from "types/community";
 import { IBannerInfo } from "types/home";
-import { IMentor } from "types/mentor";
+import { IMember } from "types/mentor";
 import { IPortfolioSummary } from "types/portfolio";
 import { IProject } from "types/project";
 
-export const DUMMY_MENTORS: IMentor[] = [
+export const DUMMY_MENTORS: IMember[] = [
   {
     id: 1,
     name: "John Doe",
@@ -15,6 +15,7 @@ export const DUMMY_MENTORS: IMentor[] = [
       "안녕하세요! 저는 소프트웨어 엔지니어로 일하고 있는 John Doe입니다. 새로운 기술과 도전에 항상 열려있어요.",
     rating: 4.5,
     career: "시니어 (9년이상)",
+    isMentor: true,
   },
   {
     id: 2,
@@ -27,6 +28,7 @@ export const DUMMY_MENTORS: IMentor[] = [
       "안녕하세요! 저는 사용자 경험 및 인터페이스 디자이너로 일하고 있는 Jane Smith입니다. 함께 디자인을 향상시켜보아요!",
     rating: 4.5,
     career: "시니어 (9년이상)",
+    isMentor: true,
   },
   {
     id: 3,
@@ -38,6 +40,7 @@ export const DUMMY_MENTORS: IMentor[] = [
       "안녕하세요! 그래픽 디자이너로 활동 중인 Alex Johnson입니다. 창의적이고 효과적인 디자인에 관심이 많아요.",
     career: "시니어 (9년이상)",
     rating: 4.5,
+    isMentor: true,
   },
   {
     id: 4,
@@ -50,6 +53,7 @@ export const DUMMY_MENTORS: IMentor[] = [
       "안녕하세요! 웹 개발자로 활동하고 있는 Emily Park입니다. 협업과 문제 해결에 열정을 가지고 있어요.",
     career: "시니어 (9년이상)",
     rating: 4.5,
+    isMentor: true,
   },
   {
     id: 5,
@@ -62,6 +66,73 @@ export const DUMMY_MENTORS: IMentor[] = [
       "안녕하세요! UX/UI 디자이너로 일하는 David Kim입니다. 사용자 중심의 디자인에 대한 고민을 공유하고 싶어요.",
     career: "시니어 (9년이상)",
     rating: 4.5,
+    isMentor: true,
+  },
+];
+
+export const DUMMY_MENTEES: IMember[] = [
+  {
+    id: 1,
+    name: "John Doe",
+    occupation: "개발",
+    profileImg:
+      "https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg",
+    introduction:
+      "안녕하세요! 저는 소프트웨어 엔지니어로 일하고 있는 John Doe입니다. 새로운 기술과 도전에 항상 열려있어요.",
+    rating: 4.5,
+    career: "시니어 (9년이상)",
+    isMentor: false,
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    occupation: "UX/UI",
+    profileImg:
+      "https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg",
+
+    introduction:
+      "안녕하세요! 저는 사용자 경험 및 인터페이스 디자이너로 일하고 있는 Jane Smith입니다. 함께 디자인을 향상시켜보아요!",
+    rating: 4.5,
+    career: "시니어 (9년이상)",
+    isMentor: false,
+  },
+  {
+    id: 3,
+    name: "Alex Johnson",
+    occupation: "디자인",
+    profileImg:
+      "https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg",
+    introduction:
+      "안녕하세요! 그래픽 디자이너로 활동 중인 Alex Johnson입니다. 창의적이고 효과적인 디자인에 관심이 많아요.",
+    career: "시니어 (9년이상)",
+    rating: 4.5,
+    isMentor: false,
+  },
+  {
+    id: 4,
+    name: "Emily Park",
+    occupation: "개발",
+    profileImg:
+      "https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg",
+
+    introduction:
+      "안녕하세요! 웹 개발자로 활동하고 있는 Emily Park입니다. 협업과 문제 해결에 열정을 가지고 있어요.",
+    career: "시니어 (9년이상)",
+    rating: 4.5,
+    isMentor: false,
+  },
+  {
+    id: 5,
+    name: "David Kim",
+    occupation: "UX/UI",
+    profileImg:
+      "https://as1.ftcdn.net/v2/jpg/01/68/80/20/1000_F_168802075_Il6LeUG0NCK4JOELmkC7Ki81g0CiLpxU.jpg",
+
+    introduction:
+      "안녕하세요! UX/UI 디자이너로 일하는 David Kim입니다. 사용자 중심의 디자인에 대한 고민을 공유하고 싶어요.",
+    career: "시니어 (9년이상)",
+    rating: 4.5,
+    isMentor: false,
   },
 ];
 

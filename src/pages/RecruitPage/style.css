@@ -7,9 +7,21 @@
   flex-direction: column;
   gap: 72px;
 
+  .two-col-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .section {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
+}
+
+.weekly-best-member {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }

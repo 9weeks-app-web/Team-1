@@ -1,4 +1,4 @@
-export interface IMentor {
+export interface IMember {
   id: number; // 멘토 식별키
   name: string; // 멘토 이름
   occupation: "UX/UI" | "디자인" | "개발"; // 직군
@@ -6,4 +6,5 @@ export interface IMentor {
   introduction: string; // 소개
   career: string; // 경력
   rating: number;
+  isMentor: boolean;
 }

@@ -9,11 +9,17 @@ function SelectorGroup() {
   const [method, setMethod] = useState<string>("");
   const [status, setStatus] = useState<string>("");
 
-  const periodOptions = ["1주", "1달", "6개월", "1년"];
-  const categoryOptions = ["디자인", "기획", "UX/UI"];
-  const jobOptions = ["디자인", "기획", "UX/UI"];
-  const methodOptions = ["디자인", "기획", "UX/UI"];
-  const statusOptions = ["디자인", "기획", "UX/UI"];
+  const periodOptions = ["전체", "기간 미정 ~ 3개월", "4~6개월", "6개월 이상"];
+  const categoryOptions = [
+    "전체",
+    "사이드 프로젝트",
+    "공모전",
+    "해커톤",
+    "창업 및 수익 창출",
+  ];
+  const jobOptions = ["전체", "기획", "디자인"];
+  const methodOptions = ["전체", "온라인", "오프라인", "온/오프라인"];
+  const statusOptions = ["전체", "모집 중", "모집 완료"];
 
   return (
     <div className="selector-group-container">
