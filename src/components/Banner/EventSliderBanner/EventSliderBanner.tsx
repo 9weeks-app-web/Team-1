@@ -3,8 +3,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
+import useBanners from "hooks/useBanners";
 
+interface IBanner {
+  id: number;
+  src: string;
+}
 function EventSliderBanner() {
+  const networkingBanner = useBanners().results[1].data?.data;
+
   return (
     <Swiper
       className="mySwiper event-slider-banner"
@@ -16,16 +23,12 @@ function EventSliderBanner() {
       }}
       loop
     >
-      {/* TODO : 상수 배열로 분리하기 */}
-      <SwiperSlide>
-        <img src="https://picsum.photos/527/296" alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://picsum.photos/527/296" alt="" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://picsum.photos/527/296" alt="" />
-      </SwiperSlide>
+      {networkingBanner &&
+        networkingBanner.map((el: IBanner) => (
+          <SwiperSlide>
+            <img src={el.src} alt="" />
+          </SwiperSlide>
+        ))}
     </Swiper>
   );
 }

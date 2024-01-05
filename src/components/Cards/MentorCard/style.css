@@ -65,6 +65,7 @@
     width: 164px;
     height: 164px;
     border-radius: 100px;
+    object-fit: cover;
   }
 
   .mentorcard-info {

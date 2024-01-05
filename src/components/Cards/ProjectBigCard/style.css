@@ -1,4 +1,5 @@
 .big-card {
+  cursor: pointer;
   box-sizing: border-box;
   width: 560px;
   height: 610px;
