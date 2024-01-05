@@ -1,0 +1,25 @@
+.bestmember-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .chip-group {
+    display: flex;
+    gap: 8px;
+  }
+
+  .member-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
+
+.all-of-members {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(232px, 1fr)
+  ); /* 수정된 부분 */
+}

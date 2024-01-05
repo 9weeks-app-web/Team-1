@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 
 interface ISinglePickChipProps {
@@ -9,24 +9,26 @@ interface ISinglePickChipProps {
 
 function SinglePickChip(props: ISinglePickChipProps): JSX.Element {
   const { title, onClick, isActive } = props;
+  const [renderComponent, setRenderComponent] = useState(<div />);
 
   const handleClick = () => {
     onClick();
   };
 
-  useEffect(() => {}, []);
-
-  return (
-    <>
+  useEffect(() => {
+    const render = () => (
       <button
-        className={`${isActive ? "chip-clicked" : "chip"}`}
+        className={isActive ? "chip-clicked" : "chip"}
         type="button"
         onClick={handleClick}
       >
         {title}
       </button>
-    </>
-  );
+    );
+    setRenderComponent(render());
+  }, [isActive]);
+
+  return <>{renderComponent}</>;
 }
 
 export default SinglePickChip;

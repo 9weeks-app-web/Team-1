@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
 
-function MentoringBadge({ isMentee }: { isMentee: boolean }) {
+function MentoringBadge({ isMentor }: { isMentor: boolean }) {
   return (
-    <div className={`mentoring-badge-container ${isMentee && "mentee"}`}>
-      {isMentee ? "Mentee" : "Mentor"}
+    <div className={`mentoring-badge-container ${isMentor || "mentee"}`}>
+      {isMentor ? "Mentor" : "Sniper"}
     </div>
   );
 }

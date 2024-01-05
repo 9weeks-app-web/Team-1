@@ -31,6 +31,9 @@ function HeaderGNB() {
           <li>
             <NavLink to="/project">프로젝트</NavLink>
           </li>
+          <li>
+            <NavLink to="/recruit">팀원·멘토</NavLink>
+          </li>
         </ul>
       </div>
       <div className="right">

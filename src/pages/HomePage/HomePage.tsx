@@ -6,8 +6,9 @@ import HomePortfolioList from "components/home/HomePortfolioList/HomePortfolioLi
 import HomeProjectList from "components/home/HomeProjectList/HomeProjectList";
 import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";
 import HomeMentorList from "components/home/HomeMentorList/HomeMentorList";
-import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
+// import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
 import PageLayout from "components/layout/PageLayout/PageLayout";
+import CommunityShortcut from "components/home/CommunityShortcut/CommunityShortcut";
 
 function HomePage() {
   return (
@@ -39,7 +40,7 @@ function HomePage() {
         {/* 이벤트 배너 */}
         <div className="section">
           <HomeAreaTitle
-            text="스펙 업! 을 위한 네트워킹 이벤트"
+            text="실무진과의 교류 기회! 네트워킹 이벤트"
             renderViewAll
             viewAllUrl="/event"
           />
@@ -49,16 +50,22 @@ function HomePage() {
         {/* 지금 뜨는 커뮤니티 게시글 */}
         <div className="section">
           <HomeAreaTitle
-            text="지금 뜨는 커뮤니티 게시글"
+            text="커뮤니티 바로가기"
             renderViewAll
             viewAllUrl="/community"
           />
-          <HomeCommunityList />
+          <CommunityShortcut />
+          {/* <HomeCommunityList /> */}
         </div>
 
-        {/* 인기 멘토 */}
+        {/* 이 주의 BEST 멤버 */}
         <div className="section">
-          <HomeAreaTitle text="인기 멘토" renderViewAll viewAllUrl="/project" />
+          {/* 칩 넣기 */}
+          <HomeAreaTitle
+            text="이 주의 BEST 멤버"
+            renderViewAll
+            viewAllUrl="/project"
+          />
           <HomeMentorList />
         </div>
       </div>
