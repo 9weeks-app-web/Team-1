@@ -1,0 +1,48 @@
+.static-banner-container {
+  padding: 48px;
+  box-sizing: border-box;
+  width: 1240px;
+  height: 200px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #e5eeff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .static-banner-left {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+
+    .banner-title {
+      color: #0059ff;
+      font-family: Spoqa Han Sans Neo;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 33.6px */
+      letter-spacing: 0.048px;
+    }
+    .move-button {
+      width: fit-content;
+      display: flex;
+      height: 60px;
+      padding: 19px 23px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 12px;
+      background: #7facff;
+      border: none;
+      color: #fff;
+      font-family: Spoqa Han Sans Neo;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 23.8px */
+      letter-spacing: 0.034px;
+    }
+  }
+}

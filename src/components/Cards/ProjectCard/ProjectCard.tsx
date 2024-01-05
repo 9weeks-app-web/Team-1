@@ -31,7 +31,7 @@ function ProjectCard(props: IProjectCardProps) {
           </div>
           <div className="project-info">
             <p className="project-title oneLineEllipsis">{project.title}</p>
-            <p className="project-description oneLineEllipsis">
+            <p className="project-description twoLineEllipsis">
               {project.description}
             </p>
           </div>
