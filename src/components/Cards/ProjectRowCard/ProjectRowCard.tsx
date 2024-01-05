@@ -4,15 +4,21 @@ import RecruitBadge from "components/Badges/RecruitBadge/RecruitBadge";
 import { IProject } from "types/project";
 import { convertToKNotation } from "utils/convertToKNotation";
 import IconText from "components/IconText/IconText";
+import { useNavigate } from "react-router-dom";
 
 interface IProjectRowCardProps {
   project: IProject;
 }
 function ProjectRowCard(props: IProjectRowCardProps) {
   const { project } = props;
+  const navigate = useNavigate();
 
   return (
-    <div className="project-row-card">
+    <div
+      className="project-row-card"
+      role="presentation"
+      onClick={() => navigate(`/project/${project.id}`)}
+    >
       <img className="project-row-thumbnail" src={project.thumbnail} alt="" />
       <div className="project-row-info">
         <div className="recruit-info">

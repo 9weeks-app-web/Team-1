@@ -3,10 +3,15 @@ import "./style.css";
 
 interface IChipProps {
   title: string;
-  onClick: () => void;
+  onClick?: () => void;
+  disabled?: boolean;
 }
 
-function Chip({ title, onClick }: IChipProps): JSX.Element {
+function Chip({
+  title,
+  onClick = () => {},
+  disabled,
+}: IChipProps): JSX.Element {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -16,7 +21,7 @@ function Chip({ title, onClick }: IChipProps): JSX.Element {
   return (
     <>
       <button
-        className={`${isClicked ? "chip-clicked" : "chip"}`}
+        className={`${isClicked || disabled ? "chip-clicked" : "chip"}`}
         type="button"
         onClick={handleClick}
       >

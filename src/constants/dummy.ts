@@ -710,3 +710,5 @@ export const DUMMY_POSTS: IPostSummary[] = [
     category: ["카테고리3"],
   },
 ];
+
+export const DUMMY_PROJECT_DETAIL = {};

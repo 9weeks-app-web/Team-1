@@ -8,7 +8,7 @@ import { IPortfolioSummary } from "types/portfolio";
 
 function HomePortfolioList() {
   const [category, setCategory] = useState("");
-  const { results } = usePortfolio();
+  const { data } = usePortfolio();
 
   return (
     <>
@@ -27,7 +27,7 @@ function HomePortfolioList() {
       </div>
 
       <CardGrid columnGap="cg-16" rowGap="rg-32">
-        {results[0]?.data?.data.map((el: IPortfolioSummary) => (
+        {data?.data.map((el: IPortfolioSummary) => (
           <PortfolioCard key={el.id} portfolio={el} />
         ))}
       </CardGrid>

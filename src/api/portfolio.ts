@@ -14,6 +14,10 @@ export const getPortfolioCollection = async (docName: string) => {
 
 export const getPortfolioSummaryApi = async () => {
   const response = await getPortfolioCollection("portfolioSummary");
-  console.log("portfolioSummary");
+  return response;
+};
+
+export const getPortfolioDetailApi = async () => {
+  const response = await getPortfolioCollection("portfolioDetail");
   return response;
 };
