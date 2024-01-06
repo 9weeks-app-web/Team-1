@@ -16,12 +16,12 @@ const useMember = () => {
       staleTime: Infinity,
     },
     {
-      queryKey: ["realtime_new_member"],
+      queryKey: ["realtime-new-member"],
       queryFn: getHomeBestMember,
       staleTime: Infinity,
     },
     {
-      queryKey: ["weekly_best_member"],
+      queryKey: ["weekly-best-member"],
       queryFn: getWeeklyBestMember,
       staleTime: Infinity,
     },

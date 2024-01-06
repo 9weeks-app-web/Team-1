@@ -36,7 +36,7 @@ function RecruitPage() {
           {/* 셀렉트 넣기 */}
           <div className="all-of-members">
             {DUMMY_MENTORS.map((el) => (
-              <MentorCard mentor={el} />
+              <MentorCard key={el.id} mentor={el} />
             ))}
           </div>
         </div>
