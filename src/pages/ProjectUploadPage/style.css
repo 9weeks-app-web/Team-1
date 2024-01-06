@@ -159,3 +159,55 @@
 .ql-editor {
   padding-top: 150px !important;
 }
+
+.success-button {
+  cursor: pointer;
+  width: 392px;
+  display: flex;
+  height: 56px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #196aff;
+  color: var(--naver-text, #fff);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  border: none;
+  letter-spacing: 0.036px;
+}
+
+.color-green {
+  color: #42dd57;
+}
+
+.success-head {
+  font-family: Spoqa Han Sans Neo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.048px;
+}
+
+.success-text {
+  color: #030303;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.036px;
+}
+
+.success-container {
+  margin: 0 auto;
+  margin-top: 25vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
