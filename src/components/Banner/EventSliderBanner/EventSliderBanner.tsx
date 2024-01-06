@@ -25,7 +25,7 @@ function EventSliderBanner() {
     >
       {networkingBanner &&
         networkingBanner.map((el: IBanner) => (
-          <SwiperSlide>
+          <SwiperSlide key={el.id}>
             <img src={el.src} alt="" />
           </SwiperSlide>
         ))}

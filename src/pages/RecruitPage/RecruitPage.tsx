@@ -4,8 +4,8 @@ import PageLayout from "components/layout/PageLayout/PageLayout";
 import BestMemberList from "components/project/BestMemberList/BestMemberList";
 import AreaTitle from "components/home/AreaTitle/AreaTitle";
 import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";
-import { DUMMY_MENTORS } from "constants/dummy";
-import MentorCard from "components/Cards/MentorCard/MentorCard";
+import AllOfMemberList from "components/recruit/AllOfMemberList/AllOfMemberList";
+import RecruitSelectorGroup from "components/recruit/RecruitSelectorGroup/RecruitSelectorGroup";
 
 function RecruitPage() {
   return (
@@ -34,11 +34,8 @@ function RecruitPage() {
         <div className="section">
           <AreaTitle text="전체 멤버" />
           {/* 셀렉트 넣기 */}
-          <div className="all-of-members">
-            {DUMMY_MENTORS.map((el) => (
-              <MentorCard mentor={el} />
-            ))}
-          </div>
+          <RecruitSelectorGroup />
+          <AllOfMemberList />
         </div>
       </div>
     </PageLayout>

@@ -14,7 +14,7 @@ function FloatingButton() {
   };
 
   const newPost = () => {
-    navigate("/project/write");
+    navigate("/project/upload");
   };
 
   return (

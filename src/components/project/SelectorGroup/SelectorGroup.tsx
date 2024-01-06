@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
-import DropdownSelector from "components/DropdownSelector/DropdownSelector";
+import SortDropdown from "components/SortDropdown/SortDropdown";
+import Selector from "components/Selector/Selector";
 
 function SelectorGroup() {
   const [period, setPeriod] = useState<string>("");
@@ -22,32 +23,42 @@ function SelectorGroup() {
   const statusOptions = ["전체", "모집 중", "모집 완료"];
 
   return (
-    <div className="selector-group-container">
-      <DropdownSelector
-        options={periodOptions}
-        selectedOption={period}
-        setSelectedOption={setPeriod}
-      />
-      <DropdownSelector
-        options={categoryOptions}
-        selectedOption={category}
-        setSelectedOption={setCategory}
-      />
-      <DropdownSelector
-        options={jobOptions}
-        selectedOption={job}
-        setSelectedOption={setJob}
-      />
-      <DropdownSelector
-        options={methodOptions}
-        selectedOption={method}
-        setSelectedOption={setMethod}
-      />
-      <DropdownSelector
-        options={statusOptions}
-        selectedOption={status}
-        setSelectedOption={setStatus}
-      />
+    <div className="selector-group">
+      <div className="selector-group-container">
+        <Selector
+          options={periodOptions}
+          value={period}
+          setValue={setPeriod}
+          placeholder="기간"
+        />
+        <Selector
+          options={categoryOptions}
+          value={category}
+          setValue={setCategory}
+          placeholder="분야"
+        />
+        <Selector
+          options={jobOptions}
+          value={job}
+          setValue={setJob}
+          placeholder="직무"
+        />
+        <Selector
+          options={methodOptions}
+          value={method}
+          setValue={setMethod}
+          placeholder="진행방식"
+        />
+        <Selector
+          options={statusOptions}
+          value={status}
+          setValue={setStatus}
+          placeholder="모집여부"
+        />
+      </div>
+      <div>
+        <SortDropdown />
+      </div>
     </div>
   );
 }

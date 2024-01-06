@@ -5,6 +5,7 @@ import IconText from "components/IconText/IconText";
 import { convertToKNotation } from "utils/convertToKNotation";
 import RecruitBadge from "components/Badges/RecruitBadge/RecruitBadge";
 import { useNavigate } from "react-router-dom";
+import getDday from "utils/getDday";
 
 interface IProjectBigCardProps {
   project: IProject;
@@ -27,7 +28,13 @@ function ProjectBigCard(props: IProjectBigCardProps) {
               maxCnt={project.maxPeopleCnt}
               nowCnt={project.nowPeopleCnt}
             />
-            <div>D-7</div>
+            <span
+              className={`deadline ${
+                getDday(project.deadline) <= 7 ? "red" : ""
+              }`}
+            >
+              D-{getDday(project.deadline)}
+            </span>
           </div>
           <div className="big-card-info">
             <div className="big-card-title">{project.title}</div>

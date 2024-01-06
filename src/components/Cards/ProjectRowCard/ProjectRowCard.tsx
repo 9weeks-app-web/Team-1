@@ -5,6 +5,7 @@ import { IProject } from "types/project";
 import { convertToKNotation } from "utils/convertToKNotation";
 import IconText from "components/IconText/IconText";
 import { useNavigate } from "react-router-dom";
+import getDday from "utils/getDday";
 
 interface IProjectRowCardProps {
   project: IProject;
@@ -26,8 +27,13 @@ function ProjectRowCard(props: IProjectRowCardProps) {
             nowCnt={project.nowPeopleCnt}
             maxCnt={project.maxPeopleCnt}
           />
-          D-7
-          {/* {project.deadline} */}
+          <span
+            className={`deadline ${
+              getDday(project.deadline) <= 7 ? "red" : ""
+            }`}
+          >
+            D-{getDday(project.deadline)}
+          </span>
         </div>
         <div className="project-info">
           <p className="project-title oneLineEllipsis">{project.title}</p>

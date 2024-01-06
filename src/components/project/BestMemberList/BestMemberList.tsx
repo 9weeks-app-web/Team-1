@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./style.css";
 import MentorRowCard from "components/Cards/MentorRowCard/MentorRowCard";
-import { DUMMY_MENTEES, DUMMY_MENTORS } from "constants/dummy";
 import SinglePickChip from "components/Chips/SinglePickChip/SinglePickChip";
+import useMember from "hooks/useMember";
+import { IMember } from "types/mentor";
 
 function BestMemberList() {
   const [selected, setSelected] = useState("팀원");
+  const members = useMember().results[2].data?.data;
 
   return (
     <div className="bestmember-container">
@@ -26,14 +28,15 @@ function BestMemberList() {
         />
       </div>
       <div className="member-list">
-        {selected === "멘토" &&
-          DUMMY_MENTORS.filter((el) => el.isMentor).map((el) => (
-            <MentorRowCard member={el} />
-          ))}
-        {selected === "팀원" &&
-          DUMMY_MENTEES.filter((el) => !el.isMentor).map((el) => (
-            <MentorRowCard member={el} />
-          ))}
+        {members
+          ? selected === "멘토"
+            ? members
+                .filter((el: IMember) => el.isMentor)
+                .map((el: IMember) => <MentorRowCard key={el.id} member={el} />)
+            : members
+                .filter((el: IMember) => !el.isMentor)
+                .map((el: IMember) => <MentorRowCard key={el.id} member={el} />)
+          : ""}
       </div>
     </div>
   );

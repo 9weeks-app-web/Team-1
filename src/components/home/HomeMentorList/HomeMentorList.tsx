@@ -7,7 +7,6 @@ import { IMember } from "types/mentor";
 function HomeMentorList() {
   const members = useMember().results[0].data?.data;
 
-  console.log(members);
   return (
     <div className="montor-list">
       {members &&

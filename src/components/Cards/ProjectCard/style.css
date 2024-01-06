@@ -1,74 +1,77 @@
-.project-card-container{
-    box-sizing: border-box;
-    width: 295px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    border: 1px solid var(--gray-20);
-    border-radius: 16px;
+.project-card-container {
+  box-sizing: border-box;
+  width: 295px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border: 1px solid var(--gray-20);
+  border-radius: 16px;
 
-    .project-card-thumbnail{
-        width: 295px;
-        height: 150px;
-        border-radius: 12px 12px 0 0 ;
-    }
+  .project-card-thumbnail {
+    width: 295px;
+    height: 150px;
+    border-radius: 12px 12px 0 0;
+  }
 }
 
-.project-card-info{
+.project-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+
+  .recruit-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .project-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 0 20px 20px 20px;
+    gap: 4px;
 
-    .recruit-info{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .project-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--mono-black);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 22.4px */
+      letter-spacing: 0.032px;
     }
 
-    .project-info {
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-
-        .project-title {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: var(--mono-black);
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 140%; /* 22.4px */
-            letter-spacing: 0.032px;
-        }
-
-        .project-description {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            color: var(--gray-70);
-            font-family: Spoqa Han Sans Neo;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 140%; /* 19.6px */
-            letter-spacing: 0.028px;
-        }
+    .project-description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      color: var(--gray-70);
+      font-family: Spoqa Han Sans Neo;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%; /* 19.6px */
+      letter-spacing: 0.028px;
     }
+  }
 
-    .project-category{
-        font-size: 12px;
-        font-weight: bold;
-        letter-spacing: 0.024px;
-        text-overflow: ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-        line-height: 140%; /* 16.8px */
+  .project-category {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.024px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 140%; /* 16.8px */
+  }
 
-    }
+  .sub-info {
+    display: flex;
+    gap: 4px;
+    color: var(--gray-70);
+  }
+}
 
-    .sub-info{
-        display: flex;
-        gap: 4px;
-        color: var(--gray-70);
-    }
+.deadline.red {
+  color: var(--ststem-red);
 }

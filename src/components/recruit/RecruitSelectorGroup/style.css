@@ -1,0 +1,5 @@
+.recruit-selector-group-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}

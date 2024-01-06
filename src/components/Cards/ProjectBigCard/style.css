@@ -50,3 +50,7 @@
     justify-content: space-between;
   }
 }
+
+.deadline.red {
+  color: var(--ststem-red);
+}

@@ -78,3 +78,7 @@
     color: var(--gary-70);
   }
 }
+
+.deadline.red {
+  color: var(--ststem-red);
+}

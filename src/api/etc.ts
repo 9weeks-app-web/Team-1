@@ -38,15 +38,24 @@ export const getMemberCollection = async (docName: string) => {
 
 export const getHomeBestMember = async () => {
   const response = await getMemberCollection("home_best_member");
+  console.log("fetch HomeBestMember");
   return response;
 };
 
 export const getRealtimeNewMember = async () => {
   const response = await getMemberCollection("realtime_new_member");
+  console.log("fetch RealtimeNewMember");
   return response;
 };
 
 export const getWeeklyBestMember = async () => {
   const response = await getMemberCollection("weekly_best_member");
+  console.log("fetch WeeklyBestMember");
+  return response;
+};
+
+export const getAllOfMember = async () => {
+  const response = await getMemberCollection("member_all");
+  console.log("fetch member_all");
   return response;
 };
