@@ -1,0 +1,25 @@
+.sort-dropdown-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+
+  span {
+    color: #727272;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+  }
+  select {
+    border: none;
+    color: #0059ff;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+  }
+}
