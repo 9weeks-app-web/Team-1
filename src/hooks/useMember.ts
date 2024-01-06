@@ -1,4 +1,8 @@
-import { getHomeBestMember, getWeeklyBestMember } from "api/etc";
+import {
+  getAllOfMember,
+  getHomeBestMember,
+  getWeeklyBestMember,
+} from "api/etc";
 import { DocumentData } from "firebase/firestore";
 import { useQueries } from "react-query";
 
@@ -23,6 +27,11 @@ const useMember = () => {
     {
       queryKey: ["weekly-best-member"],
       queryFn: getWeeklyBestMember,
+      staleTime: Infinity,
+    },
+    {
+      queryKey: ["member-all"],
+      queryFn: getAllOfMember,
       staleTime: Infinity,
     },
   ];

@@ -53,3 +53,9 @@ export const getWeeklyBestMember = async () => {
   console.log("fetch WeeklyBestMember");
   return response;
 };
+
+export const getAllOfMember = async () => {
+  const response = await getMemberCollection("member_all");
+  console.log("fetch member_all");
+  return response;
+};
