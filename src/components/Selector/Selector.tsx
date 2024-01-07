@@ -20,7 +20,7 @@ function Selector(props: ISelectorProps) {
       value={value}
       onChange={handleChange}
     >
-      <option value="" selected disabled>
+      <option value="none" defaultValue="" selected disabled>
         {placeholder}
       </option>
       {options.map((el, idx) => (
