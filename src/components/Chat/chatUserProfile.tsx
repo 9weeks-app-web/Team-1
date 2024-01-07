@@ -37,6 +37,7 @@ function ChatUserProfile({
         height="60"
         viewBox="0 0 66 66"
         fill="none"
+        className="profilePicture"
       >
         <ellipse cx="32.3" cy="32.3" rx="32.3" ry="32.3" fill="#D9D9D9" />
       </svg>
