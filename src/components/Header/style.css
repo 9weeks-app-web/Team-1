@@ -1,16 +1,16 @@
 .header-container {
-    z-index: 3000;
-    width: 100vw;
-    background-color: var(--mono-white);
-    position: fixed;
-    display: flex;
-    justify-content: center;    
-    padding: 12px 0;
+  z-index: 100;
+  width: 100vw;
+  background-color: var(--mono-white);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
 }
 
-.header-inner{
-    width: 1240px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.header-inner {
+  width: 1240px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }

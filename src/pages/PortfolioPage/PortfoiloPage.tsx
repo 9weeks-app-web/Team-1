@@ -7,7 +7,7 @@ import HomePortfolioList from "components/home/HomePortfolioList/HomePortfolioLi
 import StaticBanner from "components/Banner/StaticBanner/StaticBanner";
 import { ReactComponent as QA } from "assets/icons/home/QA.svg";
 import { Tab, Tabs } from "@mui/material";
-import PortfolioListTabPanel from "components/PortfolioListTabPanel/PortfolioListTabPanel";
+import CustomTabPanel from "components/CustomTabPanel/CustomTabPanel";
 
 function PortfolioPage() {
   const [value, setValue] = useState(0);
@@ -40,8 +40,8 @@ function PortfolioPage() {
             <Tab label="전체" />
             <Tab label="팔로잉" />
           </Tabs>
-          <PortfolioListTabPanel value={value} index={0} />
-          <PortfolioListTabPanel value={value} index={1} />
+          <CustomTabPanel value={value} index={0} />
+          <CustomTabPanel value={value} index={1} />
         </div>
       </div>
     </PageLayout>

@@ -4,9 +4,10 @@ import IconText from "components/IconText/IconText";
 import { convertToKNotation } from "utils/convertToKNotation";
 // import Badge from "components/Badges/Badge/Badge";
 import Icon from "components/Icon/Icon";
-import { useNavigate } from "react-router-dom";
-import Card from "../Card/Card";
 import "./style.css";
+import { useRecoilState } from "recoil";
+import { portfolioDetailModalState } from "store/modal";
+import Card from "../Card/Card";
 
 interface IPortfolioCardProps {
   portfolio: IPortfolioSummary;
@@ -14,14 +15,16 @@ interface IPortfolioCardProps {
 
 function PortfolioCard(props: IPortfolioCardProps) {
   const { portfolio } = props;
-  const navigate = useNavigate();
+  const [, setModal] = useRecoilState(portfolioDetailModalState);
 
   return (
     <Card width="m">
       <div
         role="presentation"
         className="portfolio-container"
-        onClick={() => navigate(`/portfolio/${portfolio.id}`)}
+        onClick={() => {
+          setModal(true);
+        }}
       >
         {/* category 뱃지 */}
         {/* <Badge type="blue" text={portfolio.category} className="category" /> */}
