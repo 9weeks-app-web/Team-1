@@ -16,9 +16,8 @@ import RecruitPage from "pages/RecruitPage/RecruitPage";
 import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
 import MemberDetail from "pages/MemberDetail/MemberDetail";
-import ScrollToTop from "./ScrollToTop";
 import Alarm from "pages/Alarm";
-
+import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
   return (
