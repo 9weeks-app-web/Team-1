@@ -15,6 +15,7 @@ import CommunityPage from "pages/CommunityPage/CommunityPage";
 import RecruitPage from "pages/RecruitPage/RecruitPage";
 import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
+import Alarm from "pages/Alarm";
 
 function AppRouter() {
   return (
@@ -27,6 +28,8 @@ function AppRouter() {
         <Route path="/registerform" element={<Register />} />
         <Route path="/mypage" element={<MyPage />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
+        <Route path="/alarm" element={<Alarm />} />
+
         <Route path="/chat" element={<Chat />} />
         <Route path="/community" element={<Community />} />
         <Route path="/community" element={<CommunityPage />} />

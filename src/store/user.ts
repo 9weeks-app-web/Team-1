@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/no-extraneous-dependencies
 import { atom } from "recoil";
 import { IUser } from "types/user";
 

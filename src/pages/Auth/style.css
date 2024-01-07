@@ -1,5 +1,10 @@
 .container {
   margin-bottom: 84px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 6.5rem;
+  justify-content: center;
+  align-items: center;
 }
 .is-invalid {
   border-color: red;

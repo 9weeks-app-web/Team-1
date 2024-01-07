@@ -38,7 +38,7 @@ function HeaderGNB() {
       </div>
       <div className="right">
         <SearchBar />
-        <IconButton icon="notifications" onClick={() => alert("ㅎㅇ")} />
+        <IconButton icon="notifications" onClick={() => navigate("/alarm")} />
         <IconButton icon="forum" onClick={() => navigate("/chat")} />
         {/* TODO : 로그인 여부에 따라 다른 컴포넌트 렌더링 */}
         {user ? (
