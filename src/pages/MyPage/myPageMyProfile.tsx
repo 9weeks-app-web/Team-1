@@ -1,6 +1,8 @@
 import React from "react";
 import "./style.css";
 import Switch from "components/Switch";
+import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
+import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
 
 function MyPageMyProfile() {
   return (
@@ -14,6 +16,15 @@ function MyPageMyProfile() {
         <button type="button" className="myPfModifyBtn">
           수정하기
         </button>
+      </div>
+      <div className="mySfacpolio">
+        <h4 className="myProfileTitle">스팩폴리오</h4>
+
+        <div className="portfolio-progress">
+          {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
+            <PortfolioCard key={el.id} portfolio={el} />
+          ))}
+        </div>
       </div>
     </div>
   );

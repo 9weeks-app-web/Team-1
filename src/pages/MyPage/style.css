@@ -16,6 +16,7 @@
     font-size: 2rem;
 }
 .mypage {
+    
     display: flex;
     justify-content: center;
     height: auto;
@@ -24,22 +25,20 @@
 }
 .mypageContainer {
     background-color: transparent;
-    width: 900px;
+    width: 950px;
     height: auto;
     flex-shrink: 0;
-    padding: 1rem;
     font-size: 2rem;
     border:none;
-    margin-left: 20px;
+}
+.mypageView {
+    padding: 0 30px;
 }
 .info {
     font-size: small;
-    padding: 2rem;
+    padding: 0;
 }
-/*aside*/
 
-/*aside 끝*/
-  
 
 /*마이페이지 상세*/
 .myProfileTitle {
@@ -96,7 +95,15 @@
     font-weight: 700;
     float: right;
 }
-
+.mySfacpolio {
+    margin-top: 2.2rem;
+}
+.portfolio-progress {
+    width: 920px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
 
     /*아이콘들 */
 

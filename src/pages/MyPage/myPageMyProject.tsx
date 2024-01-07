@@ -27,7 +27,12 @@ function MyPageMyProject() {
       </button>
 
       <div className="info">
-        {selectedTab === "progress" && <div>참여중인 프로젝트</div>}
+        {selectedTab === "progress" && (
+          <div>
+            {" "}
+            <div className="portfolio-progress" />
+          </div>
+        )}
         {selectedTab === "completed" && <div>완료된 프로젝트</div>}
       </div>
     </div>

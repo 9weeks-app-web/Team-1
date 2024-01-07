@@ -1,8 +1,8 @@
 /* 기본 속성 reset */
-@import "Reset.css";
+@import './Reset.css';
 
 /* 자주 사용하는 클래스 분리 */
-@import "Classes.css";
+@import "./Classes.css";
 
 /* 폰트 import */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);

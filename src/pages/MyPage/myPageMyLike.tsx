@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
+import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
+import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
 
 function MyPageMyLike() {
   const [selectedTab, setSelectedTab] = useState("likePF");
@@ -41,7 +43,14 @@ function MyPageMyLike() {
       </button>
 
       <div className="info">
-        {selectedTab === "likePF" && <div>관심 포트폴리오들</div>}
+        {selectedTab === "likePF" && (
+          <div className="portfolio-progress">
+            {" "}
+            {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
+              <PortfolioCard key={el.id} portfolio={el} />
+            ))}
+          </div>
+        )}
         {selectedTab === "likePJ" && <div>관심 프로젝트들</div>}
         {selectedTab === "likeMember" && <div>관심 팀원들</div>}
         {selectedTab === "likePost" && <div>관심 게시글들</div>}

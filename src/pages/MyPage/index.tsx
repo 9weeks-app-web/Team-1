@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import Aside from "components/MyPageAside/aside";
+import MyPageAside from "components/MyPageAside/aside";
 import MyPageMyProfile from "./myPageMyProfile";
 import MyPageMyProject from "./myPageMyProject";
 import MyPageMyPost from "./myPageMyPost";
@@ -17,12 +17,14 @@ function MyPage() {
     <div className="mypageWrapper">
       <div className="mypageAll">
         <div className="mypage">
-          <Aside onMenuChange={handleMenuChange} />
+          <MyPageAside onMenuChange={handleMenuChange} />
           <div className="mypageContainer">
-            {selectedMenu === "myPageMyProfile" && <MyPageMyProfile />}
-            {selectedMenu === "myPageMyProject" && <MyPageMyProject />}
-            {selectedMenu === "myPageMyPost" && <MyPageMyPost />}
-            {selectedMenu === "myPageMyLike" && <MyPageMyLike />}
+            <div className="mypageView">
+              {selectedMenu === "myPageMyProfile" && <MyPageMyProfile />}
+              {selectedMenu === "myPageMyProject" && <MyPageMyProject />}
+              {selectedMenu === "myPageMyPost" && <MyPageMyPost />}
+              {selectedMenu === "myPageMyLike" && <MyPageMyLike />}
+            </div>
           </div>
         </div>
       </div>
