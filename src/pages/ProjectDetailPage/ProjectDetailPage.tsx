@@ -15,7 +15,9 @@ function ProjectDetailPage() {
     <PageLayout>
       <div className="project-detail-page-content">
         <div className="project-detail-inner">
-          <h1 className="title">세미프로젝트 - 걱정 공유[디자이너 모집]</h1>
+          <h1 className="project-title">
+            세미프로젝트 - 걱정 공유[디자이너 모집]
+          </h1>
           <div className="project-detail-section1 justify-between">
             {/* 1번줄 (작성자, 좋아요, 댓글, 조회수) */}
             <div className="flex-row justify-between">
