@@ -1,0 +1,11 @@
+.hot-project-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .hot-project-rowcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

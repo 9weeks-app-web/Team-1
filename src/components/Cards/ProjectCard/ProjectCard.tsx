@@ -3,6 +3,8 @@ import { IProject } from "types/project";
 import RecruitBadge from "components/Badges/RecruitBadge/RecruitBadge";
 import IconText from "components/IconText/IconText";
 import { convertToKNotation } from "utils/convertToKNotation";
+import { useNavigate } from "react-router-dom";
+import getDday from "utils/getDday";
 import Card from "../Card/Card";
 import "./style.css";
 
@@ -12,9 +14,15 @@ interface IProjectCardProps {
 
 function ProjectCard(props: IProjectCardProps) {
   const { project } = props;
+  const navigate = useNavigate();
+
   return (
     <Card width="m">
-      <div className="project-card-container">
+      <div
+        role="presentation"
+        onClick={() => navigate(`/project/${project.id}`)}
+        className="project-card-container"
+      >
         <img
           className="project-card-thumbnail"
           src={project.thumbnail}
@@ -26,11 +34,17 @@ function ProjectCard(props: IProjectCardProps) {
               nowCnt={project.nowPeopleCnt}
               maxCnt={project.maxPeopleCnt}
             />
-            {project.deadline}
+            <span
+              className={`deadline ${
+                getDday(project.deadline) <= 7 ? "red" : ""
+              }`}
+            >
+              D-{getDday(project.deadline)}
+            </span>
           </div>
           <div className="project-info">
             <p className="project-title oneLineEllipsis">{project.title}</p>
-            <p className="project-description oneLineEllipsis">
+            <p className="project-description twoLineEllipsis">
               {project.description}
             </p>
           </div>

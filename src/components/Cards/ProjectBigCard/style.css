@@ -1,0 +1,56 @@
+.big-card {
+  cursor: pointer;
+  box-sizing: border-box;
+  width: 560px;
+  height: 610px;
+  background: #fff;
+  border: 1px solid var(--gray-20);
+  border-radius: 16px;
+
+  .big-card-info-container {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .big-card-thumbnail {
+    width: 560px;
+    height: 343px;
+    border-radius: 16px 16px 0px 0px;
+  }
+
+  .big-card-badge {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .big-card-title {
+    overflow: hidden;
+    color: #000;
+
+    text-overflow: ellipsis;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+  }
+  .sub-info {
+    display: flex;
+    gap: 10px;
+
+    color: var(--gary-70);
+  }
+
+  .big-card-category {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.deadline.red {
+  color: var(--ststem-red);
+}

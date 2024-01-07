@@ -15,38 +15,38 @@ body {
 /* CSS 변수 정의 */
 :root {
   /* Core */
-  --gray-5: #F3F3F3;
-  --gray-10: #E6E6E6;
-  --gray-20: #CCCCCC;
-  --gray-30: #B3B3B3;
+  --gray-5: #f3f3f3;
+  --gray-10: #e6e6e6;
+  --gray-20: #cccccc;
+  --gray-30: #b3b3b3;
   --gray-40: #999999;
   --gray-50: #808080;
   --gray-60: #666666;
-  --gray-70: #4D4D4D;
+  --gray-70: #4d4d4d;
   --gray-80: #333333;
-  --gray-90: #1A1A1A;
+  --gray-90: #1a1a1a;
   --gray-100: #030303;
 
   --mono-white: #fff;
   --mono-black: #000;
 
-  --blue-5: #F5F8FF;
-  --blue-10: #E5EEFF;
-  --blue-20: #CCDEFF;
-  --blue-30: #B2CDFF;
-  --blue-40: #99BDFF;
-  --blue-50: #7FACFF;
-  --blue-60: #669BFF;
-  --blue-70: #4C8BFF;
-  --blue-80: #337AFF;
-  --blue-90: #196AFF;
-  --blue-100: #0059FF;
+  --blue-5: #f5f8ff;
+  --blue-10: #e5eeff;
+  --blue-20: #ccdeff;
+  --blue-30: #b2cdff;
+  --blue-40: #99bdff;
+  --blue-50: #7facff;
+  --blue-60: #669bff;
+  --blue-70: #4c8bff;
+  --blue-80: #337aff;
+  --blue-90: #196aff;
+  --blue-100: #0059ff;
 
-  --ststem-red: #FF3333;
-  --ststem-green: #42DD57;
+  --ststem-red: #ff3333;
+  --ststem-green: #42dd57;
 
-  --background-5: #F8F8F9;
-  --background-50: #A9A9A9;
+  --background-5: #f8f8f9;
+  --background-50: #a9a9a9;
   --background-100: #666666;
   --background-50-opacity: rgba(0, 0, 0, 0.3);
   --background-blue: var(--blue-5);
@@ -55,16 +55,16 @@ body {
   --border-10: var(--gray-10);
   --border-blue: var(--blue-40);
 
-  --violet-20: #F0E3FF;
-  --violet-40: #E9A3FF;
-  --violet-100: #AA21D4;
+  --violet-20: #f0e3ff;
+  --violet-40: #e9a3ff;
+  --violet-100: #aa21d4;
 
-  --orange-20: #FFDDC5;
-  --orange-40: #FEA260;
-  --orange-100: #E75504;
+  --orange-20: #ffddc5;
+  --orange-40: #fea260;
+  --orange-100: #e75504;
 
-  --teal-20: #DBFFFE;
-  --teal-40: #5ED7D7;
+  --teal-20: #dbfffe;
+  --teal-40: #5ed7d7;
   --teal-100: #019898;
 
   --line-height: 140%;

@@ -12,6 +12,7 @@ interface IIconProps {
  */
 function Icon(props: IIconProps) {
   const { icon, className } = props;
+
   return (
     <span className={`material-symbols-outlined ${className && className}`}>
       {icon}

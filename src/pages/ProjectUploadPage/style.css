@@ -1,0 +1,213 @@
+.project-upload-page-contents {
+  width: 1240px;
+  margin: 0 auto;
+  margin-top: 72px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 72px;
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+  }
+
+  .button-group {
+    button {
+      border-radius: 8px;
+      border: 1px solid #e6e6e6;
+      background: #fff;
+      display: flex;
+      padding: 8px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .done {
+      background-color: var(--blue-100);
+      color: #fff;
+    }
+  }
+
+  .stack-input {
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 12px;
+    color: #808080;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+    height: 40px;
+  }
+
+  .date-input {
+    width: 140px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 0 12px;
+    color: #808080;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+    height: 40px;
+  }
+
+  .people-select {
+    border-radius: 8px;
+    width: 160px;
+    padding: 0 12px;
+    height: 40px;
+    border: 1px solid #ccc;
+    color: #808080;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+  }
+}
+
+.title-header {
+  overflow: hidden;
+  color: #1a1a1a;
+  text-overflow: ellipsis;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 39.2px */
+  letter-spacing: 0.056px;
+}
+
+.title-input {
+  display: flex;
+  padding: 15px 24px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: var(--naver-text, #fff);
+  color: #b3b3b3;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 21px */
+  letter-spacing: 0.03px;
+}
+
+.text-editor {
+  height: 720px;
+}
+
+.editor {
+  border-radius: 8px;
+  position: relative;
+}
+
+.quill.text-editor,
+.ql-toolbar.ql-snow,
+.ql-editor.ql-blank,
+.ql-container.ql-snow {
+  border-radius: 8px !important;
+}
+.editor-introduce {
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 80px;
+  line-height: 80px;
+
+  .introduce-text {
+    border-radius: 8px;
+    height: 80px;
+    line-height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f8ff;
+    width: 1192px;
+    color: #000;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+  }
+
+  .blue {
+    color: var(--blue-100);
+    background: none;
+  }
+}
+.ql-editor {
+  padding-top: 150px !important;
+}
+
+.success-button {
+  cursor: pointer;
+  width: 392px;
+  display: flex;
+  height: 56px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 16px;
+  background: #196aff;
+  color: var(--naver-text, #fff);
+  font-family: Spoqa Han Sans Neo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  border: none;
+  letter-spacing: 0.036px;
+}
+
+.color-green {
+  color: #42dd57;
+}
+
+.success-head {
+  font-family: Spoqa Han Sans Neo;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 33.6px */
+  letter-spacing: 0.048px;
+}
+
+.success-text {
+  color: #030303;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.036px;
+}
+
+.success-container {
+  margin: 0 auto;
+  margin-top: 25vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}

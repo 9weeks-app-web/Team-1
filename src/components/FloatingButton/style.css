@@ -1,0 +1,42 @@
+.floating-button-container {
+  z-index: 100;
+  position: fixed;
+  bottom: 84px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+
+  .to-top {
+    cursor: pointer;
+    width: 72px;
+    height: 72px;
+    padding: 10px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--mono-white);
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .big-icon {
+      font-size: 72px;
+    }
+  }
+  .edit {
+    cursor: pointer;
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+    background-color: var(--blue-100);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+}

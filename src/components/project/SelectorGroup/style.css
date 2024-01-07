@@ -1,0 +1,10 @@
+.selector-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.selector-group-container {
+  display: flex;
+  gap: 16px;
+}

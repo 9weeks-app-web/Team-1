@@ -1,42 +1,89 @@
-.mentorcard-container{
-    width: 188px;
+.mentorcard-container {
+  width: 232px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+  padding: 40px 32px;
+  border-radius: 16px;
+  border: 1px solid var(--gray-20);
+  box-sizing: border-box;
+
+  .mentorcard-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    div {
+      border-radius: 16px 0;
+      height: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .mentor-name {
+    overflow: hidden;
+    color: #030303;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 25.2px */
+    letter-spacing: 0.036px;
+  }
+
+  .rating {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+
+    .rating-text {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 19.6px */
+      letter-spacing: 0.028px;
+    }
+
+    .rating-icon {
+      color: var(--blue-80);
+    }
+  }
+  .profile-img {
+    width: 164px;
+    height: 164px;
+    border-radius: 100px;
+    object-fit: cover;
+  }
+
+  .mentorcard-info {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    text-align: center;
-    padding: 24px;
-    border-radius: 16px;
-    border: 1px solid var(--gray-20);
-    box-sizing: border-box;
+    gap: 8px;
+  }
 
-    .profile-img {
-        width: 140px;
-        height: 140px;
-        background: var(--gray-20);
-        border-radius: 100px;
+  .info-line {
+    display: flex;
+    gap: 8px;
+
+    .info-line-title {
+      color: var(--gray-50);
     }
 
-    .info {
-        width: 140px;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        font-size: var(--body-font-size);
-
-        .name {
-            font-size: var(--h4-font-size);
-            text-overflow: ellipsis;
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .occupation{
-            color: var(--gray-50);
-        }
-
-        .introduction {
-           
-        }
+    .info-line-content {
+      color: var(--gray-60);
     }
+  }
 }

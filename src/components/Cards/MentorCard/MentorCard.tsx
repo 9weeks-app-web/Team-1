@@ -1,26 +1,45 @@
 import React from "react";
-import { IMentor } from "types/mentor";
-import Card from "../Card/Card";
+import { IMember } from "types/mentor";
+import MentoringBadge from "components/Badges/MentoringBadge/MentoringBadge";
 import "./style.css";
+import Icon from "components/Icon/Icon";
 
 interface IMentorCardProps {
-  mentor: IMentor;
+  mentor: IMember;
 }
 
 function MentorCard(props: IMentorCardProps) {
   const { mentor } = props;
 
   return (
-    <Card width="s">
-      <div className="mentorcard-container">
-        <img className="profile-img" src={mentor.profileImg ?? ""} alt="" />
-        <div className="info">
-          <p className="name">{mentor.name}</p>
-          <p className="occupation">{mentor.occupation}</p>
-          <p className="introduction twoLineEllipsis">{mentor.introduction}</p>
+    <div className="mentorcard-container">
+      <div className="mentorcard-badge">
+        <MentoringBadge isMentor={mentor.isMentor} />
+      </div>
+      <div>
+        <div className="mentor-name">{mentor.name}</div>
+        <div className="rating">
+          <Icon icon="star" className="rating-icon" />
+          <span className="rating-text">{mentor.rating}</span>
         </div>
       </div>
-    </Card>
+      <img className="profile-img" src={mentor.profileImg ?? ""} alt="" />
+      <div className="mentorcard-info">
+        <div>
+          <p className="info-line">
+            <span className="info-line-title">직무</span>
+            <span className="info-line-content">{mentor.occupation}</span>
+          </p>
+          <p className="info-line">
+            <span className="info-line-title">경력</span>
+            <span className="info-line-content">{mentor.career}</span>
+          </p>
+        </div>
+        <p className="info-line">
+          <span className="info-line-content">{mentor.occupation}</span>
+        </p>
+      </div>
+    </div>
   );
 }
 
