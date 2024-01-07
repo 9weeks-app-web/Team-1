@@ -16,12 +16,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 100%;
 
   .shortcut-info {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .title {
       color: #000;
@@ -41,4 +40,8 @@
       letter-spacing: 0.04px;
     }
   }
+}
+
+.justify-center {
+  justify-content: center;
 }

@@ -45,4 +45,11 @@
       letter-spacing: 0.034px;
     }
   }
+
+  .static-banner-right {
+    svg {
+      width: 127px;
+      height: 127px;
+    }
+  }
 }
