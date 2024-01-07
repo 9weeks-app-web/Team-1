@@ -215,7 +215,7 @@ function ProjectUploadPage() {
         <button
           type="button"
           className="success-button"
-          onClick={() => navigate("/project")}
+          onClick={() => navigate("/project/1")}
         >
           게시글 확인하기
         </button>

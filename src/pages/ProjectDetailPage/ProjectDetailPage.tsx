@@ -15,7 +15,7 @@ function ProjectDetailPage() {
     <PageLayout>
       <div className="project-detail-page-content">
         <div className="project-detail-inner">
-          <h1 className="project-title">
+          <h1 className="project-detail-title">
             세미프로젝트 - 걱정 공유[디자이너 모집]
           </h1>
           <div className="project-detail-section1 justify-between">

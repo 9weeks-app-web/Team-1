@@ -1,7 +1,7 @@
 .portfolio-page-container {
   min-height: calc(100vh - 116px);
   position: relative;
-  padding : 116px 0 84px 0;
+  padding: 116px 0 84px 0;
   display: flex;
   flex-direction: column;
   gap: 44px;
@@ -17,8 +17,15 @@
   gap: 72px;
 
   .section {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.svg-35 {
+  span {
+    font-size: 35px;
+    color: var(--blue-100);
   }
 }

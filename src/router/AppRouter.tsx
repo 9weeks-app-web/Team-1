@@ -12,11 +12,14 @@ import CommunityPage from "pages/CommunityPage/CommunityPage";
 import RecruitPage from "pages/RecruitPage/RecruitPage";
 import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
+import MemberDetail from "pages/MemberDetail/MemberDetail";
+import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
   return (
     <BrowserRouter>
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
@@ -29,7 +32,10 @@ function AppRouter() {
           <Route path="upload" element={<ProjectUploadPage />} />
           <Route path=":id" element={<ProjectDetailPage />} />
         </Route>
-        <Route path="/recruit" element={<RecruitPage />} />
+        <Route path="/recruit">
+          <Route path="" element={<RecruitPage />} />
+          <Route path=":id" element={<MemberDetail />} />
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
