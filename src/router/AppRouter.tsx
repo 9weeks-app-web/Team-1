@@ -17,6 +17,7 @@ import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
 import MemberDetail from "pages/MemberDetail/MemberDetail";
 import Alarm from "pages/Alarm";
+import PortfolioModal from "components/Modal/PortfolioModal/PortfolioModal";
 import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
@@ -46,6 +47,7 @@ function AppRouter() {
           <Route path=":id" element={<MemberDetail />} />
         </Route>
       </Routes>
+      <PortfolioModal />
       <Footer />
     </BrowserRouter>
   );
