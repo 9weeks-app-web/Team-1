@@ -1,6 +1,5 @@
 /* eslint-disable prettier/prettier */
 import * as React from "react";
-import Button from "@mui/material/Button";
 import Modal from "@mui/material/Modal";
 import { useRecoilState } from "recoil";
 import { portfolioDetailModalState } from "store/modal";
@@ -14,7 +13,6 @@ export default function PortfolioModal() {
     portfolioDetailModalState
   );
 
-  const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setPortfolioModalState(false);
     setOpen(false);
@@ -26,7 +24,6 @@ export default function PortfolioModal() {
 
   return (
     <div>
-      <Button onClick={handleOpen}>Open modal</Button>
       <Modal
         className="modal"
         open={open}
