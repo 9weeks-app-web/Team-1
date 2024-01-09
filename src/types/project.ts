@@ -14,3 +14,12 @@ export interface IProject {
 export interface IProjectDetail extends IProject {
   writer: string;
 }
+
+export interface IProjectReviewSummary {
+  id: number;
+  profileImg: string;
+  writer: string;
+  date: string;
+  rating: number;
+  content: string;
+}

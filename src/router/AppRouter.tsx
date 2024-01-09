@@ -15,9 +15,9 @@ import CommunityPage from "pages/CommunityPage/CommunityPage";
 import RecruitPage from "pages/RecruitPage/RecruitPage";
 import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
-import MemberDetail from "pages/MemberDetail/MemberDetail";
 import Alarm from "pages/Alarm";
 import PortfolioModal from "components/Modal/PortfolioModal/PortfolioModal";
+import RecruitDetailPage from "pages/RecruitDetailPage/RecruitDetailPage";
 import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
@@ -44,7 +44,7 @@ function AppRouter() {
         </Route>
         <Route path="/recruit">
           <Route path="" element={<RecruitPage />} />
-          <Route path=":id" element={<MemberDetail />} />
+          <Route path=":id" element={<RecruitDetailPage />} />
         </Route>
       </Routes>
       <PortfolioModal />

@@ -1,4 +1,5 @@
 .mentor-row-card {
+  cursor: pointer;
   position: relative;
   width: 600px;
   height: 200px;

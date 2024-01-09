@@ -194,7 +194,7 @@ function ProjectDetailPage() {
                 <span className="tag-badge">#취업</span>
               </div>
               <div className="circle-button-group">
-                <div className="circle-button">
+                <div className="circle-button like">
                   <Icon icon="favorite" />
                   <span>좋아요</span>
                 </div>

@@ -119,6 +119,7 @@ b {
     border-radius: 100px;
     border: 0.923px solid #b3b3b3;
   }
+  
   .circle-button-group {
     display: flex;
     flex-direction: row;
@@ -138,6 +139,11 @@ b {
     border-radius: 100px;
     border: 1px solid #e6e6e6;
     gap: 5px;
+  }
+  
+  .like{
+    background-color: rgba(170, 33, 212, 1);
+    color: white;
   }
 }
 

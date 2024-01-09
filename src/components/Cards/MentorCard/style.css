@@ -1,4 +1,5 @@
 .mentorcard-container {
+  cursor:pointer;
   width: 232px;
   position: relative;
   display: flex;

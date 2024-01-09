@@ -2,7 +2,59 @@ import { IPostSummary } from "types/community";
 import { IBannerInfo } from "types/home";
 import { IMember } from "types/mentor";
 import { IPortfolioSummary } from "types/portfolio";
-import { IProject } from "types/project";
+import { IProject, IProjectReviewSummary } from "types/project";
+
+export const DUMMY_REVIEWS: IProjectReviewSummary[] = [
+  {
+    id: 1,
+    profileImg: "path/to/profile1.jpg",
+    writer: "John Doe",
+    date: "2024-01-09",
+    rating: 4.5,
+    content: "This is a great project! I really enjoyed working on it.",
+  },
+  {
+    id: 2,
+    profileImg: "path/to/profile2.jpg",
+    writer: "Jane Smith",
+    date: "2024-01-08",
+    rating: 3.8,
+    content: "The project had some challenges, but overall a good experience.",
+  },
+  {
+    id: 3,
+    profileImg: "path/to/profile3.jpg",
+    writer: "Alice Johnson",
+    date: "2024-01-07",
+    rating: 5.0,
+    content: "Fantastic project and teamwork! Highly recommended.",
+  },
+  {
+    id: 4,
+    profileImg: "path/to/profile4.jpg",
+    writer: "Bob Williams",
+    date: "2024-01-06",
+    rating: 4.2,
+    content: "Enjoyed the collaboration. Looking forward to future projects.",
+  },
+  {
+    id: 5,
+    profileImg: "path/to/profile5.jpg",
+    writer: "Eva Davis",
+    date: "2024-01-05",
+    rating: 4.7,
+    content:
+      "A well-managed project with clear goals. Happy to be a part of it.",
+  },
+  {
+    id: 6,
+    profileImg: "path/to/profile6.jpg",
+    writer: "Michael Brown",
+    date: "2024-01-04",
+    rating: 3.5,
+    content: "Decent project, but there were some communication issues.",
+  },
+];
 
 export const DUMMY_MENTORS: IMember[] = [
   {
