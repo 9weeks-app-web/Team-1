@@ -1,13 +1,13 @@
 import React from "react";
 import "./style.css";
-import Switch from "components/Switch";
-import PortfolioCard from "components/Cards/PortfolioCard/PortfolioCard";
+// import Switch from "components/Switch";
 import { DUMMY_PORTFOLIO_SUMMARY } from "constants/dummy";
+import MyPagePFCard from "components/Cards/MyPagePFCard";
 
 function MyPageMyProfile() {
   return (
     <div>
-      <h4 className="myProfileTitle">프로필 소개</h4>
+      {/* <h4 className="myProfileTitle">프로필 소개</h4>
       <div className="myProfileinfo">
         <Switch />
         <div className="myProfileInfoTitle">소개 제목을 입력해 주세요.</div>
@@ -18,14 +18,16 @@ function MyPageMyProfile() {
         </button>
       </div>
       <div className="mySfacpolio">
-        <h4 className="myProfileTitle">스팩폴리오</h4>
-
-        <div className="portfolio-progress">
-          {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
-            <PortfolioCard key={el.id} portfolio={el} />
-          ))}
-        </div>
+        <h4 className="myProfileTitle">스팩폴리오</h4> */}
+      <div className="mypagePfCount">
+        전체 <p>3</p>
       </div>
+      <div className="portfolio-progress">
+        {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
+          <MyPagePFCard key={el.id} portfolio={el} />
+        ))}
+      </div>
+      {/* </div> */}
     </div>
   );
 }
