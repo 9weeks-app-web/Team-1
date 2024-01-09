@@ -1,32 +1,38 @@
 .free-topic-container{
     display: flex;
     flex-direction: column;
-    gap: 72px;
+    gap: 20px;
+    width: 100%;
 }
 
-.now-floating-post-list {
+.free-topic-header{
     display: flex;
-    flex-direction: column;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.now-floating-post{
-    width: 420px;
-}
-
-.area-title {
-    color: #030303;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    color: #1A1A1A;
     font-family: Spoqa Han Sans Neo;
-    font-size: 20px;
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 28px */
-    letter-spacing: 0.04px;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+
+    svg{
+        width: 52px;
+        height: 52px;
+    }
 }
 
-.section {
+.menus{
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-menus{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
 }

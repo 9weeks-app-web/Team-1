@@ -7,6 +7,7 @@
 }
 
 .shortcut-card {
+  cursor: pointer;
   width: 610px;
   height: 150px;
   border-radius: 12px;
@@ -17,6 +18,11 @@
   flex-direction: row;
   justify-content: space-between;
 
+  .icon{
+    font-size: 70px;
+    color: #337AFF;
+  }
+  
   .shortcut-info {
     display: flex;
     flex-direction: column;

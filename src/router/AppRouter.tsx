@@ -17,6 +17,11 @@ import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
 import Alarm from "pages/Alarm";
 import PortfolioModal from "components/Modal/PortfolioModal/PortfolioModal";
 import RecruitDetailPage from "pages/RecruitDetailPage/RecruitDetailPage";
+import AllSubPage from "pages/Community/AllSubPage/AllSubPage";
+import FreeTopicSubPage from "pages/Community/FreeTopicSubPage/FreeTopicSubPage";
+import ReviewsSubPage from "pages/Community/ReviewsSubPage/ReviewsSubPage";
+import WorriesSubPage from "pages/Community/WorriesSubPage/WorriesSubPage";
+import QnASubPage from "pages/Community/QnASubPage/QnASubPage";
 import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
@@ -34,7 +39,13 @@ function AppRouter() {
         <Route path="/alarm" element={<Alarm />} />
 
         <Route path="/chat" element={<Chat />} />
-        <Route path="/community" element={<Community />} />
+        <Route path="/community" element={<Community />}>
+          <Route index element={<AllSubPage />} />
+          <Route path="free" element={<FreeTopicSubPage />} />
+          <Route path="qna" element={<QnASubPage />} />
+          <Route path="worries" element={<WorriesSubPage />} />
+          <Route path="reviews" element={<ReviewsSubPage />} />
+        </Route>
         <Route path="/project">
           <Route path="" element={<ProjectPage />} />
           <Route path="upload" element={<ProjectUploadPage />} />

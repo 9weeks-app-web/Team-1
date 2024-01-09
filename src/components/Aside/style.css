@@ -38,7 +38,6 @@
   overflow: hidden;
   z-index: 1; 
   transition: color 0.3s ease; 
-
 }
 
 .asideList ul li::before {
@@ -59,4 +58,27 @@
   
   .asideList ul li:hover::before {
     width: 100%;
+  }
+
+  .icon-label{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    span{
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        fill: #4d4d4d;
+
+        path{
+          fill: #4d4d4d;
+        }
+      }
+    }
   }
