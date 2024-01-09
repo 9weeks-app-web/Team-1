@@ -10,7 +10,7 @@
   display: flex;
   padding: 40px 28px;
   align-items: flex-start;
-  gap: 20px;
+  gap: 16px;
 
   .mentor-profileImg {
     width: 113px;
@@ -44,11 +44,51 @@
     gap: 4px;
   }
 }
-
+.member-badges{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+}
 .member-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+  color: var(--Colors-Grey-Black, #000);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.04px;
+
+  .best-icon {
+    color: #FFDF38;
+  }
 }
 
 .member-rating {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+  overflow: hidden;
+  color: #4D4D4D;
+  text-overflow: ellipsis;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+
+  .star-icon {
+    color: var(--blue-100);
+  }
 }
 
 .member-introduction {
@@ -57,4 +97,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.sub-info{
+  display: flex;
+  align-items: center;
+  color: #808080;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+
+  span {
+    color: #666;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+  }
 }
