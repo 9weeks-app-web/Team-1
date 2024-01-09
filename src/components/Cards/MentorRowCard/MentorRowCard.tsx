@@ -29,9 +29,8 @@ function MentorRowCard(props: IMentorRowCard) {
       <div className="member-info">
         <div>
           <p className="member-name">
-            <Icon icon="trophy" className="best-icon" />
-            {isBest && <Icon icon="trophy" />}
-            {isNew && <span>NEW</span>}
+            {isBest && <Icon icon="trophy" className="best-icon" />}
+            {isNew && <span className="violet-color">NEW</span>}
             {member.name}
           </p>
           <p className="member-rating">

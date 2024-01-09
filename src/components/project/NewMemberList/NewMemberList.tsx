@@ -33,12 +33,12 @@ function NewMemberList() {
             ? members
                 .filter((el: IMember) => el.isMentor)
                 .map((el: IMember) => (
-                  <MentorRowCard key={el.id} member={el} isBest />
+                  <MentorRowCard key={el.id} member={el} isNew />
                 ))
             : members
                 .filter((el: IMember) => !el.isMentor)
                 .map((el: IMember) => (
-                  <MentorRowCard key={el.id} member={el} isBest />
+                  <MentorRowCard key={el.id} member={el} isNew />
                 ))
           : ""}
       </div>

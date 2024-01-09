@@ -6,6 +6,7 @@ import AreaTitle from "components/home/AreaTitle/AreaTitle";
 import EventSliderBanner from "components/Banner/EventSliderBanner/EventSliderBanner";
 import AllOfMemberList from "components/recruit/AllOfMemberList/AllOfMemberList";
 import RecruitSelectorGroup from "components/recruit/RecruitSelectorGroup/RecruitSelectorGroup";
+import NewMemberList from "components/project/NewMemberList/NewMemberList";
 
 function RecruitPage() {
   return (
@@ -18,9 +19,9 @@ function RecruitPage() {
             <BestMemberList />
           </div>
           <div className="weekly-best-member">
-            {/* 이번 주 베스트 멤버 */}
+            {/* 실시간 NEW 멤버 */}
             <AreaTitle text="실시간 NEW 멤버" />
-            <BestMemberList />
+            <NewMemberList />
           </div>
         </div>
         <div className="section">
