@@ -11,7 +11,6 @@ import Footer from "components/Footer/Footer";
 import Community from "pages/Community";
 import Register from "pages/Auth/Register";
 import ProjectPage from "pages/ProjectPage/ProjectPage";
-import CommunityPage from "pages/CommunityPage/CommunityPage";
 import RecruitPage from "pages/RecruitPage/RecruitPage";
 import ProjectDetailPage from "pages/ProjectDetailPage/ProjectDetailPage";
 import ProjectUploadPage from "pages/ProjectUploadPage/ProjectUploadPage";
@@ -36,7 +35,6 @@ function AppRouter() {
 
         <Route path="/chat" element={<Chat />} />
         <Route path="/community" element={<Community />} />
-        <Route path="/community" element={<CommunityPage />} />
         <Route path="/project">
           <Route path="" element={<ProjectPage />} />
           <Route path="upload" element={<ProjectUploadPage />} />

@@ -1,0 +1,32 @@
+.free-topic-container{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.now-floating-post-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.now-floating-post{
+    width: 420px;
+}
+
+.area-title {
+    color: #030303;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.04px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
