@@ -1,0 +1,38 @@
+.free-topic-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.free-topic-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    color: #1A1A1A;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+
+    svg{
+        width: 52px;
+        height: 52px;
+    }
+}
+
+.menus{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-menus{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}

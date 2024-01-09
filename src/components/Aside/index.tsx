@@ -1,10 +1,10 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import "./style.css";
 
 type AsideProps = {
   onMenuChange: (menu: string) => void;
   menuTitle: { label: string };
-  menuItems: { label: string; menu: string }[];
+  menuItems: { icon: ReactNode; label: string; menu: string }[];
 };
 
 function Aside({ onMenuChange, menuTitle, menuItems }: AsideProps) {
@@ -15,7 +15,10 @@ function Aside({ onMenuChange, menuTitle, menuItems }: AsideProps) {
         <ul>
           {menuItems.map((item) => (
             <li key={item.menu} onClick={() => onMenuChange(item.menu)}>
-              {item.label}
+              <div className="icon-label">
+                <span>{item.icon}</span>
+                {item.label}
+              </div>
             </li>
           ))}
         </ul>

@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import { IMember } from "types/mentor";
 import MentoringBadge from "components/Badges/MentoringBadge/MentoringBadge";
+import { useNavigate } from "react-router-dom";
 
 interface IMentorRowCard {
   member: IMember;
@@ -9,9 +10,14 @@ interface IMentorRowCard {
 
 function MentorRowCard(props: IMentorRowCard) {
   const { member } = props;
+  const navigate = useNavigate();
 
   return (
-    <div className="mentor-row-card">
+    <div
+      className="mentor-row-card"
+      role="presentation"
+      onClick={() => navigate("/recruit/1")}
+    >
       <div className="mentorcard-badge">
         <MentoringBadge isMentor={member.isMentor} />
       </div>

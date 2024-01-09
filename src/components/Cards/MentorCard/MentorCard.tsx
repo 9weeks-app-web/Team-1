@@ -3,6 +3,7 @@ import { IMember } from "types/mentor";
 import MentoringBadge from "components/Badges/MentoringBadge/MentoringBadge";
 import "./style.css";
 import Icon from "components/Icon/Icon";
+import { useNavigate } from "react-router-dom";
 
 interface IMentorCardProps {
   mentor: IMember;
@@ -10,12 +11,18 @@ interface IMentorCardProps {
 
 function MentorCard(props: IMentorCardProps) {
   const { mentor } = props;
+  const navigate = useNavigate();
 
   return (
-    <div className="mentorcard-container">
+    <div
+      className="mentorcard-container"
+      role="presentation"
+      onClick={() => navigate("/recruit/1")}
+    >
       <div className="mentorcard-badge">
         <MentoringBadge isMentor={mentor.isMentor} />
       </div>
+      <img className="profile-img" src={mentor.profileImg ?? ""} alt="" />
       <div>
         <div className="mentor-name">{mentor.name}</div>
         <div className="rating">
@@ -23,7 +30,6 @@ function MentorCard(props: IMentorCardProps) {
           <span className="rating-text">{mentor.rating}</span>
         </div>
       </div>
-      <img className="profile-img" src={mentor.profileImg ?? ""} alt="" />
       <div className="mentorcard-info">
         <div>
           <p className="info-line">

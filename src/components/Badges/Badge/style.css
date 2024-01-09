@@ -11,6 +11,12 @@
     font-weight: var(--badge-font-weight);
 }
 
+.normal{
+    background-color: #fff;
+    color: black;
+    border: 0.923px solid #B3B3B3;
+}
+
 .blue {
     background-color: var(--blue-10);
     color: var(--blue-100);

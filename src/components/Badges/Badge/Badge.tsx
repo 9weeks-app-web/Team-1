@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 
 interface IBadgeProps {
-  type: "blue" | "teal" | "violet" | "orange";
+  type: "blue" | "teal" | "violet" | "orange" | "normal";
   text: string;
   className?: string;
 }

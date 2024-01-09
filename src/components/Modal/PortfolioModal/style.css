@@ -66,11 +66,90 @@
 
 .portfolio-section {
   width: 1040px;
+  color: white;
 
   img {
     width: 1040px;
     object-fit: scale-down;
   }
+}
+
+.portfolio-bottom-menu{
+  padding: 72px 0;
+}
+
+.portfolio-button-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px ;
+
+  button {
+    cursor: pointer;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    width: 150px;
+    padding: 8px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+  }
+}
+
+.portfolio-info{
+  text-align: center;
+}
+
+.portfolio-info-title{
+  color: #FFF;
+  text-align: center;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.04px;
+  margin-bottom: 8px;
+}
+
+.portfolio-info-content{
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+  margin-bottom: 20px;
+
+}
+
+.portfolio-info-options{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: #B3B3B3;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 13.363px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 18.708px */
+  letter-spacing: 0.027px;
+  margin-bottom: 72px;
 }
 
 .portfolio-sidebar {
@@ -95,6 +174,7 @@
 }
 
 .menu-circle {
+  cursor: pointer;
   width: 52px;
   height: 52px;
   border-radius: 100px;
@@ -112,21 +192,32 @@
   }
 }
 
+.like {
+  background-color: #AA21D4;
+  color: white;
+}
+
 .comment-area {
   width: 1040px;
   padding: 72px 0;
   background-color: #fff;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .comment-input-group {
+  width: 952px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 16px;
-  align-items: end;
   margin-bottom: 72px;
 }
 
 .comment-field {
+  width: 952px;
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -145,7 +236,64 @@
   border-radius: 8px;
 }
 
+.comment-header{
+  box-sizing: border-box;
+  padding: 0 44px;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: start;
+  color: #1A1A1A;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.04px;
+
+  .comment-cnt{
+    color: #999;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+  }
+}
+
+.commnet-menu{
+  color: #808080;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+}
+
+.comment-writer {
+  color: #1A1A1A;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.032px;
+}
+
+.comment-time {
+  color: #666;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+}
+
 .comment-list-group {
+  box-sizing: border-box;
+  width: 952px;
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 24px;
