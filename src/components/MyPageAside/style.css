@@ -1,11 +1,13 @@
 .mypageAside {
-    background-color: #fff;
+    border-radius: 12px;
+    background: #FFF;
     border: none;
     font-size: 2rem;
-    width: 295px;
-    height: 90vh;
+    width: 280px;
+    height: 855px;
+    box-sizing: border-box;
     flex-shrink: 0;
-    margin-top: -2rem;
+    margin: 0 20px 34px 24px ;
 }
 .mypageAside .myProfileSec {
     display: flex;
@@ -15,17 +17,15 @@
     padding: 20px 20px 0 20px;
 }
 .myProfileName {
-    width: 45px;
     height: 33px;
     flex-shrink: 0;
     color: #1A1A1A;
     font-family: Spoqa Han Sans Neo;
     font-size: 24px;
-    font-style: normal;
+    font-style: normal; 
     font-weight: 700;
     line-height: 140%; /* 33.6px */
     letter-spacing: 0.048px;
-    margin: 10px;
 }
 .myProfilePositions {
     color: #1A1A1A;
@@ -34,11 +34,13 @@
     font-style: normal;
     font-weight: 700;
     line-height: 140%; /* 22.4px */
-    letter-spacing: 0.032px;}
+    letter-spacing: 0.032px;
+    margin: 8px 0 20px 0;
+}
 
 .myProfilePicture {
-    width: 125px;
-    height: 125px;
+    width: 135px;
+    height: 135px;
     flex-shrink: 0;    
     background: #D6DADF;
     border-radius: 125px;
@@ -46,25 +48,86 @@
 }
 .profileFollowBtn {
     display: flex;
+    flex-direction: row;
     width: 100%;
     height: 60px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
-    gap: 10px 50px;
+    gap: 10px 20px;
     flex-wrap: wrap;
 }
 .profileFollowBtn a{
+    width: 40px;
     text-decoration: none;
-    text-align: center;
     color: #4D4D4D;
+    text-align: center;
     font-family: Spoqa Han Sans Neo;
-    font-size: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+}
+.profileFollowBtn a strong {
+    color: #4D4D4D;
+    text-align: center;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 28px */
-    letter-spacing: 0.04px;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+    margin: 2px 4px;
 }
+.profileSetBtn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 240px;
+    align-items: center;
+    gap: 10px;
+    margin-top: 38px;
+}
+.profileSetBtn .myprofileSetBtn {
+    width: 240px;
+    height: 40px;
+    padding: 8px 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: none;
+    background: #0059FF;
+    color: #FFF;
+    text-align: center;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+}
+.accountSetBtn {
+    display: flex;
+    width: 240px;
+    height: 40px;
+    padding: 8px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 100px;
+    border: 1px solid #0059FF;
+    background: #FFF;
+    color: #0059FF;
+    text-align: center;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+}
+
 .mypageAside ul {
     list-style: none;
     padding-left: 0;

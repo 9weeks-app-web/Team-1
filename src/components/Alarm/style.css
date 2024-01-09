@@ -1,0 +1,72 @@
+.alarmMsg {
+    display: flex;
+    width: 1240px;
+    height: 107px;
+    padding: 16px 28px;
+    align-items: center;
+    gap: 28px;
+    border-radius: 16px;
+    background: #FFF;
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  
+  .profile-pic {
+    width: 50px; /* 이미지 크기 */
+    height: 50px; /* 이미지 크기 */
+    border-radius: 50%; /* 이미지 원형으로 */
+    margin-right: 12px; /* 이미지와 메시지 사이의 마진 */
+  }
+  
+  .alarm-content {
+    flex: 1;
+  }
+  .alarmTitle {
+    display: flex;
+    color: #333;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: 0.034px;
+  }
+  .alarm-content .alarmTitle  p {
+    color: #030303;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 0.034px; 
+ }
+  
+ 
+  .alarmMsg {
+    color: #030303;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+
+  }
+  .alarmCardFooter {
+    display: flex;
+    gap: 10px;
+    color: #666;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+    margin-top: 12px;
+  }
+  .alarmCtg {
+
+  }
+  .time-stamp {
+  }
+  
