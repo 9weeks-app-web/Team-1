@@ -22,6 +22,7 @@ import FreeTopicSubPage from "pages/Community/FreeTopicSubPage/FreeTopicSubPage"
 import ReviewsSubPage from "pages/Community/ReviewsSubPage/ReviewsSubPage";
 import WorriesSubPage from "pages/Community/WorriesSubPage/WorriesSubPage";
 import QnASubPage from "pages/Community/QnASubPage/QnASubPage";
+import CommunityDetailPage from "pages/Community/CommunityDetailPage/CommunityDetailPage";
 import ScrollToTop from "./ScrollToTop";
 
 function AppRouter() {
@@ -39,6 +40,8 @@ function AppRouter() {
         <Route path="/alarm" element={<Alarm />} />
 
         <Route path="/chat" element={<Chat />} />
+
+        <Route path="/community/:id" element={<CommunityDetailPage />} />
         <Route path="/community" element={<Community />}>
           <Route index element={<AllSubPage />} />
           <Route path="free" element={<FreeTopicSubPage />} />
@@ -46,11 +49,13 @@ function AppRouter() {
           <Route path="worries" element={<WorriesSubPage />} />
           <Route path="reviews" element={<ReviewsSubPage />} />
         </Route>
+
         <Route path="/project">
           <Route path="" element={<ProjectPage />} />
           <Route path="upload" element={<ProjectUploadPage />} />
           <Route path=":id" element={<ProjectDetailPage />} />
         </Route>
+
         <Route path="/recruit">
           <Route path="" element={<RecruitPage />} />
           <Route path=":id" element={<RecruitDetailPage />} />

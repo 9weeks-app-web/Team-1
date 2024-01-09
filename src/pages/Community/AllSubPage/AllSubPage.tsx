@@ -3,6 +3,7 @@ import "./style.css";
 import Badge from "components/Badges/Badge/Badge";
 import IconText from "components/IconText/IconText";
 import { Pagination } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 function AllSubPage() {
   const keywords = [
@@ -26,6 +27,7 @@ function AllSubPage() {
     "부트캠프 후기",
     "게임 기획",
   ];
+  const navigate = useNavigate();
 
   return (
     <div className="all-container">
@@ -34,7 +36,11 @@ function AllSubPage() {
         <div className="area-title">지금 뜨는 게시글</div>
         <div className="now-floating-post-list">
           {/* 게시글 하나 */}
-          <div className="now-floating-post">
+          <div
+            className="now-floating-post"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="number">1</div>
             <div className="flex-column gap-8">
               <p className="now-post-title oneLineEllipsis">
@@ -47,7 +53,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="now-floating-post">
+          <div
+            className="now-floating-post"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="number">2</div>
             <div className="flex-column gap-8">
               <p className="now-post-title oneLineEllipsis">
@@ -60,7 +70,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="now-floating-post">
+          <div
+            className="now-floating-post"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="number">3</div>
             <div className="flex-column gap-8">
               <p className="now-post-title oneLineEllipsis">
@@ -73,7 +87,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="now-floating-post">
+          <div
+            className="now-floating-post"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="number">4</div>
             <div className="flex-column gap-8">
               <p className="now-post-title oneLineEllipsis">
@@ -86,7 +104,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="now-floating-post">
+          <div
+            className="now-floating-post"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="number">5</div>
             <div className="flex-column gap-8">
               <p className="now-post-title oneLineEllipsis">
@@ -99,7 +121,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="now-floating-post">
+          <div
+            className="now-floating-post"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="number">6</div>
             <div className="flex-column gap-8">
               <p className="now-post-title oneLineEllipsis">
@@ -128,7 +154,11 @@ function AllSubPage() {
         <div className="area-title">전체 게시글</div>
         <div className="all-post-list">
           {/* 게시글 하나 */}
-          <div className="post-container">
+          <div
+            className="post-container"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="post-inner">
               <div className="">
                 <div className="flex-row gap-12 mb-12">
@@ -168,7 +198,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="post-container">
+          <div
+            className="post-container"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="post-inner">
               <div className="">
                 <div className="flex-row gap-12 mb-12">
@@ -208,7 +242,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="post-container">
+          <div
+            className="post-container"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="post-inner">
               <div className="">
                 <div className="flex-row gap-12 mb-12">
@@ -248,7 +286,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="post-container">
+          <div
+            className="post-container"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="post-inner">
               <div className="">
                 <div className="flex-row gap-12 mb-12">
@@ -288,7 +330,11 @@ function AllSubPage() {
           </div>
 
           {/* 게시글 하나 */}
-          <div className="post-container">
+          <div
+            className="post-container"
+            role="presentation"
+            onClick={() => navigate("/community/1")}
+          >
             <div className="post-inner">
               <div className="">
                 <div className="flex-row gap-12 mb-12">

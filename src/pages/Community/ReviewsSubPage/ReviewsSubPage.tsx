@@ -6,11 +6,13 @@ import Badge from "components/Badges/Badge/Badge";
 import IconText from "components/IconText/IconText";
 import { Pagination } from "@mui/material";
 import { ReactComponent as Review } from "assets/icons/home/Review.svg";
+import { useNavigate } from "react-router-dom";
 
 function ReviewsSubPage() {
   const jobOptions = ["기획", "디자인"];
   const secondOptions = ["전체", "옵션1", "옵션2"];
   const [selectedJob, setSelectedJob] = useState("");
+  const navigate = useNavigate();
   const [selectedSecond, setSelectedSecond] = useState("");
 
   return (
@@ -44,7 +46,11 @@ function ReviewsSubPage() {
           <div className="area-title">전체 게시글</div>
           <div className="all-post-list">
             {/* 게시글 하나 */}
-            <div className="post-container">
+            <div
+              className="post-container"
+              role="presentation"
+              onClick={() => navigate("/community/1")}
+            >
               <div className="post-inner">
                 <div className="">
                   <div className="flex-row gap-12 mb-12">
@@ -84,7 +90,11 @@ function ReviewsSubPage() {
             </div>
 
             {/* 게시글 하나 */}
-            <div className="post-container">
+            <div
+              className="post-container"
+              role="presentation"
+              onClick={() => navigate("/community/1")}
+            >
               <div className="post-inner">
                 <div className="">
                   <div className="flex-row gap-12 mb-12">
@@ -124,7 +134,11 @@ function ReviewsSubPage() {
             </div>
 
             {/* 게시글 하나 */}
-            <div className="post-container">
+            <div
+              className="post-container"
+              role="presentation"
+              onClick={() => navigate("/community/1")}
+            >
               <div className="post-inner">
                 <div className="">
                   <div className="flex-row gap-12 mb-12">
@@ -164,7 +178,11 @@ function ReviewsSubPage() {
             </div>
 
             {/* 게시글 하나 */}
-            <div className="post-container">
+            <div
+              className="post-container"
+              role="presentation"
+              onClick={() => navigate("/community/1")}
+            >
               <div className="post-inner">
                 <div className="">
                   <div className="flex-row gap-12 mb-12">
@@ -204,7 +222,11 @@ function ReviewsSubPage() {
             </div>
 
             {/* 게시글 하나 */}
-            <div className="post-container">
+            <div
+              className="post-container"
+              role="presentation"
+              onClick={() => navigate("/community/1")}
+            >
               <div className="post-inner">
                 <div className="">
                   <div className="flex-row gap-12 mb-12">

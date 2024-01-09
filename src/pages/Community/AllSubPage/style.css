@@ -13,6 +13,7 @@
 }
 
 .now-floating-post{
+    cursor: pointer;
     width: 420px;
     height: 50px;
     display: flex;
@@ -79,6 +80,7 @@
 }
 
 .post-container{
+    cursor: pointer;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
