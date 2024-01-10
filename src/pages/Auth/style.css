@@ -1,5 +1,4 @@
 .container {
-  margin-bottom: 84px;
   display: flex;
   flex-direction: column;
   padding-top: 6.5rem;
@@ -15,11 +14,39 @@
 .auth-center {
   display: flex;
   justify-content: center;
+  align-items: center;
+  
 }
 .auth-title {
-  margin: 40px 0 44px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0px 46px 0px;
+  align-items: center;
 
 }
+.resigterGroup {
+  display: flex; 
+  gap: 10px;
+  color: #666;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+  margin-top: 20px;
+}
+.resigterBtn {
+  color: #1A1A1A;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+  text-decoration-line: underline;
+}
+
 .login-title {
   display: flex;
   flex-direction: column;
@@ -152,22 +179,6 @@ form .login-field-title, .login-field-title-pwd {
 }
 .sns-btn-kakao, .sns-btn-naver, .sns-btn-google, .sns-btn-apple {
   cursor: pointer;
-}
-.resigterGroup {
-  margin-bottom: 84px;
-  display: flex; 
-  gap: 10px;
-  color: #666;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700; 
-  line-height: 140%;
-  letter-spacing: 0.036px;
-  margin-top: 44px;
-}
-.resigterBtn {
-  text-decoration-line: underline;
 }
 .hrLine {
   width: 586px;
