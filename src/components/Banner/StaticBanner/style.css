@@ -17,7 +17,6 @@
     gap: 28px;
 
     .banner-title {
-      color: #0059ff;
       font-family: Spoqa Han Sans Neo;
       font-size: 24px;
       font-style: normal;
@@ -34,7 +33,8 @@
       align-items: center;
       gap: 10px;
       border-radius: 12px;
-      background: #7facff;
+      background: var(--blue-100);
+      cursor: pointer;
       border: none;
       color: #fff;
       font-family: Spoqa Han Sans Neo;
@@ -43,6 +43,10 @@
       font-weight: 700;
       line-height: 140%; /* 23.8px */
       letter-spacing: 0.034px;
+      transition: all 0.1s;
+    }
+    .move-button:hover{
+        opacity: 0.8;
     }
   }
 

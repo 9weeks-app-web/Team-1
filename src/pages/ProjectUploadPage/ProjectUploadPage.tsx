@@ -156,7 +156,7 @@ function ProjectUploadPage() {
                     />
                   </span>
                   <span className="flex-row gap-8">
-                    연락방법
+                    오픈 채팅방
                     <input
                       className="stack-input"
                       placeholder="오픈 채팅방 등 링크를 입력해주세요"

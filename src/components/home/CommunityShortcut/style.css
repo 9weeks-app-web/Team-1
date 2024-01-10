@@ -6,7 +6,24 @@
   gap: 20px;
 }
 
+.shortcut-card:hover{
+  background: #337AFF;
+  
+  .shortcut-info > *{
+    color: white!important;
+  }
+
+  .icon{
+    color: #e5eeff;
+  }
+
+  svg > *{
+    fill: #e5eeff;
+  }
+}
+
 .shortcut-card {
+  transition: all 0.2s;
   cursor: pointer;
   width: 610px;
   height: 150px;
