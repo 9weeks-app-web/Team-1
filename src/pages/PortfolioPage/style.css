@@ -1,3 +1,7 @@
+.tabs *{
+  font-family: Spoqa Han Sans Neo!important;
+}
+
 .portfolio-page-container {
   min-height: calc(100vh - 116px);
   position: relative;

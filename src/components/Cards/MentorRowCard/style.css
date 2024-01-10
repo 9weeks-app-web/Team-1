@@ -112,7 +112,6 @@
   display: flex;
   align-items: center;
   color: #808080;
-  font-family: Spoqa Han Sans Neo;
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
@@ -121,10 +120,8 @@
 
   span {
     color: #666;
-    font-family: Spoqa Han Sans Neo;
     font-size: 14px;
     font-style: normal;
-    font-weight: 700;
     line-height: 140%; /* 22.4px */
     letter-spacing: 0.032px;
   }

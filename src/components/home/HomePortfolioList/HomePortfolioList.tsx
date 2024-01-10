@@ -7,7 +7,7 @@ import usePortfolio from "hooks/usePortfolio";
 import { IPortfolioSummary } from "types/portfolio";
 
 function HomePortfolioList() {
-  const [category, setCategory] = useState("");
+  const [category, setCategory] = useState("디자인");
   const { data } = usePortfolio();
 
   return (
@@ -27,9 +27,12 @@ function HomePortfolioList() {
       </div>
 
       <CardGrid columnGap="cg-16" rowGap="rg-32">
-        {data?.data.map((el: IPortfolioSummary) => (
-          <PortfolioCard key={el.id} portfolio={el} />
-        ))}
+        {data?.data
+          .filter((el: IPortfolioSummary) => el.category === category)
+          .map(
+            (el: IPortfolioSummary, idx: number) =>
+              idx < 8 && <PortfolioCard key={el.id} portfolio={el} />,
+          )}
       </CardGrid>
     </>
   );

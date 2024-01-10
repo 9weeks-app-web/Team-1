@@ -6,7 +6,7 @@ import useMember from "hooks/useMember";
 import { IMember } from "types/mentor";
 
 function NewMemberList() {
-  const [selected, setSelected] = useState("팀원");
+  const [selected, setSelected] = useState("멘토");
   const members = useMember().results[2].data?.data;
 
   return (

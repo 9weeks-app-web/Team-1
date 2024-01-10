@@ -33,6 +33,7 @@ function PortfolioPage() {
         <div className="section">
           <AreaTitle text="전체 포트폴리오" />
           <Tabs
+            className="tabs"
             value={value}
             aria-label="basic tabs example"
             onChange={(_, v: number) => setValue(v)}
