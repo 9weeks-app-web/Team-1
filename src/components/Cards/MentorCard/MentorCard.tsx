@@ -45,6 +45,35 @@ function MentorCard(props: IMentorCardProps) {
           <span className="info-line-content">{mentor.introduction}</span>
         </p>
       </div>
+      <div className="card__overlay">
+        <div className="overlay__text">
+          <button
+            type="button"
+            className="overlay-btn"
+            onClick={(event) => {
+              event.stopPropagation();
+              alert(`${mentor.name}님을 팔로우하였습니다!`);
+            }}
+          >
+            팔로우
+          </button>
+          <button
+            type="button"
+            className="overlay-btn"
+            onClick={(event) => {
+              event.stopPropagation();
+              if (window.confirm(`${mentor.name}님께 채팅을 하시겠습니까?`)) {
+                navigate("/chat");
+              }
+            }}
+          >
+            채팅하기
+          </button>
+          <button type="button" className="bg-blue overlay-btn">
+            상세정보
+          </button>
+        </div>
+      </div>
     </div>
   );
 }
