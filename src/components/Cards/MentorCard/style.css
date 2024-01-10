@@ -84,6 +84,7 @@
     }
 
     .info-line-content {
+      text-align: start;
       color: var(--gray-60);
     }
   }
