@@ -1,0 +1,190 @@
+.recruit-detail-page-contents {
+    width: 1240px;
+    margin: 0 auto;
+    margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 40px;
+  
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+    }
+}
+
+.recruit-detail-header{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    .recruit-detail-header-first{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        img {
+            width: 160px;
+            height: 160px;
+            border-radius: 100px;
+        }
+    }
+}
+
+.recruit-detail-header-second{
+    display: flex;
+    gap: 8px;
+
+}
+
+.recruit-detail-profile { 
+    gap: 40px;
+    align-items: center;
+
+    .name {
+        color: #000;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 39.2px */
+        letter-spacing: 0.056px;
+    }
+
+    .follow {
+        color: #4D4D4D;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+    }
+}
+
+.recruit-detail-button-group{
+    display: flex;
+    gap: 24px;
+    height: 38px;
+
+    button {
+        display: flex;
+        padding: 8px 24px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        border: 1px solid #E6E6E6;
+        background: #FFF;   
+        color: #1A1A1A;
+        text-align: center;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 22.4px */
+        letter-spacing: 0.032px;
+    }
+
+    .primary {
+        background-color: var(--blue-100);
+        color: white;
+    }
+}
+
+.oneline-intro{
+    height: 22px;
+    align-self: stretch;
+    overflow: hidden;
+    color: #000;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+}
+
+.recruit-detail-profile{
+    display: flex;
+}
+
+.section-title{
+    height: 28px;
+    align-self: stretch;
+    overflow: hidden;
+    color: var(--Colors-Grey-Black, #000);
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 33.6px */
+    letter-spacing: 0.048px;
+}
+
+.project-reviews {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.section-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--Colors-Grey-Black, #000);
+    white-space: nowrap;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+
+    .bold{
+        overflow: hidden;
+        color: #333;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 22.4px */
+        letter-spacing: 0.032px;
+    }
+}
+
+
+.circle-button-group {
+    margin: 120px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .circle-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 72px;
+    height: 72px;
+    border-radius: 100px;
+    border: 1px solid #e6e6e6;
+    gap: 5px;
+  }
+
+  .like{
+    background-color: rgba(170, 33, 212, 1);
+    color: white;
+  }

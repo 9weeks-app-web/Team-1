@@ -5,12 +5,14 @@ import HeaderGNB from "./HeaderGNB/HeaderGNB";
 
 function Header() {
   return (
-    <div className="header-container">
-      <div className="header-inner">
-        <HeaderServiceNav />
-        <HeaderGNB />
+    <>
+      <HeaderServiceNav />
+      <div className="header-container">
+        <div className="header-inner">
+          <HeaderGNB />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

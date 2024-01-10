@@ -119,6 +119,7 @@ b {
     border-radius: 100px;
     border: 0.923px solid #b3b3b3;
   }
+  
   .circle-button-group {
     display: flex;
     flex-direction: row;
@@ -139,9 +140,14 @@ b {
     border: 1px solid #e6e6e6;
     gap: 5px;
   }
+  
+  .like{
+    background-color: rgba(170, 33, 212, 1);
+    color: white;
+  }
 }
 
-.comment-input-group {
+.project-comment-input-group {
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -149,7 +155,7 @@ b {
   margin-bottom: 72px;
 }
 
-.comment-field {
+.project-comment-field {
   border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
@@ -159,7 +165,7 @@ b {
   padding-top: 0;
 }
 
-.comment-submit-button {
+.project-comment-submit-button {
   width: 90px;
   border: none;
   background: var(--blue-100);
@@ -168,7 +174,61 @@ b {
   border-radius: 8px;
 }
 
-.comment-list-group {
+.project-comment-header{
+  box-sizing: border-box;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: start;
+  color: #1A1A1A;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.04px;
+
+  .comment-cnt{
+    color: #999;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 22.4px */
+    letter-spacing: 0.032px;
+  }
+}
+
+.project-commnet-menu{
+  color: #808080;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+}
+
+.project-comment-writer {
+  color: #1A1A1A;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 22.4px */
+  letter-spacing: 0.032px;
+}
+
+.project-comment-time {
+  color: #666;
+  font-family: Spoqa Han Sans Neo;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
+}
+
+.project-comment-list-group {
   border: 1px solid #ccc;
   border-radius: 12px;
   padding: 24px;
@@ -177,7 +237,7 @@ b {
   gap: 20px;
 }
 
-.comment {
+.project-comment {
   padding: 16px;
 
   img {

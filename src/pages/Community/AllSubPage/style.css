@@ -1,0 +1,203 @@
+.all-container{
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.now-floating-post-list {
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.post-inner-first{
+    align-items: center;
+}
+
+.now-floating-post {
+    cursor: pointer;
+    width: 420px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .number{
+        border-radius: 8px;
+        background-color: #669BFF;
+        width: 28px;
+        height: 28px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #FFF;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 28px */
+        letter-spacing: 0.04px;
+    }
+
+    .now-post-title {
+        color: #030303;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%; /* 22.4px */
+        letter-spacing: 0.032px;
+    }
+
+    .now-post-content{
+        color: #666;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.028px;
+    }
+}
+
+.keyword-badge-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+
+    .badge{
+        cursor: pointer;
+        height: 36px;
+        padding: 8px 16px;
+        font-size: 15px;
+        line-height: 15px;
+    }
+}
+
+.all-post-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-container{
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+
+    .post-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+            width: 215px;
+            height: 136px;
+        }
+
+        .mb-12{
+            margin-bottom: 12px;
+        }
+        .post-title{
+            overflow: hidden;
+            color: #030303;
+            text-overflow: ellipsis;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 140%; /* 22.4px */
+            letter-spacing: 0.032px;
+        }
+
+        .post-content {
+            min-height: 60px;
+            overflow: hidden;
+            color: #333;
+            text-overflow: ellipsis;
+            font-family: Spoqa Han Sans Neo;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; /* 19.6px */
+            letter-spacing: 0.028px;
+        }
+    }
+
+    .post-bottom{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        color: #666;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.028px;
+    }
+
+    .category{
+        border-radius: 6px;
+        background: #E5EEFF;display: flex;
+        padding: 8px 10px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        color: #196AFF;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 140%; /* 16.8px */
+        letter-spacing: 0.024px;
+        margin-bottom: 0;
+    }
+
+    .category-text{
+        overflow: hidden;
+        color: #808080;
+        text-align: right;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Spoqa Han Sans Neo;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 19.6px */
+        letter-spacing: 0.028px;
+    }
+}
+
+.pagination{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 52px;
+}
+
+.area-title {
+    color: #030303;
+    font-family: Spoqa Han Sans Neo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.04px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

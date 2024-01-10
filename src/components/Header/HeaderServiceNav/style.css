@@ -1,12 +1,31 @@
+.bg-gray{
+    position: fixed;
+    z-index: 101;
+    width: 100%;
+    background-color: #F8F8F9;
+}
+
+.bg-white{
+    background-color: #fff;
+    border: 1px solid #E6E6E6;
+    border-top: 0;
+    border-bottom: 0;
+}
 .header-service-nav-container {
+    width: 1240px;
     height: 40px;
     line-height: 40px;
     display: flex;
     flex-direction: row;
     gap: 12px;
+    margin: 0 auto;
 
     li {
-        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
         color: var(--gray-100);
         font-size: 14px;
         font-style: normal;
