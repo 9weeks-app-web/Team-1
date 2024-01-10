@@ -33,7 +33,9 @@ function PortfolioCard(props: IPortfolioCardProps) {
         {portfolio.isVerified && <Icon className="verified" icon="verified" />}
 
         {/* 카드 내용 */}
-        <img className="thumbnail" src={portfolio.thumbnail ?? ""} alt="" />
+        <div className="thumbnail-container">
+          <img className="thumbnail" src={portfolio.thumbnail ?? ""} alt="" />
+        </div>
         <div className="card-info">
           <div className="card-first">
             <img

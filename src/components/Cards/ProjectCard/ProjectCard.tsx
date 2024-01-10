@@ -23,11 +23,13 @@ function ProjectCard(props: IProjectCardProps) {
         onClick={() => navigate(`/project/${project.id}`)}
         className="project-card-container"
       >
-        <img
-          className="project-card-thumbnail"
-          src={project.thumbnail}
-          alt=""
-        />
+        <div className="project-card-thumbnail-container">
+          <img
+            className="project-card-thumbnail"
+            src={project.thumbnail}
+            alt=""
+          />
+        </div>
         <div className="project-card-info">
           <div className="recruit-info">
             <RecruitBadge

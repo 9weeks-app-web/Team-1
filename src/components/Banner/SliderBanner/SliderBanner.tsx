@@ -1,8 +1,9 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./style.css";
 import useBanners from "hooks/useBanners";
 import { IBannerInfo } from "types/home";
@@ -14,12 +15,10 @@ function SliderBanner() {
     <Swiper
       slidesPerView="auto"
       spaceBetween={30}
-      autoplay={{ delay: 2000, disableOnInteraction: false }}
+      autoplay={{ delay: 3000, disableOnInteraction: true }}
       centeredSlides
-      pagination={{
-        clickable: true,
-      }}
-      modules={[Autoplay]}
+      navigation
+      modules={[Navigation, Autoplay]}
       loop
       className="mySwiper main-slider-banner"
     >

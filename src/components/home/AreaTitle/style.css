@@ -10,6 +10,7 @@
     }
 
     .view-all-button {
+        font-family: Spoqa Han Sans Neo;
         border: none;
         background: none;
         color: var(--gray-60);
