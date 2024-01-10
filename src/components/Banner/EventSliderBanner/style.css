@@ -1,37 +1,3 @@
-.swiper-button-prev {
-  position: absolute;
-  left: 500px;
-  background-color: #fff;
-  opacity: 0.8;
-  color: black;
-  width: 32px;
-  height: 32px;
-  padding: 12px;
-  border-radius: 100px;
-}
-
-.swiper-button-next:after{
-  font-weight: bold;
-  font-size: 32px;
-}
-
-.swiper-button-next {
-  position: absolute;
-  right: 500px;
-  background-color: #fff;
-  opacity: 0.8;
-  color: black;
-  width: 32px;
-  height: 32px;
-  padding: 12px;
-  border-radius: 100px;
-}
-
-.swiper-button-prev:after{
-  font-weight: bold;
-  font-size: 32px;
-}
-
 .event-slider-banner {
   width: 100%;
 
@@ -59,5 +25,34 @@
       border-radius: 12px;
       transform: scale(1.05);
     }
+  }
+  .swiper-button-prev {
+    background-color: #fff;
+    opacity: 0.8;
+    color: black;
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 100px;
+  }
+  
+  .swiper-button-next:after{
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .swiper-button-next {
+    background-color: #fff;
+    opacity: 0.8;
+    color: black;
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 100px;
+  }
+  
+  .swiper-button-prev:after{
+    font-weight: bold;
+    font-size: 24px;
   }
 }

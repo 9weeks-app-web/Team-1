@@ -1,5 +1,7 @@
 import React from "react";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css/navigation";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./style.css";
@@ -11,22 +13,19 @@ interface IBanner {
 }
 function EventSliderBanner() {
   const networkingBanner = useBanners().results[1].data?.data;
-  const swiper = useSwiper();
 
   return (
     <Swiper
       className="mySwiper event-slider-banner"
       slidesPerView="auto"
       spaceBetween={30}
-      modules={[]}
+      navigation
+      modules={[Navigation]}
       pagination={{
         clickable: true,
       }}
       loop
     >
-      <button type="button" onClick={() => swiper.slideNext()}>
-        next
-      </button>
       {networkingBanner &&
         networkingBanner.map((el: IBanner) => (
           <SwiperSlide key={el.id}>

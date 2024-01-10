@@ -1,7 +1,42 @@
-.banner-container{
-}
+
 
 .main-slider-banner{
+  .index-indicator{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(275%,200%);
+    z-index:100;
+    display: flex;
+    gap: 2px;
+
+    .indicator-icon {
+      border: none;
+      display: flex;
+      height: 36px;
+      padding: 6px 6px 6px 8px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50px 0px 0px 50px;
+      background: rgba(255, 255, 255, 0.80)
+    }
+
+    .indicator-text {
+      display: flex;
+      padding: 7px 22px 9px 14px;
+      align-items: center;
+      border-radius: 0px 50px 50px 0px;
+      background: rgba(255, 255, 255, 0.80);
+      color: #333;
+      font-family: Spoqa Han Sans Neo;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 19.6px */
+      letter-spacing: 0.028px;
+    }
+  }
+
 /* swiper lib 커스텀 */
 .swiper-slide {
     width: 964px!important;
@@ -37,4 +72,38 @@
 .swiper-wrapper{
     align-items: center;
 }
+
+.swiper-button-prev {
+    position: absolute;
+    left: 500px;
+    background-color: #fff;
+    opacity: 0.8;
+    color: black;
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 100px;
+  }
+  
+  .swiper-button-next:after{
+    font-weight: bold;
+    font-size: 24px;
+  }
+  
+  .swiper-button-next {
+    position: absolute;
+    right: 500px;
+    background-color: #fff;
+    opacity: 0.8;
+    color: black;
+    width: 32px;
+    height: 32px;
+    padding: 12px;
+    border-radius: 100px;
+  }
+  
+  .swiper-button-prev:after{
+    font-weight: bold;
+    font-size: 24px;
+  }
 }
