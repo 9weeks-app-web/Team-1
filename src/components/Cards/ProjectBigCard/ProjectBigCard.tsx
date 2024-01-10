@@ -21,7 +21,9 @@ function ProjectBigCard(props: IProjectBigCardProps) {
         role="presentation"
         onClick={() => navigate(`/project/${project.id}`)}
       >
-        <img className="big-card-thumbnail" src={project.thumbnail} alt="" />
+        <div className="big-card-thumbnail-container">
+          <img className="big-card-thumbnail" src={project.thumbnail} alt="" />
+        </div>
         <div className="big-card-info-container">
           <div className="big-card-badge">
             <RecruitBadge

@@ -20,7 +20,9 @@ function ProjectRowCard(props: IProjectRowCardProps) {
       role="presentation"
       onClick={() => navigate(`/project/${project.id}`)}
     >
-      <img className="project-row-thumbnail" src={project.thumbnail} alt="" />
+      <div className="project-row-thumbnail-container">
+        <img className="project-row-thumbnail" src={project.thumbnail} alt="" />
+      </div>
       <div className="project-row-info">
         <div className="recruit-info">
           <RecruitBadge
