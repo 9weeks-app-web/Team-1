@@ -161,7 +161,7 @@ function AllSubPage() {
           >
             <div className="post-inner">
               <div className="">
-                <div className="flex-row gap-12 mb-12">
+                <div className="post-inner-first flex-row gap-12 mb-12">
                   <div className="category">포트폴리오 Q&A</div>
                   <span className="category-text">15분 전 · 신입</span>
                 </div>
@@ -205,7 +205,7 @@ function AllSubPage() {
           >
             <div className="post-inner">
               <div className="">
-                <div className="flex-row gap-12 mb-12">
+                <div className="post-inner-first flex-row gap-12 mb-12">
                   <div className="category">포트폴리오 Q&A</div>
                   <span className="category-text">15분 전 · 신입</span>
                 </div>
@@ -249,7 +249,7 @@ function AllSubPage() {
           >
             <div className="post-inner">
               <div className="">
-                <div className="flex-row gap-12 mb-12">
+                <div className="post-inner-first flex-row gap-12 mb-12">
                   <div className="category">포트폴리오 Q&A</div>
                   <span className="category-text">15분 전 · 신입</span>
                 </div>
@@ -293,7 +293,7 @@ function AllSubPage() {
           >
             <div className="post-inner">
               <div className="">
-                <div className="flex-row gap-12 mb-12">
+                <div className="post-inner-first flex-row gap-12 mb-12">
                   <div className="category">포트폴리오 Q&A</div>
                   <span className="category-text">15분 전 · 신입</span>
                 </div>
@@ -337,7 +337,7 @@ function AllSubPage() {
           >
             <div className="post-inner">
               <div className="">
-                <div className="flex-row gap-12 mb-12">
+                <div className="post-inner-first flex-row gap-12 mb-12">
                   <div className="category">포트폴리오 Q&A</div>
                   <span className="category-text">15분 전 · 신입</span>
                 </div>

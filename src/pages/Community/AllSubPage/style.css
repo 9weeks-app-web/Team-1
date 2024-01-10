@@ -12,7 +12,11 @@
     flex-wrap: wrap;
 }
 
-.now-floating-post{
+.post-inner-first{
+    align-items: center;
+}
+
+.now-floating-post {
     cursor: pointer;
     width: 420px;
     height: 50px;
@@ -156,6 +160,7 @@
         font-weight: 700;
         line-height: 140%; /* 16.8px */
         letter-spacing: 0.024px;
+        margin-bottom: 0;
     }
 
     .category-text{
