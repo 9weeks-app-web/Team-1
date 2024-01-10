@@ -19,4 +19,4 @@ ENV REACT_APP_MESUREMENT_ID "G-1B3GS1JKX0"
 
 EXPOSE 3003
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "start"]
