@@ -36,7 +36,9 @@
             letter-spacing: var(--button-letter-spacing);
             padding: 0 8px;
         }
-
+        li a:hover {
+            color: #669BFF;
+        }
         li a.active {
             color: var(--blue-100);
 

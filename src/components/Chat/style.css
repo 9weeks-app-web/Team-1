@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
 }
-
 /*채팅리스트 상단 필터*/
 .chatListFilter {
   width: 420px;
@@ -29,6 +28,8 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
+  cursor: pointer;
+
 }
 /*필터 선택*/
 .selectedFilter {
@@ -41,6 +42,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 100px;
+  cursor: pointer;
 
 }
 
@@ -54,11 +56,29 @@
   gap: 12px;
   border-bottom: 1px solid #ccc;
   box-sizing: border-box; 
+  cursor: pointer;
   }
+  .userProfile:hover {
+    background-color: #F5F8FF;
+    }
+  
   .userProfile:active {
   background-color: #F5F8FF;
   }
- 
+  .userProfile:active .listNewMsgCount {
+    display: none;
+  }
+ .profilePicture {
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background-image: url('/src/assets/img/profile.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+
+}
   .listUserPreview {
     flex-grow: 1; 
     display: flex;
@@ -148,6 +168,7 @@
 .chattingRoomHeader .userInfo {
   margin: 0 20px;
 }
+
 .chattingRoomHeader .userName {
   color: #000;
   font-family: Spoqa Han Sans Neo;
@@ -180,7 +201,18 @@
   }
   .chattingRoomMsgP {
     display: flex;
-    margin-bottom: 10px;    
+    margin-bottom: 28px;    
+
+  }
+  .header-profilePicture {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 110.87px;
+    background-image: url('/src/assets/img/profile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
 
   }
   
@@ -213,12 +245,12 @@
     font-family: Spoqa Han Sans Neo;
     font-size: 15px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.03px;
     position: relative;
-    left: 4rem;
   }
+
   .sentBubble .chattingRoomMsgProfile,.sentBubble .messageSender {
     display: none;
   }
@@ -234,9 +266,13 @@
     font-family: Spoqa Han Sans Neo;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 140%;
     letter-spacing: 0.032px;
+
+  }
+
+  .recievedBubble .msgText {
   }
   .chattingRoomMsgProfile {
     background: #F3F3F3;
@@ -244,6 +280,11 @@
     height: 40px;
     border-radius: 30px;
     display: flex;
+    background-image: url('/src/assets/img/profile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+  
   }
   .chattingRoomInput {
     display: inline-block;
@@ -251,6 +292,9 @@
   .textareaContainer {
     position: relative;
     width: 740px;
+  }
+  textarea {
+    font-family: Spoqa Han Sans Neo;
   }
   .messageContent {
     margin-left: 7px;
@@ -263,12 +307,19 @@
     justify-content: center;
     align-items: center;
     margin-top: 8px;
+    max-width: 280px;
   }
   .sentBubble .messageText {
     border-radius: 18px 0px 18px 18px;
     padding: 8px 15px;
     background: #337AFF;
     color: #fff;
+    max-width: 280px;
+  }
+  .msgText {
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
   }
   .recievedBubble .bubbleTime {
     color: var(--Gray-Gray-400, #898989);
@@ -278,6 +329,7 @@
     font-weight: 500;
     line-height: 140%; /* 18.2px */
     letter-spacing: 0.026px;  
+    margin: 0 10px;
   }
   .sentBubble .bubbleTime {
     color: var(--Gray-Gray-400, #898989);
@@ -288,14 +340,22 @@
     line-height: 140%; /* 18.2px */
     letter-spacing: 0.026px;
     position: relative;
-    left: -11rem;
+  }
+  .sentBubble .msgText {
+    display: flex;
+    flex-direction: row-reverse; 
+  }
+  .sentBubble .msgText .bubbleTime{
+    margin: 0 10px;
   }
   
+  
+
   
   .chattingRoomInput textarea {
     padding: 8px;
     border-radius: 9px;
-    border: 1px solid #0059FF;
+    border: 1px solid #E6E6E6;
     background: rgba(255, 255, 255, 0.00);    
     width: 740px;
     height: 130px;
@@ -311,20 +371,17 @@
     display: flex;
     justify-content: flex-end;
     }
-  .textareaFooter button {
-    margin: 10px 20px;
-    width: 40px;
-    height: 24px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 1px solid #E6E6E6;
-    background: rgba(217, 217, 217, 0.00);
-    color: #B3B3B3;
-    font-family: Spoqa Han Sans Neo;
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 140%; /* 18.2px */
-    letter-spacing: 0.026px;
-  }
-  
+
+    .sendMsgBtn {
+      display: flex;
+      gap: 16px;
+      margin: 0 22px 24px 0 ;
+      cursor: pointer;
+    }
+    .sendMsgBtn svg {
+      fill: #4d4d4d
+    }
+    .sendMsgBtn svg:hover {
+      fill: #337AFF;
+      
+    }

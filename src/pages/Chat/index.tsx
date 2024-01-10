@@ -16,37 +16,37 @@ function Chat() {
   const chatData = [
     {
       chatId: "1",
-      userName: "김유저",
+      userName: "이민지",
       lastTime: "10분 전",
       previewMessage: "안녕하세요",
       newMsgCount: 2,
     },
     {
       chatId: "2",
-      userName: "이유저",
+      userName: "유저",
       lastTime: "30분 전",
       previewMessage: "아니",
       newMsgCount: 1,
     },
     {
-      chatId: "2",
-      userName: "이민지",
+      chatId: "3",
+      userName: "유저3",
       lastTime: "40분 전",
-      previewMessage: "어떤 팀원을 구하시나요?",
+      previewMessage: "안녕하시오",
+      newMsgCount: 0,
+    },
+    {
+      chatId: "4",
+      userName: "유저4",
+      lastTime: "40분 전",
+      previewMessage: "팀원을 구하시나요?",
       newMsgCount: 1,
     },
     {
-      chatId: "2",
-      userName: "이민지",
+      chatId: "5",
+      userName: "오유저",
       lastTime: "40분 전",
-      previewMessage: "어떤 팀원을 구하시나요?",
-      newMsgCount: 1,
-    },
-    {
-      chatId: "2",
-      userName: "이민지",
-      lastTime: "40분 전",
-      previewMessage: "어떤 팀원을 구하시나요?",
+      previewMessage: "구하시나요?",
       newMsgCount: 1,
     },
   ];
@@ -68,6 +68,7 @@ function Chat() {
                 height="30"
                 viewBox="0 0 30 30"
                 fill="none"
+                className="newChatBtn"
               >
                 <path
                   d="M0 30L2.57143 20.8929C2.09524 19.869 1.75 18.8155 1.53571 17.7321C1.32143 16.6488 1.21429 15.5357 1.21429 14.3929C1.21429 12.3929 1.58929 10.5238 2.33929 8.78571C3.08929 7.04762 4.11905 5.52381 5.42857 4.21429C6.7381 2.90476 8.2619 1.875 10 1.125C11.7381 0.375 13.6071 0 15.6071 0C17.6071 0 19.4762 0.375 21.2143 1.125C22.9524 1.875 24.4762 2.90476 25.7857 4.21429C27.0952 5.52381 28.125 7.04762 28.875 8.78571C29.625 10.5238 30 12.3929 30 14.3929C30 16.3929 29.625 18.2619 28.875 20C28.125 21.7381 27.0952 23.2619 25.7857 24.5714C24.4762 25.881 22.9524 26.9107 21.2143 27.6607C19.4762 28.4107 17.6071 28.7857 15.6071 28.7857C14.4643 28.7857 13.3512 28.6786 12.2679 28.4643C11.1845 28.25 10.131 27.9048 9.10714 27.4286L0 30ZM14.5357 20.1429H16.6786V15.6071H21.25V13.4643H16.6786V8.89286H14.5357V13.4643H9.96428V15.6071H14.5357V20.1429Z"
@@ -82,7 +83,6 @@ function Chat() {
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
-                fill="none"
               >
                 <g clipPath="url(#clip0_1656_108489)">
                   <path

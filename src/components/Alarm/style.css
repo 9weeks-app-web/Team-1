@@ -10,6 +10,9 @@
     margin-top: 20px;
     box-sizing: border-box;
   }
+  .alarmMsg:hover { 
+    background: #F2F2F2;
+  }
   
   .profile-pic {
     width: 50px; /* 이미지 크기 */

@@ -21,7 +21,10 @@ function MyPage() {
           <MyPageAside />
           <div className="mypageContainer">
             <div className="mypageView">
-              <MyPageTopMenu onMenuChange={handleMenuChange} />
+              <MyPageTopMenu
+                onMenuChange={handleMenuChange}
+                selectedMenu={selectedMenu}
+              />
               {selectedMenu === "myPageMyProfile" && <MyPageMyProfile />}
               {selectedMenu === "myPageMyProject" && <MyPageMyProject />}
               {selectedMenu === "myPageMyPost" && <MyPageMyPost />}

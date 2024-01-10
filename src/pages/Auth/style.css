@@ -4,6 +4,7 @@
   padding-top: 6.5rem;
   justify-content: center;
   align-items: center;
+  margin-bottom: 187px;
 }
 .is-invalid {
   border-color: red;
@@ -130,19 +131,20 @@ form .login-field-title, .login-field-title-pwd {
 }
 .form-btn:hover {
   cursor: pointer;
+  background-color: #669BFF;
 }
 .auth-link {
-  width: 586px;
+  width: 100%;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 190px;
+  gap: 200px;
   margin: 24px 0 0 0;
   color: #030303;
   font-family: Spoqa Han Sans Neo;
   font-size: 20px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
 }
 .auth-link span {
   display: flex;
@@ -181,7 +183,7 @@ form .login-field-title, .login-field-title-pwd {
   cursor: pointer;
 }
 .hrLine {
-  width: 586px;
+  width: 621px;
   display: flex;
   color: #B3B3B3;
   font-size: 20px;
@@ -192,6 +194,7 @@ form .login-field-title, .login-field-title-pwd {
   width: 252.5px;
   border:1px solid #B3B3B3;
   transform: scaleY(0.3);
+  
 }
 @media (max-width: 700px) {
   .auth-link {

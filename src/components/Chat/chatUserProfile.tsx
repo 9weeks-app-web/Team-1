@@ -32,15 +32,8 @@ function ChatUserProfile({
         if (e.key === "Enter") handleSelectChat();
       }}
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="60"
-        viewBox="0 0 66 66"
-        fill="none"
-        className="profilePicture"
-      >
-        <ellipse cx="32.3" cy="32.3" rx="32.3" ry="32.3" fill="#D9D9D9" />
-      </svg>
+      <div className="profilePicture" />
+
       <div className="listUserText">
         <div className="listUserPreview">
           <span className="listUserName">{userName}</span>

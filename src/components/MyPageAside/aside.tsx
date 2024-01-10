@@ -19,10 +19,10 @@ function MyPageAside() {
             <strong>20</strong> 좋아요
           </a>
           <a href="/">
-            <strong>11</strong> 팔로워
+            <strong>73</strong> 팔로워
           </a>
           <a href="/">
-            <strong>15 </strong> 팔로잉
+            <strong>51 </strong> 팔로잉
           </a>
         </div>
         <div className="profileSetBtn">

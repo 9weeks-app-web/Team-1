@@ -60,6 +60,9 @@
     line-height: 140%; /* 33.6px */
     letter-spacing: 0.048px;
 }
+.chatlistHeaderTitle svg{
+    cursor: pointer;
+}
 .searchChatlist {
     display: flex;
     width: 320px;

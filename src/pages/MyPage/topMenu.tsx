@@ -1,13 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 
 type TopMenuProps = {
   onMenuChange: (menu: string) => void;
+  selectedMenu: string;
 };
-function MyPageTopMenu({ onMenuChange }: TopMenuProps) {
-  const [selectedMenu, setSelectedMenu] = useState<string | null>(null);
+function MyPageTopMenu({ onMenuChange, selectedMenu }: TopMenuProps) {
   const handleClick = (menu: string) => {
-    setSelectedMenu(menu);
     onMenuChange(menu);
   };
 
