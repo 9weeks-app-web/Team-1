@@ -51,3 +51,44 @@
     align-items: center;
     gap: 24px;
 }
+
+.login-button{
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    cursor: pointer;
+    border: none;
+    display: flex;
+    height: 42px;
+    padding: 19px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #E5EEFF;
+    color: #0059FF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+}
+
+
+.register-button{
+    font-family: "Spoqa Han Sans Neo", "sans-serif";
+    cursor: pointer;
+    border: none;
+    display: flex;
+    height: 42px;
+    padding: 19px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 100px;
+    background: #0059FF;
+    color: var(--naver-text, #FFF);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 19.6px */
+    letter-spacing: 0.028px;
+}

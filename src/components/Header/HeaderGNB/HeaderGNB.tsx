@@ -38,20 +38,36 @@ function HeaderGNB() {
       </div>
       <div className="right">
         <SearchBar />
-        <IconButton icon="notifications" onClick={() => navigate("/alarm")} />
-        <IconButton icon="forum" onClick={() => navigate("/chat")} />
-        {/* TODO : 로그인 여부에 따라 다른 컴포넌트 렌더링 */}
         {user ? (
-          <Avatar alt="displayName" sx={{ bgcolor: randomColorHax() }}>
-            <Link to="/mypage" style={{ color: "white" }}>
-              {user.displayName.slice(0, 1)}
-            </Link>
-          </Avatar>
+          <>
+            <IconButton
+              icon="notifications"
+              onClick={() => navigate("/alarm")}
+            />
+            <IconButton icon="forum" onClick={() => navigate("/chat")} />
+            <Avatar alt="displayName" sx={{ bgcolor: randomColorHax() }}>
+              <Link to="/mypage" style={{ color: "white" }}>
+                {user.displayName.slice(0, 1)}
+              </Link>
+            </Avatar>
+          </>
         ) : (
-          <IconButton
-            icon="account_circle"
-            onClick={() => navigate("/login")}
-          />
+          <>
+            <button
+              type="button"
+              className="login-button"
+              onClick={() => navigate("/login")}
+            >
+              로그인
+            </button>
+            <button
+              type="button"
+              className="register-button"
+              onClick={() => navigate("/register")}
+            >
+              회원가입
+            </button>
+          </>
         )}
       </div>
     </div>

@@ -1,17 +1,20 @@
 .container {
+  min-height: calc(100vh - 105px);
   display: flex;
   flex-direction: column;
   padding-top: 6.5rem;
   justify-content: center;
   align-items: center;
-  margin-bottom: 187px;
 }
 .is-invalid {
-  border-color: red;
+  border-color: #F33;
 }
 .invalid-feedback {
-  color: red;
+  font-size: 0.9em;
+  margin: 5px 0 0 5px;
+  color: #F33;
 }
+
 .auth-center {
   display: flex;
   justify-content: center;
@@ -21,7 +24,7 @@
 .auth-title {
   display: flex;
   flex-direction: column;
-  margin: 100px 0px 46px 0px;
+  margin: 44px 0px 44px 0px;
   align-items: center;
 
 }
@@ -49,18 +52,10 @@
 }
 
 .login-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 48px;
-  color: #030303;
-  text-align: center;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 28px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 0.056px;
+  svg {
+    width: 192px;
+    height: 49px;
+  }
 }
 .login-subtitle {
   color: #030303;
@@ -78,40 +73,42 @@
   /* justify-content: center; */
 }
 form .login-field-title, .login-field-title-pwd {
-  color: #030303;
   font-family: Spoqa Han Sans Neo;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 140%; /* 33.6px */
-  letter-spacing: 0.048px;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.036px;
 }
 .login-field-title-pwd {
   margin-top: 24px;
 }
 .form-control {
-  width: 586px;
-  height: 72px;
+  box-sizing: border-box;
+  width: 360px;
+  height: 56px;
   margin-top: 8px;
-  font-size: 19px;
+  font-size: 15px;
   border: 1px solid #E6E6E6;
 }
 .form-btn {
+  box-sizing: border-box;
   display: flex;
-  width: 586px;
-  height: 80px;
-  padding: 10px;
+  width: 360px;
+  height: 56px;
+  font-family: Spoqa Han Sans Neo;
   justify-content: center;
   align-items: center;
   border: none;
   background-color: #196AFF;
   border-radius: 16px;
-  color: #FFF;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 24px;
+  color: var(--naver-text, #FFF);
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  margin-top: 44px;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.036px;
+  margin-top: 40px;
 }
 .register-btn {
   display: flex;
@@ -134,20 +131,30 @@ form .login-field-title, .login-field-title-pwd {
   background-color: #669BFF;
 }
 .auth-link {
-  width: 100%;
-  display: inline-flex;
+  display: flex;
+  justify-content: space-between;
+  width: 360px;
+  font-family: Spoqa Han Sans Neo;
   justify-content: center;
   align-items: center;
-  gap: 200px;
   margin: 24px 0 0 0;
   color: #030303;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 20px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
 }
-.auth-link span {
+.auth-link > span {
+  width: 100%;
   display: flex;
+  flex-direction: row;
+}
+
+.auth-link > div {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
 }
 .forgot-or {
   margin: 0 5px;
@@ -158,14 +165,19 @@ form .login-field-title, .login-field-title-pwd {
 .sns-btn-div {
   display: flex;
   align-items: center;
-  gap: 44px;  
+  gap: 20px;  
 }
 .sns-btn-kakao, .sns-btn-naver, .sns-btn-google, .sns-btn-apple {
   border-radius: 100%;
   border: 0px;
-  width: 82px;
-  height: 82px;
+  width: 52px;
+  height: 52px;
   background-color: #d9d9d9;
+
+  svg{
+    width: 20px;
+    height: 20px;
+  }
 }
 .sns-btn-kakao {
   background-color: #FEE500;
@@ -183,10 +195,9 @@ form .login-field-title, .login-field-title-pwd {
   cursor: pointer;
 }
 .hrLine {
-  width: 621px;
   display: flex;
   color: #B3B3B3;
-  font-size: 20px;
+  font-size: 14px;
   margin: 44px 0;
 
 }
