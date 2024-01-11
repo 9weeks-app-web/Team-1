@@ -17,7 +17,7 @@ function StaticBanner(props: IStaticBannerProps) {
   };
 
   return (
-    <div className="static-banner-container">
+    <div className="static-banner-container noDrag">
       <div className="static-banner-left">
         <p className="banner-title">{title}</p>
         <button type="button" onClick={movePage} className="move-button">

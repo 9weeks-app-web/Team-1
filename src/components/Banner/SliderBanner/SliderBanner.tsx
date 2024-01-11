@@ -25,7 +25,7 @@ function SliderBanner() {
       onSlideChange={(e: SwiperType) => setSlideIdx(e.realIndex)}
       modules={[Navigation, Autoplay]}
       loop
-      className="mySwiper main-slider-banner"
+      className="mySwiper main-slider-banner "
     >
       {sliderBanners ? (
         <div className="index-indicator">
@@ -45,7 +45,7 @@ function SliderBanner() {
       )}
 
       {sliderBanners?.map((el: IBannerInfo) => (
-        <SwiperSlide key={el.id}>
+        <SwiperSlide key={el.id} className="noDrag">
           <a href={el.link} target="_blank" rel="noreferrer">
             <img src={el.imgSrc} alt="" />
           </a>
