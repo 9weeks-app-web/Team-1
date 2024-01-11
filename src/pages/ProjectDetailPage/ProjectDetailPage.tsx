@@ -35,9 +35,9 @@ function ProjectDetailPage() {
                 </span>
               </div>
               <div className="flex-row gap-8">
-                <IconText icon="favorite" text="50" />
-                <IconText icon="chat_bubble" text="50" />
-                <IconText icon="visibility" text="85" />
+                <IconText icon="favorite" text="950" />
+                <IconText icon="chat_bubble" text="4" />
+                <IconText icon="visibility" text="1212" />
               </div>
             </div>
 
@@ -304,78 +304,78 @@ function ProjectDetailPage() {
             <p className="aside-section-title">핫한 프로젝트 모집 공고</p>
 
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+            <div className="flex-column gap-8 hot-project-list align-start">
+              <p>글로벌 음악 투표 플랫폼</p>
 
-              <div className="color-gray flex-row justify-between">
-                <span className="flex-row">
+              <div className="color-gray flex-row justify-between gap-8">
+                <span className="flex-row text-start">
                   <Icon icon="account_circle" />
                   고승호
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="5512" />
+                  <IconText icon="chat_bubble" text="29" />
                 </div>
               </div>
             </div>
 
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+            <div className="flex-column gap-8 hot-project-list align-start">
+              <p>DIA (개발자 면접 도우미)</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  김아연
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="3512" />
+                  <IconText icon="chat_bubble" text="24" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+            <div className="flex-column gap-8 hot-project-list align-start">
+              <p>비친족 가구를 위한 정산 공유가계부</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  이경서
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="3219" />
+                  <IconText icon="chat_bubble" text="19" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+            <div className="flex-column gap-8 hot-project-list align-start">
+              <p>울고 웃고 화내는 AI 영어 스피킹 앱</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  곽세미
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="2141" />
+                  <IconText icon="chat_bubble" text="17" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+            <div className="flex-column gap-8 hot-project-list align-start">
+              <p>링크 스크랩 서비스 “퀵카이브”</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  Leah
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="1810" />
+                  <IconText icon="chat_bubble" text="14" />
                 </div>
               </div>
             </div>
@@ -388,41 +388,53 @@ function ProjectDetailPage() {
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">1</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://media.istockphoto.com/id/1350690621/ko/%EC%82%AC%EC%A7%84/%EC%95%84%EC%8B%9C%EC%95%84-%EB%82%A8%EC%9E%90%EC%9D%98-%EC%B4%88%EC%83%81%ED%99%94.webp?b=1&s=170667a&w=0&k=20&c=mN5kxbjK_8df8di5IN614DQgjBhXnVIcmst0WDY3TAw="
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 김민지짱짱</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UX 리서처 | 미들(4~8년)</p>
+                <p>🏆 류현수</p>
+                <p>⭐️ 4.8</p>
+                <p className="color-gray">UX 디자이너 | 주니어 (1~3년)</p>
               </div>
             </div>
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">2</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/751b/583b/8d00f87bc7ffbc3886be631cdf4ab213?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SNF-WbojE9~HXI863t9o0E7PJutRoQoMWTXpjxdCbnDv35FBYotCyLHJq9jM1a0LjyFd3c-rFb-bLsfVsQXC-E-2Q-qhkekfkU92qINpwJ1B9tZKiEPdkyGw~lr8TNa4aelkHIZj6YYcgBMY0bwjZ4gJiOtC8j-Ll7eyTVIeBawY6KA1wr2TyShzNCl3sxFtmcJTNHFFYhpWNIjhbc9xXEUmFoayh~LwsI1AEN5S3ZNsINDklKwrlwu2NN6nSF1PQGklDh~bIliawvcjuwQlKCuCxIMW7tjxwzuaH7ajKsnDXOzASp1XFEYOXJ5N8Ghhhy89zX2E-KiPZtKuD~TtbA__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 바쁜 다람쥐</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UI 디자이너 | 주니어 (1~3년)</p>
+                <p>🏆 OSAFE</p>
+                <p>⭐️ 4.6</p>
+                <p className="color-gray">웹 디자이너 | 미들 (4~8년)</p>
               </div>
             </div>
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">3</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/591b/84a9/fe83181e1b9c0b57a534fd1f8697b04c?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mb-DvMtNwqYlRSNxkLZwYxviWSpRFQi3ejxzJk7mluUVuADE67V1eFcI16TbK46uAr-WDOBhX4bG2x3Ln8L-gbsFs7mzRaq1-fU~tjBWwEm9PKbl2nSsDRMODOrX2u5BJwzt~VNrYeVZi0ha0wgbRBohnuSQMkKHasc3VF-7Z8uoAQ3EfFoxMMfMMVQFK-rXaFhr-disi9PCMlrDQOfck3CAYHu5iUS3VXCK0HfJ88R0STVdX~GM9ZwNAYOfQAAL13fiwxrfCrDShT3zBy~WX~lk2yDdD3gOVZjRVifw~WDZZbuPuPV-EqghJ~hQMmDEBUYn-K8F1UXO12qf2AfBuw__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 배고픈 오징어</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">광고 기획자 | 시니어 (9년~)</p>
+                <p>🏆 한승연</p>
+                <p>⭐️ 4.3</p>
+                <p className="color-gray">광고 디자이너 | 주니어 (1~3년)</p>
               </div>
             </div>
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">4</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/3930/cf53/6c09c7828bbf9ae09f48054bb9f8aa29?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=KFw1POPmsIuoJie39qGGoq2eqO2YOuSe4lSmTkDneWUdWqWP63MKirZeDdHqPtYqHohl7zgvQ1ABpBd2n5R~Qm5d1rD7fbJvF6y6AjQyHja19zmNRWfTXW95aYamOVsjiwGi-s~BTchepSpx094XIPO6BScM8jegISd25yqtQoAAtJX4grV4Sob1xgX~6zo2EgZZHrSA1BFqc2TXMQ1amfORE86kdmJ8okism5wPwA5MMCuB8ZF9dz3jJr9xZRlkXa5FD9klUWTx3kuoVGVc5AMfe9qj1S4hwMEtlXwV1IFtWBXCrrop2Tu~OILqV1MUK0F3CZ6x6XgfIk2dMHYruQ__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 오크리스탈</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UX 리서처 | 주니어 (1~3년)</p>
+                <p>🏆 위앤드</p>
+                <p>⭐️ 4.2</p>
+                <p className="color-gray">UX 디자이너 | 주니어 (1~3년)</p>
               </div>
             </div>
           </div>
@@ -434,41 +446,53 @@ function ProjectDetailPage() {
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">1</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/ef5c/4f50/6d33fcc4c99f13e9a6afe24df3335a7d?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PnQLxQTskes-ct9JQk28PQt7sjRaQfRYzOaGCS7O0VqQXLMGHcpTx2hVORjddKSs-XHYE-n-rWj5PQ2VwZIRkig7RALtr7Hw-6wwzjS8~0meunDn-kMvJP5GPw-nMyg55KApmXcVXeLuZjMF-R4P6k9VAh~hfNRi-U3VGhQFa2mozGQJJpSnraUhf-qC74UItebhVXO18vRcRA1l2l0SmJhgU6dQ9asyIyVCSlBxuLH7os53wNmdpxUCyP-F4EtrI~uDabqN-IGQ5aR~eCzrWG2YFpy5EEW901gwWCXVAq4m6q3BwuPaBpwC4uzcMb2RiXY-RD2FXVuBQqKcBB3pUA__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 김나영</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UX 리서처 | 미들(4~8년)</p>
+                <p>🏆 Liam Lee</p>
+                <p>⭐️ 4.7</p>
+                <p className="color-gray">UX 디자이너 | 미들 (4~8년)</p>
               </div>
             </div>
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">2</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/751b/583b/8d00f87bc7ffbc3886be631cdf4ab213?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SNF-WbojE9~HXI863t9o0E7PJutRoQoMWTXpjxdCbnDv35FBYotCyLHJq9jM1a0LjyFd3c-rFb-bLsfVsQXC-E-2Q-qhkekfkU92qINpwJ1B9tZKiEPdkyGw~lr8TNa4aelkHIZj6YYcgBMY0bwjZ4gJiOtC8j-Ll7eyTVIeBawY6KA1wr2TyShzNCl3sxFtmcJTNHFFYhpWNIjhbc9xXEUmFoayh~LwsI1AEN5S3ZNsINDklKwrlwu2NN6nSF1PQGklDh~bIliawvcjuwQlKCuCxIMW7tjxwzuaH7ajKsnDXOzASp1XFEYOXJ5N8Ghhhy89zX2E-KiPZtKuD~TtbA__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 고승호</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UI 디자이너 | 주니어 (1~3년)</p>
+                <p>🏆 최지현</p>
+                <p>⭐️ 4.2</p>
+                <p className="color-gray">UX 디자이너 | 시니어 (9년~)</p>
               </div>
             </div>
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">3</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/591b/84a9/fe83181e1b9c0b57a534fd1f8697b04c?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mb-DvMtNwqYlRSNxkLZwYxviWSpRFQi3ejxzJk7mluUVuADE67V1eFcI16TbK46uAr-WDOBhX4bG2x3Ln8L-gbsFs7mzRaq1-fU~tjBWwEm9PKbl2nSsDRMODOrX2u5BJwzt~VNrYeVZi0ha0wgbRBohnuSQMkKHasc3VF-7Z8uoAQ3EfFoxMMfMMVQFK-rXaFhr-disi9PCMlrDQOfck3CAYHu5iUS3VXCK0HfJ88R0STVdX~GM9ZwNAYOfQAAL13fiwxrfCrDShT3zBy~WX~lk2yDdD3gOVZjRVifw~WDZZbuPuPV-EqghJ~hQMmDEBUYn-K8F1UXO12qf2AfBuw__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 나준택</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UX 리서처 | 시니어 (9년~)</p>
+                <p>🏆 카지</p>
+                <p>⭐️ 4.5</p>
+                <p className="color-gray">UX 디자이너 | 시니어 (9년~)</p>
               </div>
             </div>
             {/* 베스트 팀원 한장 */}
             <div className="flex-row member-card">
               <span className="ranking-number">4</span>
-              <img src="https://picsum.photos/48/48" alt="" />
+              <img
+                src="https://s3-alpha-sig.figma.com/img/aecc/de44/1de9df468832873669f104bf82252b56?Expires=1705276800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=U70t00E5ICzxYmCHdYWTvEEEWmWOH0JpuW2lTqq1EldjPVAUDMMlcdL9yOD9gS~zphu1DQ4e6RGDsUX-A4HYffpnUjBRjM6AYWutvW7Y3PdeyrvGT~wKk2HuAs3ytf-2HJB2lgLmfIbmhLhYvPX32gYP5nFbav5UXJn2i0reRCDPg6c-ZF6FQU~60E7EA5Pu5DK3sNDIbS8lnANg6pWvZO8T-MSkern-hfVLeU36EpreYsH2L1c-y8Rb8oaDLjVAZas6f8HkaP60kW4aOAp-1Nx8hUU6gekGhPqHviRFgL8YOHEEDXFC-vrR7VNB8hqPnWqdmX02fCNJDYV9f~vEpw__"
+                alt=""
+              />
               <div className="flex-column gap-4">
-                <p>🏆 이경서</p>
-                <p>⭐️ 5.0</p>
-                <p className="color-gray">UX 리서처 | 주니어 (1~3년)</p>
+                <p>🏆 Sandy</p>
+                <p>⭐️ 3.4</p>
+                <p className="color-gray">UX 디자이너 | 미들 (4~8년)</p>
               </div>
             </div>
           </div>

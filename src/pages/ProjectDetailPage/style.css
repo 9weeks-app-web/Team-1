@@ -15,6 +15,9 @@ b {
   font-weight: bold;
 }
 
+.align-start{
+  align-items: flex-start
+}
 .profile-img{
   width: 28px;
   height: 28px;
