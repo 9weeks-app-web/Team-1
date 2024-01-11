@@ -213,10 +213,10 @@ function CommunityDetailPage() {
             <p className="aside-section-title">비슷한 게시글</p>
 
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>UX 디자인 프로젝트 진행중인 학부생입니다! </p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   아자아자잣
@@ -229,10 +229,10 @@ function CommunityDetailPage() {
             </div>
 
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>직무 변경 후 첫 포트폴리오 리뷰 부탁드립니다!</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   바쁜 다람쥐
@@ -244,10 +244,10 @@ function CommunityDetailPage() {
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>메세지 읽음 표시, 어떤 방식을 선호하시나요? </p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   배고픈 오징어
@@ -259,10 +259,10 @@ function CommunityDetailPage() {
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>디자이너가 갖추어야 할 가장 중요한 역량 </p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   오크리스탈
@@ -274,10 +274,10 @@ function CommunityDetailPage() {
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>여러분들 상시 채용 자주 지원하시나요?</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   김나영
@@ -294,10 +294,10 @@ function CommunityDetailPage() {
             <p className="aside-section-title">지금 뜨는 게시글</p>
 
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>가이드 텍스트 위치를 어디에 노출하나요? </p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   고승호
@@ -310,10 +310,10 @@ function CommunityDetailPage() {
             </div>
 
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>이런 커뮤니티 왜 이제야 알았을까요 ㅠㅠ</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   장화 신은 고양이
@@ -325,10 +325,10 @@ function CommunityDetailPage() {
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>여러분 포트폴리오에 보통 작품 몇 개 넣으시나요?</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   이경서
@@ -340,10 +340,10 @@ function CommunityDetailPage() {
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>기획자 전향 쉽지 않네요....</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   곽시탈
@@ -355,10 +355,10 @@ function CommunityDetailPage() {
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
+            <div className="flex-column gap-8 hot-project-list align-start">
               <p>개발자들과 효율적으로 소통 하는 법 공유 드려요</p>
 
-              <div className="color-gray flex-row justify-between">
+              <div className="color-gray flex-row justify-between gap-8">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
                   화이팅 해야지
