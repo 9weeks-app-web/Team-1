@@ -131,9 +131,9 @@ function Register() {
                       onSubmit={onClickSubmit}
                     >
                       {({ errors, touched }) => (
-                        <Form className="">
-                          <div className="form-naming">이름</div>
+                        <Form className="register-form">
                           <div className="form-div">
+                            <div className="form-naming">이름</div>
                             <Field
                               type="text"
                               name="name"
@@ -141,16 +141,17 @@ function Register() {
               ${errors.email && touched.email ? " is-invalid" : ""}`}
                               placeholder="이름"
                             />
+                            <div className="form-div">
+                              <ErrorMessage
+                                name="name"
+                                component="div"
+                                className="invalid-feedback"
+                              />
+                            </div>
                           </div>
+
                           <div className="form-div">
-                            <ErrorMessage
-                              name="name"
-                              component="div"
-                              className="invalid-feedback"
-                            />
-                          </div>
-                          <div className="form-naming">이메일</div>
-                          <div className="form-div">
+                            <div className="form-naming">이메일</div>
                             <Field
                               type="email"
                               name="email"
@@ -158,16 +159,16 @@ function Register() {
               ${errors.password && touched.password ? " is-invalid" : ""}`}
                               placeholder="이메일"
                             />
+                            <div className="form-div">
+                              <ErrorMessage
+                                name="email"
+                                component="div"
+                                className="invalid-feedback"
+                              />
+                            </div>
                           </div>
                           <div className="form-div">
-                            <ErrorMessage
-                              name="email"
-                              component="div"
-                              className="invalid-feedback"
-                            />
-                          </div>
-                          <div className="form-naming">비밀번호</div>
-                          <div className="form-div">
+                            <div className="form-naming">비밀번호</div>
                             <Field
                               type="password"
                               name="password"
@@ -175,16 +176,16 @@ function Register() {
               ${errors.password && touched.password ? " is-invalid" : ""}`}
                               placeholder="비밀번호"
                             />
+                            <div className="form-div">
+                              <ErrorMessage
+                                name="password"
+                                component="div"
+                                className="invalid-feedback"
+                              />
+                            </div>
                           </div>
                           <div className="form-div">
-                            <ErrorMessage
-                              name="password"
-                              component="div"
-                              className="invalid-feedback"
-                            />
-                          </div>
-                          <div className="form-naming">비밀번호 확인</div>
-                          <div className="form-div">
+                            <div className="form-naming">비밀번호 확인</div>
                             <Field
                               type="password"
                               name="rePassword"
@@ -192,65 +193,73 @@ function Register() {
               ${errors.password && touched.password ? " is-invalid" : ""}`}
                               placeholder="비밀번호 확인"
                             />
+                            <div className="form-div">
+                              <ErrorMessage
+                                name="rePassword"
+                                component="div"
+                                className="invalid-feedback"
+                              />
+                            </div>
                           </div>
-                          <div className="form-div">
-                            <ErrorMessage
-                              name="rePassword"
-                              component="div"
-                              className="invalid-feedback"
-                            />
-                          </div>
-                          <div className="form-naming">휴대폰 인증</div>
+
                           <div className="telecom-div">
-                            <button
-                              type="button"
-                              className={`telecom-btn  ${
-                                selectedTelecom === "SKT"
-                                  ? "telecom-active"
-                                  : ""
-                              }`}
-                              onClick={() => {
-                                setSelectedTelecom("SKT");
-                              }}
-                            >
-                              SKT
-                            </button>
-                            <button
-                              type="button"
-                              className={`telecom-btn  ${
-                                selectedTelecom === "KT" ? "telecom-active" : ""
-                              }`}
-                              onClick={() => {
-                                setSelectedTelecom("KT");
-                              }}
-                            >
-                              KT
-                            </button>
-                            <button
-                              type="button"
-                              className={`telecom-btn  ${
-                                selectedTelecom === "LG" ? "telecom-active" : ""
-                              }`}
-                              onClick={() => {
-                                setSelectedTelecom("LG");
-                              }}
-                            >
-                              LG U+
-                            </button>
-                            <button
-                              type="button"
-                              className={`telecom-btn  ${
-                                selectedTelecom === "orther"
-                                  ? "telecom-active"
-                                  : ""
-                              }`}
-                              onClick={() => {
-                                setSelectedTelecom("orther");
-                              }}
-                            >
-                              알뜰폰
-                            </button>
+                            <div className="form-naming">휴대폰 인증</div>
+                            <div className="telecom-btn-group">
+                              <button
+                                type="button"
+                                className={`telecom-btn  ${
+                                  selectedTelecom === "SKT"
+                                    ? "telecom-active"
+                                    : ""
+                                }`}
+                                onClick={() => {
+                                  setSelectedTelecom("SKT");
+                                }}
+                              >
+                                SKT
+                              </button>
+                              <button
+                                type="button"
+                                className={`telecom-btn  ${
+                                  selectedTelecom === "KT"
+                                    ? "telecom-active"
+                                    : ""
+                                }`}
+                                onClick={() => {
+                                  setSelectedTelecom("KT");
+                                }}
+                              >
+                                KT
+                              </button>
+                              <button
+                                type="button"
+                                className={`telecom-btn  ${
+                                  selectedTelecom === "LG"
+                                    ? "telecom-active"
+                                    : ""
+                                }`}
+                                onClick={() => {
+                                  setSelectedTelecom("LG");
+                                }}
+                              >
+                                LG U+
+                              </button>
+                              <button
+                                type="button"
+                                className={`telecom-btn  ${
+                                  selectedTelecom === "orther"
+                                    ? "telecom-active"
+                                    : ""
+                                }`}
+                                onClick={() => {
+                                  setSelectedTelecom("orther");
+                                }}
+                              >
+                                알뜰폰
+                              </button>
+                            </div>
                           </div>
+
                           <div className="form-div">
                             <Field
                               type="number"
@@ -269,27 +278,28 @@ function Register() {
                             >
                               인증 요청
                             </button>
-                          </div>
-                          <div className="form-div">
-                            <ErrorMessage
-                              name="phone"
-                              component="div"
-                              className="invalid-feedback"
-                            />
-                          </div>
-                          <div className="form-div">
-                            <Field
-                              type="text"
-                              name="verificationCode"
-                              className={`form-control form-control-user mb-3" +
+                            <div className="form-div">
+                              <ErrorMessage
+                                name="phone"
+                                component="div"
+                                className="invalid-feedback"
+                              />
+                            </div>
+                            <div className="form-div">
+                              <Field
+                                type="text"
+                                name="verificationCode"
+                                className={`verification-button form-control form-control-user mb-3" +
               ${
                 errors.verificationCode && touched.verificationCode
                   ? " is-invalid"
                   : ""
               }`}
-                              placeholder="인증 번호"
-                            />
+                                placeholder="인증 번호"
+                              />
+                            </div>
                           </div>
+
                           <div className="form-div">
                             <ErrorMessage
                               name="verificationCode"

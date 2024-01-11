@@ -58,9 +58,9 @@
   }
 }
 .login-subtitle {
+  font-family: Spoqa Han Sans Neo;
   color: #030303;
   text-align: center;
-  font-family: Spoqa Han Sans Neo;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -89,6 +89,7 @@ form .login-field-title, .login-field-title-pwd {
   height: 56px;
   margin-top: 8px;
   font-size: 15px;
+  border-radius: 8px;
   border: 1px solid #E6E6E6;
   padding: 0 10px;
 }
@@ -230,19 +231,18 @@ form .login-field-title, .login-field-title-pwd {
   margin-bottom: 40px;
 }
 .register-process span {
-  width: 58px;
-  height: 58px;
+  width: 43px;
+  height: 43px;
   background-color: #B3B3B3;
-  text-align: center;
-  color: #FFF;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 24.325px;
+  color: white;
+  font-size: 18.034px;
   font-style: normal;
   font-weight: 700;
-  line-height: 140%; /* 34.056px */
-  letter-spacing: 0.049px;
-  border-radius: 30px;
+  line-height: 140%; /* 25.248px */
+  letter-spacing: 0.036px;
+  border-radius: 100px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -270,7 +270,7 @@ form .login-field-title, .login-field-title-pwd {
 .telecom-btn {
   border: 1px solid #d6dadf;
   font-size: 17.95px;
-  width: 153px;
+  width: 118px;
   height: 66px;
   display: flex;
   align-items: center;
@@ -282,31 +282,44 @@ form .login-field-title, .login-field-title-pwd {
   border: 1px solid blue;
   color: blue;
 }
-.telecom-div {
-  display: flex;
-  gap: 14px;
-  margin-top: 10px;
-}
+
 .telecom-btn:hover {
   cursor: pointer;
 }
 
+.telecom-btn-group{
+  display: flex;
+  gap: 8px;
+}
 .form-control-phone {
-  width: 490px;
-  height: 75px;
+  box-sizing: border-box;
+  width: 380px;
+  height: 56px;
   margin-top: 15px;
-  font-size: 19px;
+  font-size: 15px;
+  padding-left: 10px;
+  border-radius: 8px;
+  border: 1px solid #E6E6E6;
 }
 .phone-verify-btn {
-  width: 156px;
-  height: 75px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  width: 108px;
+  height: 56px;
   margin-left: 5px;
   background-color: black;
-  color: white;
+  color: #CCC;
+    background: #F3F3F3;
+  border: none;
+  cursor: pointer;
+}
+
+.verification-button{
+  width: 496px;
 }
 .checkmark-circle-active {
-  width: 37px; /* 원하는 크기 설정 */
-  height: 37px; /* 원하는 크기 설정 */
+  width: 20px; /* 원하는 크기 설정 */
+  height: 20px; /* 원하는 크기 설정 */
   background-color: #196AFF; /* 배경색 */
   color: white; /* 체크 표시 색상 */
   display: flex;
@@ -315,13 +328,14 @@ form .login-field-title, .login-field-title-pwd {
   font-size: 20px; /* 체크 표시 크기 */
 }
 .checkmark-circle {
-  width: 37px; /* 원하는 크기 설정 */
-  height: 37px; /* 원하는 크기 설정 */
+  width: 20px; /* 원하는 크기 설정 */
+  height: 20px; /* 원하는 크기 설정 */
   background-color: #d9d9d9; /* 배경색 */
+  color: white;
 }
 .checkmark-square-active {         
-  width: 25px; /* 원하는 크기 설정 */
-  height: 25px; /* 원하는 크기 설정 */
+  width: 20px; /* 원하는 크기 설정 */
+  height: 20px; /* 원하는 크기 설정 */
   background-color: #196AFF; /* 배경색 */
   color: white; /* 체크 표시 색상 */
   display: flex;
@@ -330,8 +344,8 @@ form .login-field-title, .login-field-title-pwd {
   font-size: 20px; /* 체크 표시 크기 */
 }
 .checkmark-square {
-  width: 25px; /* 원하는 크기 설정 */
-  height: 25px; /* 원하는 크기 설정 */
+  width: 20px; /* 원하는 크기 설정 */
+  height: 20px; /* 원하는 크기 설정 */
   background-color: #d9d9d9; /* 배경색 */
 }
 .checkmark-square-active::after {
@@ -342,7 +356,6 @@ form .login-field-title, .login-field-title-pwd {
   /* content: "✔";  */
 }
 .agree-container {
-  margin: 44px 0 28px 0;
   display: flex;
 flex-direction: column;
 
@@ -353,6 +366,12 @@ flex-direction: column;
   font-size: 19px;
   margin-top: 15px;
   gap: 20px;
+  color: #030303;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%; /* 19.6px */
+  letter-spacing: 0.028px;
 }
 .checkmark-circle-active:hover,
 .checkmark-circle:hover {
@@ -369,15 +388,19 @@ flex-direction: column;
   display: inline-block;
   width: 586px;
 }
+
+.register-form{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .form-naming, .form-naming-nickname { 
   color: #030303;
-  font-family: Spoqa Han Sans Neo;
-  font-size: 24px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
-  line-height: 140%; /* 33.6px */
-  letter-spacing: 0.048px;
-  margin: 24px 0 0px  0;
+  line-height: 140%; /* 25.2px */
+  letter-spacing: 0.036px;
 }
 .form-naming-nickname {
   margin: 0;
@@ -410,7 +433,6 @@ flex-direction: column;
 }
 
 .form-chips {
-  display: flex;
   display: flex;
   width: 550px;
   align-items: center;
