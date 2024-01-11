@@ -123,7 +123,7 @@ function ProjectDetailPage() {
             <div className="project-detail-introduce">
               <img
                 className="image"
-                src="https://picsum.photos/850/500"
+                src="https://s3-alpha-sig.figma.com/img/2af2/a1fb/8f2ccd8dcd378b7f0087e0217401c08e?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nHG8AkB74uxPsD31xk2YF-incLPJ4-jbx9Q-7tQbKNGAXluWQhOdrOpg-YdWckiSlJtC0jT2g5ZeRLhM8JTl8pbthfxiDCZGHFKP8Ki7Q6fmprb9Il64K8kCudzP32ooa9dBGwFNty3tm1skLff1eQmBo7awfLcayNvZ3eA5lOpaz0lVpsDZatiHgSpqv7W-cXSscLxmB8VUeOgPlbbyONfX0zpRarzo0-rAxMfSe9t1GzjxffXP1haJLJh13c2vpibv8iVo3RSkKLV592y1CswPD22P8HEkSHK4qmO6i3e~s54NOfrLg22VDlv5ze5DB6BMagx7Daz24SUBNH6TNQ__"
                 alt=""
               />
               <pre className="pre">

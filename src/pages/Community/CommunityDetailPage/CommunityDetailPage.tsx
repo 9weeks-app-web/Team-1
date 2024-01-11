@@ -46,7 +46,7 @@ function CommunityDetailPage() {
                 <span className="flex-row gap-8">
                   <Icon icon="account_circle" />
                   배고픈 오징어
-                  <span className="time">15분 전</span>
+                  <span className="time">2분 전</span>
                 </span>
               </div>
               <div className="flex-row gap-8">
@@ -85,7 +85,7 @@ function CommunityDetailPage() {
             <div className="project-detail-introduce">
               <img
                 className="image"
-                src="https://picsum.photos/850/500"
+                src="https://s3-alpha-sig.figma.com/img/e5af/5aaa/b8f4bcfc085224ec1b16a184ead7877e?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kg5dB20x6oVJ8sl3WBesLeYa9aZeayMdTrpQIM7A3Mm-Vg2QKqoWUfzhlCef~tpQFUA6RSsvor2Hc~MiBPKca2uemgP1WBZN4XDZAVo~dMrkiD5BlpxVbLgfCoDMM2rKx-4Tyq7j0teXzh9DdJEzk-7A4VJaVxi1PfPtLouDI7xR7RfjbigOuB3TFug~FKbqVCU2ExmgIYj-zQmxoWb03uShUIU13af8N2CoxkjKazSyz11QNovecuDZ4r21LvOmwUFL~S3Dmk5h8i5ieLdcFNALrVBo-Lv~1GWq~~jDLJcu7Z~xyI9aL2UMTMlEFOX0uCwKQGNA~aEho13U-JEckQ__"
                 alt=""
               />
               <pre className="pre">
@@ -101,9 +101,7 @@ function CommunityDetailPage() {
 능력자분들의 꿀팁이 궁금합니다!!!! 🥹`}
               </pre>
               <div className="flex-row gap-8 badge-group">
-                <span className="tag-badge">#개발자</span>
-                <span className="tag-badge">#포트폴리오</span>
-                <span className="tag-badge">#취업</span>
+                <span className="tag-badge">#디자인</span>
               </div>
               <div className="circle-button-group">
                 <div className="circle-button like">
@@ -148,12 +146,33 @@ function CommunityDetailPage() {
                   <img src="https://picsum.photos/48/48" alt="" />
                   <div className="flex-column gap-8">
                     <p className="flex-row gap-8">
-                      <b className="project-comment-writer">김민혁</b>
-                      <span className="project-comment-time">• 16시간 전</span>
+                      <b className="project-comment-writer">디쟌좋아</b>
+                      <span className="project-comment-time">• 2시간 전</span>
                     </p>
                     <p>
-                      안녕하세요! 이렇게 한 프로젝트 만드는데 얼마나 걸리셨는지
-                      궁금합니다.
+                      너무 잘 보고 가요! 저는 다른 분들 포트폴리오 많이 참고하는
+                      것 같아요.
+                    </p>
+                    <div className="project-commnet-menu flex-row gap-20">
+                      <IconText icon="favorite" text="좋아요 1" />
+                      <IconText icon="chat_bubble" text="답글 남기기" />
+                    </div>
+                  </div>
+                </div>
+
+                {/* 댓글 하나 */}
+                <div className="project-comment flex-row gap-12">
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/9370/e6db/33a75943cc1f1400c54e314c06005f6f?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BGJRUgNGlVZOwSaZsvZrDL1yJorD4VXm-bLxSxNPe7xp5~Vper6eAJb9Ruq8wN3t1tKyeXx0goVzKmNBGsuYSj8YGIqHAE6VI4khL3MXKiVojVmBFJV1HX8XTXsEGD7PFMuK6u3i8ZQhVrC4DQ-VZhkeaKMK2UtLAncsQYjAvT413Kwqph1ODSYYnwD7YOEGQlJryaeC1rkWbgPmd7WExG572maqlQaFhVNdFZ5HxnoSdL-v5-gvx0Ei0CLtvtMXSVGYFrNwnV62uci7adufybGwBWJhIlzBE6IPAWWc8u6sJmZgRB4mHzXiQgYJ1TERs74sW1dTLzhKQyQ7RMt3Jg__"
+                    alt=""
+                  />
+                  <div className="flex-column gap-8">
+                    <p className="flex-row gap-8">
+                      <b className="project-comment-writer">최지우</b>
+                      <span className="project-comment-time">• 6시간 전</span>
+                    </p>
+                    <p>
+                      물리학과요? 완전 디자인 전공생인 줄 알았어요. 대단해요
                     </p>
                     <div className="project-commnet-menu flex-row gap-20">
                       <IconText icon="favorite" text="좋아요 23" />
@@ -164,37 +183,21 @@ function CommunityDetailPage() {
 
                 {/* 댓글 하나 */}
                 <div className="project-comment flex-row gap-12">
-                  <img src="https://picsum.photos/48/48" alt="" />
+                  <img
+                    src="https://s3-alpha-sig.figma.com/img/6146/83b8/0e26848c5a036028ea7cc53865227c34?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G6x5vgil1OnSLn7fZJSwzGbxhcI-a-QRUKqdXYblPCQ7UVS6tiC4tVAmRJqilTVf6Vf5IrvGPMcCXDB4Ych~Lzwl39fkbwA6h73NymTBXYRxS9ERuuI07yq3xZB1sftFUAOevIhoNUIMshc4g0yb44yHsfVahJzLxoJP2haJTH6RQc1yAfLGVK65Q1R~pJY-t20q~mSEnyBVUMG8sbuKoYagEmbjizPEgtPqXVfq4c0bZyPQY-zFDrTbFNleNMpG0d7PzCIQAwdb7WxqSk5ZV2PWvO-eU-cDzL1j-rsAxE20wjngBDbEZ4soaIXxhOKIfB6GOxrokrKaGw93gTObpw__"
+                    alt=""
+                  />
                   <div className="flex-column gap-8">
                     <p className="flex-row gap-8">
-                      <b className="project-comment-writer">김민혁</b>
-                      <span className="project-comment-time">• 16시간 전</span>
+                      <b className="project-comment-writer">신난 펭귄</b>
+                      <span className="project-comment-time">• 3시간 전</span>
                     </p>
                     <p>
                       안녕하세요! 이렇게 한 프로젝트 만드는데 얼마나 걸리셨는지
                       궁금합니다.
                     </p>
                     <div className="project-commnet-menu flex-row gap-20">
-                      <IconText icon="favorite" text="좋아요 23" />
-                      <IconText icon="chat_bubble" text="답글 남기기" />
-                    </div>
-                  </div>
-                </div>
-
-                {/* 댓글 하나 */}
-                <div className="project-comment flex-row gap-12">
-                  <img src="https://picsum.photos/48/48" alt="" />
-                  <div className="flex-column gap-8">
-                    <p className="flex-row gap-8">
-                      <b className="project-comment-writer">김민혁</b>
-                      <span className="project-comment-time">• 16시간 전</span>
-                    </p>
-                    <p>
-                      안녕하세요! 이렇게 한 프로젝트 만드는데 얼마나 걸리셨는지
-                      궁금합니다.
-                    </p>
-                    <div className="project-commnet-menu flex-row gap-20">
-                      <IconText icon="favorite" text="좋아요 23" />
+                      <IconText icon="favorite" text="좋아요 3" />
                       <IconText icon="chat_bubble" text="답글 남기기" />
                     </div>
                   </div>
@@ -211,43 +214,28 @@ function CommunityDetailPage() {
 
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>UX 디자인 프로젝트 진행중인 학부생입니다! </p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  아자아자잣
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="51" />
+                  <IconText icon="chat_bubble" text="30" />
                 </div>
               </div>
             </div>
 
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>직무 변경 후 첫 포트폴리오 리뷰 부탁드립니다!</p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
-                </span>
-                <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
-                </div>
-              </div>
-            </div>
-            {/* 프로젝트 모집 한장 */}
-            <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
-
-              <div className="color-gray flex-row justify-between">
-                <span className="flex-row">
-                  <Icon icon="account_circle" />
-                  고승호
+                  바쁜 다람쥐
                 </span>
                 <div className="flex-row gap-8">
                   <IconText icon="favorite" text="50" />
@@ -257,31 +245,46 @@ function CommunityDetailPage() {
             </div>
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>메세지 읽음 표시, 어떤 방식을 선호하시나요? </p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  배고픈 오징어
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="12" />
+                  <IconText icon="chat_bubble" text="24" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>디자이너가 갖추어야 할 가장 중요한 역량 </p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  오크리스탈
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="11" />
+                  <IconText icon="chat_bubble" text="28" />
+                </div>
+              </div>
+            </div>
+            {/* 프로젝트 모집 한장 */}
+            <div className="flex-column gap-8 hot-project-list">
+              <p>여러분들 상시 채용 자주 지원하시나요?</p>
+
+              <div className="color-gray flex-row justify-between">
+                <span className="flex-row">
+                  <Icon icon="account_circle" />
+                  김나영
+                </span>
+                <div className="flex-row gap-8">
+                  <IconText icon="favorite" text="26" />
+                  <IconText icon="chat_bubble" text="3" />
                 </div>
               </div>
             </div>
@@ -292,7 +295,7 @@ function CommunityDetailPage() {
 
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>가이드 텍스트 위치를 어디에 노출하나요? </p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
@@ -300,69 +303,69 @@ function CommunityDetailPage() {
                   고승호
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="32" />
+                  <IconText icon="chat_bubble" text="5" />
                 </div>
               </div>
             </div>
 
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>이런 커뮤니티 왜 이제야 알았을까요 ㅠㅠ</p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  장화 신은 고양이
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="42" />
+                  <IconText icon="chat_bubble" text="34" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>여러분 포트폴리오에 보통 작품 몇 개 넣으시나요?</p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  이경서
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="28" />
+                  <IconText icon="chat_bubble" text="28" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>기획자 전향 쉽지 않네요....</p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  곽시탈
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="19" />
+                  <IconText icon="chat_bubble" text="18" />
                 </div>
               </div>
             </div>
             {/* 프로젝트 모집 한장 */}
             <div className="flex-column gap-8 hot-project-list">
-              <p>세미프로젝트 - 걱정 공유 [디자이너 모집]</p>
+              <p>개발자들과 효율적으로 소통 하는 법 공유 드려요</p>
 
               <div className="color-gray flex-row justify-between">
                 <span className="flex-row">
                   <Icon icon="account_circle" />
-                  고승호
+                  화이팅 해야지
                 </span>
                 <div className="flex-row gap-8">
-                  <IconText icon="favorite" text="50" />
-                  <IconText icon="chat_bubble" text="50" />
+                  <IconText icon="favorite" text="34" />
+                  <IconText icon="chat_bubble" text="42" />
                 </div>
               </div>
             </div>
