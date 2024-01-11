@@ -14,7 +14,7 @@ function HotProjectList() {
         project={DUMMY_HOT_PROJECTS[0]}
       />
       <div className="hot-project-rowcard">
-        {DUMMY_HOT_PROJECTS.filter((_, idx) => idx !== 1).map((el) => (
+        {DUMMY_HOT_PROJECTS.filter((_, idx) => idx !== 0).map((el) => (
           <ProjectRowCard key={el.id} project={el} />
         ))}
       </div>

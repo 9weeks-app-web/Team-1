@@ -31,7 +31,7 @@ function ProjectBigCard(props: IProjectBigCardProps) {
               nowCnt={project.nowPeopleCnt}
             />
             <span
-              className={`deadline ${
+              className={`hot-deadline ${
                 getDday(project.deadline) <= 7 ? "red" : ""
               }`}
             >

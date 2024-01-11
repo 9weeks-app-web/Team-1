@@ -39,7 +39,6 @@
     overflow: hidden;
     color: #4D4D4D;
     text-overflow: ellipsis;
-    white-space: nowrap;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -97,7 +96,7 @@
   }
 
   .big-card-category {
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -111,7 +110,7 @@
   }
 }
 
-.deadline.red {
+.hot-deadline.red {
   color: #F33;
   text-align: right;
   font-size: 20px;

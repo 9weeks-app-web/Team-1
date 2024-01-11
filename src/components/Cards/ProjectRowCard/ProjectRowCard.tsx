@@ -39,11 +39,11 @@ function ProjectRowCard(props: IProjectRowCardProps) {
         </div>
         <div className="project-info">
           <p className="project-title oneLineEllipsis">{project.title}</p>
-          <p className="project-description oneLineEllipsis">
+          <p className="project-description twoLineEllipsis">
             {project.description}
           </p>
         </div>
-        <div className="row">
+        <div className="row project-line-two">
           <div className="project-category oneLineEllipsis">
             모집분야 : {project.category}
           </div>

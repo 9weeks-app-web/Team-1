@@ -3,7 +3,7 @@ import "./style.css";
 import AreaTitle from "components/home/AreaTitle/AreaTitle";
 import CardGrid from "components/CardGrid/CardGrid";
 import ProjectCard from "components/Cards/ProjectCard/ProjectCard";
-import { DUMMY_PROJECTS } from "constants/dummy";
+import { ALL_PROJECTS } from "constants/dummy";
 import SelectorGroup from "components/project/SelectorGroup/SelectorGroup";
 import FloatingButton from "components/FloatingButton/FloatingButton";
 import PageLayout from "components/layout/PageLayout/PageLayout";
@@ -24,7 +24,7 @@ function ProjectPage() {
           <AreaTitle text="전체 프로젝트" />
           <SelectorGroup />
           <CardGrid columnGap="cg-20" rowGap="rg-16">
-            {DUMMY_PROJECTS.filter((_, idx) => idx < 12).map((el) => (
+            {ALL_PROJECTS.filter((_, idx) => idx < 16).map((el) => (
               <ProjectCard key={el.id} project={el} />
             ))}
           </CardGrid>
@@ -35,7 +35,7 @@ function ProjectPage() {
             moveUrl="/recruit"
           />
           <CardGrid columnGap="cg-20" rowGap="rg-16">
-            {DUMMY_PROJECTS.filter((_, idx) => idx > 11).map((el) => (
+            {ALL_PROJECTS.filter((_, idx) => idx > 16).map((el) => (
               <ProjectCard key={el.id} project={el} />
             ))}
           </CardGrid>
