@@ -50,6 +50,10 @@
     display: flex;
     align-items: center;
     gap: 24px;
+
+    span {
+        color: #4c4c4c;
+    }
 }
 
 .login-button{

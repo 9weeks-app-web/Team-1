@@ -44,7 +44,7 @@ function HeaderGNB() {
               icon="notifications"
               onClick={() => navigate("/alarm")}
             />
-            <IconButton icon="forum" onClick={() => navigate("/chat")} />
+            <IconButton icon="sms" onClick={() => navigate("/chat")} />
             <Avatar alt="displayName" sx={{ bgcolor: randomColorHax() }}>
               <Link to="/mypage" style={{ color: "white" }}>
                 {user.displayName.slice(0, 1)}
