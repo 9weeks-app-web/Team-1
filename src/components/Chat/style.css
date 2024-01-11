@@ -2,7 +2,6 @@
     width: 438px;
     height: 120px;
     flex-shrink: 0;
-    border-top: 1px solid #D2D2D2;
     display: flex;
     flex-direction: column;
 }
@@ -54,7 +53,6 @@
   padding: 24px;
   align-items: center;
   gap: 12px;
-  border-bottom: 1px solid #ccc;
   box-sizing: border-box; 
   cursor: pointer;
   }
@@ -66,14 +64,13 @@
   background-color: #F5F8FF;
   }
   .userProfile:active .listNewMsgCount {
-    display: none;
   }
  .profilePicture {
   width: 60px;
   height: 60px;
   flex-shrink: 0;
   border-radius: 100px;
-  background-image: url('/src/assets/img/profile.jpg');
+  /* background-image: url('/src/assets/img/profile.jpg'); */
   background-size: cover;
   background-repeat: no-repeat; 
   background-position: center; 
@@ -123,6 +120,7 @@
     font-weight: 500;
     line-height: 140%; /* 19.6px */
     letter-spacing: 0.028px;
+    max-width: 250px;
   }
   
   .listNewMsgCount {
@@ -209,7 +207,7 @@
     height: 52px;
     flex-shrink: 0;
     border-radius: 110.87px;
-    background-image: url('/src/assets/img/profile.jpg');
+    background-image: url('/src/assets/img/chat1.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 
@@ -280,7 +278,7 @@
     height: 40px;
     border-radius: 30px;
     display: flex;
-    background-image: url('/src/assets/img/profile.jpg');
+    background-image: url('/src/assets/img/chat1.png');
     background-size: cover;
     background-repeat: no-repeat; 
     background-position: center; 

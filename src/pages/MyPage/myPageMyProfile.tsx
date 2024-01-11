@@ -23,7 +23,7 @@ function MyPageMyProfile() {
         전체 <p>3</p>
       </div>
       <div className="portfolio-progress">
-        {DUMMY_PORTFOLIO_SUMMARY.map((el) => (
+        {DUMMY_PORTFOLIO_SUMMARY.slice(0, 4).map((el) => (
           <MyPagePFCard key={el.id} portfolio={el} />
         ))}
       </div>

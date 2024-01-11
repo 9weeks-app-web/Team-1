@@ -13,12 +13,23 @@
   .alarmMsg:hover { 
     background: #F2F2F2;
   }
+  .readState {
+    display: none;
+  }
   
   .profile-pic {
     width: 50px; /* 이미지 크기 */
     height: 50px; /* 이미지 크기 */
     border-radius: 50%; /* 이미지 원형으로 */
     margin-right: 12px; /* 이미지와 메시지 사이의 마진 */
+  }
+  .read-content {
+    span {
+      color: #999999;
+    }
+    p {
+      font-weight: 700;
+    }
   }
   
   .alarm-content {

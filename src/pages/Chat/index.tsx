@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import "./style.css";
 import ChatList from "components/Chat/chatList";
 import ChattingRoom from "components/Chat/chattingRoom";
+import chat1 from "../../assets/img/chat1.png";
+import chat2 from "../../assets/img/chat2.png";
+import chat3 from "../../assets/img/chat3.png";
+import chat4 from "../../assets/img/chat4.png";
+import chat5 from "../../assets/img/chat5.png";
 
 function Chat() {
   const [selectedChat, setSelectedChat] = useState<string | null>(null);
@@ -16,38 +21,44 @@ function Chat() {
   const chatData = [
     {
       chatId: "1",
+      profileP: chat1,
       userName: "이민지",
-      lastTime: "10분 전",
+      lastTime: "1분 전",
       previewMessage: "안녕하세요",
-      newMsgCount: 2,
+      newMsgCount: 0,
     },
     {
       chatId: "2",
-      userName: "유저",
-      lastTime: "30분 전",
-      previewMessage: "아니",
+      profileP: chat2,
+      userName: "선셋",
+      lastTime: "10분 전",
+      previewMessage: "추가 모집은 10월에 할 에정입니다!",
       newMsgCount: 1,
     },
     {
       chatId: "3",
-      userName: "유저3",
-      lastTime: "40분 전",
-      previewMessage: "안녕하시오",
-      newMsgCount: 0,
+      profileP: chat3,
+      userName: "jane",
+      lastTime: "10분 전",
+      previewMessage:
+        "혹시 언제 쯤 시간 가능하실까요? 저는 주중에는 오후 12시부터 4시까지 가능하며...",
+      newMsgCount: 1,
     },
     {
       chatId: "4",
-      userName: "유저4",
-      lastTime: "40분 전",
-      previewMessage: "팀원을 구하시나요?",
-      newMsgCount: 1,
+      profileP: chat4,
+      userName: "younji_6",
+      lastTime: "30분 전",
+      previewMessage: "그렇네요..",
+      newMsgCount: 0,
     },
     {
       chatId: "5",
-      userName: "오유저",
-      lastTime: "40분 전",
-      previewMessage: "구하시나요?",
-      newMsgCount: 1,
+      profileP: chat5,
+      userName: "정수지",
+      lastTime: "1시간 전",
+      previewMessage: "저는 여러 분야에 관심이 많습니다.",
+      newMsgCount: 0,
     },
   ];
 

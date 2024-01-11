@@ -31,11 +31,14 @@
     display: flex;
     justify-content: center;
     height: auto;
-    margin-top: 7.3rem;
+    margin-top: 6.5rem;
     width: 1240px;
     height: 850px;
-    border-top: 1px solid #D2D2D2;
     margin-bottom: 4rem;
+    border-left: 1px solid #D2D2D2;
+    border-right: 1px solid #D2D2D2;
+
+
 }
 .chattingList {
     background-color: transparent;
