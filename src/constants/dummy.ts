@@ -8,51 +8,56 @@ export const DUMMY_REVIEWS: IProjectReviewSummary[] = [
   {
     id: 1,
     profileImg: "path/to/profile1.jpg",
-    writer: "John Doe",
+    writer: "meeso",
     date: "2024-01-09",
     rating: 4.5,
-    content: "This is a great project! I really enjoyed working on it.",
+    content:
+      "함께 성공을 이룬 것에 대해 자랑스럽고, 다음 프로젝트에서도 함께 일하고 싶습니다.",
   },
   {
     id: 2,
     profileImg: "path/to/profile2.jpg",
-    writer: "Jane Smith",
+    writer: "이아현",
     date: "2024-01-08",
     rating: 3.8,
-    content: "The project had some challenges, but overall a good experience.",
+    content:
+      "프로젝트를 함께 한 동료들과의 경험은 정말 소중했습니다. 서로의 강점을 살려가며 효율적으로 일할 수 있었고, 결과물에 대한 만족감도 크네요. 함께 한 시간이 행복했고, 또 다른 기회가 있다면 또 함께 일하고 싶습니다.",
   },
   {
     id: 3,
     profileImg: "path/to/profile3.jpg",
-    writer: "Alice Johnson",
+    writer: "홍지석",
     date: "2024-01-07",
     rating: 5.0,
-    content: "Fantastic project and teamwork! Highly recommended.",
+    content:
+      "이번 프로젝트에서 함께 일한 동료들은 정말 열정적이고 책임감이 강했습니다. 함께 노력하고 서로를 응원하며 어려움을 극복해나갔던 경험이 기억에 남아요. 다음에도 이런 팀원들과 함께 일하고 싶습니다.",
   },
   {
     id: 4,
     profileImg: "path/to/profile4.jpg",
-    writer: "Bob Williams",
+    writer: "스튜디오 파도나무",
     date: "2024-01-06",
     rating: 4.2,
-    content: "Enjoyed the collaboration. Looking forward to future projects.",
+    content:
+      "서로의 아이디어를 존중하고 피드백을 통해 더 나은 결과물을 만들어내는 과정이 정말 행복했어요.",
   },
   {
     id: 5,
     profileImg: "path/to/profile5.jpg",
-    writer: "Eva Davis",
+    writer: "Hye-gyeong Lee",
     date: "2024-01-05",
     rating: 4.7,
     content:
-      "A well-managed project with clear goals. Happy to be a part of it.",
+      "정말 값진 시간이었습니다. 서로의 역량을 존중하고 협력하여 일을 진행하면서 많은 것을 배웠고, 새로운 아이디어와 시야를 넓힐 수 있었어요.",
   },
   {
     id: 6,
     profileImg: "path/to/profile6.jpg",
-    writer: "Michael Brown",
+    writer: "Bspokr Studio",
     date: "2024-01-04",
     rating: 3.5,
-    content: "Decent project, but there were some communication issues.",
+    content:
+      "프로젝트를 같이 진행한 동료들과의 협업은 정말 훌륭했습니다. 서로의 아이디어를 존중하고 토론을 통해 최선의 결과물을 만들어냈어요. 함께 일하면서 많이 배우고 성장할 수 있었던 소중한 경험이었습니다",
   },
 ];
 

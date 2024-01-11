@@ -25,7 +25,7 @@ function RecruitDetailPage() {
             <div className="recruit-detail-header-first">
               <div className="recruit-detail-profile">
                 <img
-                  src="https://mblogthumb-phinf.pstatic.net/MjAxNzAyMjdfMjk0/MDAxNDg4MTgwMTM2NDQx.hL1PiaJRXlxZlpw9GOtbcdiL-rd2-vq6XNEwm6hel8Eg.qZvMk-q_I2KHj9nkL68LTCT33gkTw380v8KiwffSYtIg.JPEG.octolab/KakaoTalk_20170209_183033988.jpg?type=w800"
+                  src="https://media.istockphoto.com/id/1350690621/ko/%EC%82%AC%EC%A7%84/%EC%95%84%EC%8B%9C%EC%95%84-%EB%82%A8%EC%9E%90%EC%9D%98-%EC%B4%88%EC%83%81%ED%99%94.webp?b=1&s=170667a&w=0&k=20&c=mN5kxbjK_8df8di5IN614DQgjBhXnVIcmst0WDY3TAw="
                   alt=""
                 />
                 <div className="flex-column gap-12">
@@ -59,9 +59,9 @@ function RecruitDetailPage() {
         <div className="section">
           <h3 className="section-title">연락처</h3>
           <div className="section-inner">
-            <p>이메일: spac1212@gmail.com</p>
-            <p>인스타그램: @spac1212</p>
-            <p>링크: https://sniperfactory.com</p>
+            <p>이메일: ryuhs1212@gmail.com</p>
+            <p>인스타그램: @ryuhs1212</p>
+            <p>링크: https://ryuhs1212.com</p>
           </div>
         </div>
 
@@ -104,11 +104,11 @@ function RecruitDetailPage() {
           <h3 className="section-title">경력</h3>
           <div className="section-inner">
             <p className="bold">경력 - 1년 6개월</p>
-            <p>OO기업 인턴 (2024/2 ~ 2025/07)</p>
+            <p>DesignRise Studio - UX 디자이너 (인턴) (2024/02 ~ 2025/02)</p>
             <p>
               스나이퍼 팩토리 UI/UX 인턴형 프로그램 과정 (2023/10 ~ 2024/01)
             </p>
-            <p>OO대학교 디자인 학과 (2018~2023)</p>
+            <p>스팩대학교 디자인 학과 (2018/09 ~ 2023/03)</p>
           </div>
         </div>
 
@@ -118,13 +118,15 @@ function RecruitDetailPage() {
           <CardGrid>
             {data?.data
               .filter((_: IPortfolioSummary, idx: number) => idx < 4)
-              .map((el: IPortfolioSummary) => <PortfolioCard portfolio={el} />)}
+              .map((el: IPortfolioSummary) => (
+                <PortfolioCard key={el.id} ishyunsu portfolio={el} />
+              ))}
           </CardGrid>
         </div>
 
         {/* 프로젝트 후기 */}
         <div className="section">
-          <h3 className="section-title">프로젝트 후기</h3>
+          <h3 className="section-title">류현수님이 받은 팀원 후기</h3>
           <div className="project-reviews">
             {DUMMY_REVIEWS.map((el: IProjectReviewSummary) => (
               <ProjectReviewCard reviewSummary={el} key={el.id} />
