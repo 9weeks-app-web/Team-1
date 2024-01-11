@@ -22,6 +22,9 @@
     letter-spacing: 0.056px;
 }
 .alarmChips {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
     margin: 20px 0 40px;
 }
 .newAlarmContainer {

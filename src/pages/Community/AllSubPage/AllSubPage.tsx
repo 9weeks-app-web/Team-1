@@ -185,7 +185,7 @@ function AllSubPage() {
               />
             </div>
             <div className="post-bottom">
-              <div className="flex-row gap-8">
+              <div className="post-bottom-badge flex-row gap-8">
                 <Badge text="#디자인" type="normal" />
                 <Badge text="#직무변경" type="normal" />
               </div>
@@ -229,7 +229,7 @@ function AllSubPage() {
               />
             </div>
             <div className="post-bottom">
-              <div className="flex-row gap-8">
+              <div className="post-bottom-badge flex-row gap-8">
                 <Badge text="#디자인" type="normal" />
                 <Badge text="#직무변경" type="normal" />
               </div>
@@ -273,7 +273,7 @@ function AllSubPage() {
               />
             </div>
             <div className="post-bottom">
-              <div className="flex-row gap-8">
+              <div className="post-bottom-badge flex-row gap-8">
                 <Badge text="#디자인" type="normal" />
                 <Badge text="#직무변경" type="normal" />
               </div>
@@ -317,7 +317,7 @@ function AllSubPage() {
               />
             </div>
             <div className="post-bottom">
-              <div className="flex-row gap-8">
+              <div className="post-bottom-badge flex-row gap-8">
                 <Badge text="#디자인" type="normal" />
                 <Badge text="#직무변경" type="normal" />
               </div>
@@ -361,7 +361,7 @@ function AllSubPage() {
               />
             </div>
             <div className="post-bottom">
-              <div className="flex-row gap-8">
+              <div className="post-bottom-badge flex-row gap-8">
                 <Badge text="#디자인" type="normal" />
                 <Badge text="#직무변경" type="normal" />
               </div>

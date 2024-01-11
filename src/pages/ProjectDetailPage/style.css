@@ -255,7 +255,7 @@ b {
 /* 사이드바 */
 .project-detail-aside {
   position: sticky;
-  top: 116px;
+  top: 105px;
   height: fit-content;
   border-radius: 8px;
   background: #f3f3f3;

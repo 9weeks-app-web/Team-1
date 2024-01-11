@@ -1,8 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
-import Chip from "components/Chips/Chip";
 import AlarmCard from "components/Alarm";
 import { IMessageData } from "types/alarm";
+import SinglePickChip from "components/Chips/SinglePickChip/SinglePickChip";
 import alarm1 from "../../assets/img/alarm1.png";
 import alarm2 from "../../assets/img/alarm2.png";
 import alarm3 from "../../assets/img/alarm3.png";
@@ -88,6 +88,8 @@ const messagesData: IMessageData[] = [
   },
 ];
 function Alarm() {
+  const [chip, setChip] = useState("전체");
+
   return (
     <div className="alarmAll">
       <div className="alarm">
@@ -95,9 +97,21 @@ function Alarm() {
           알림
           <div>
             <div className="alarmChips">
-              <Chip title="전체" onClick={() => {}} />
-              <Chip title="안읽음" onClick={() => {}} />
-              <Chip title="팔로잉" onClick={() => {}} />
+              <SinglePickChip
+                title="전체"
+                onClick={() => setChip("전체")}
+                isActive={chip === "전체"}
+              />
+              <SinglePickChip
+                title="안읽음"
+                onClick={() => setChip("안읽음")}
+                isActive={chip === "안읽음"}
+              />
+              <SinglePickChip
+                title="팔로잉"
+                onClick={() => setChip("팔로잉")}
+                isActive={chip === "팔로잉"}
+              />
             </div>
             <div className="newAlarmContainer">
               <span>

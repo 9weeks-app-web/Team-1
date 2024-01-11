@@ -75,7 +75,7 @@
 
 .swiper-button-prev {
     position: absolute;
-    left: 500px;
+    left: 26%;
     background-color: #fff;
     opacity: 0.8;
     color: black;
@@ -92,7 +92,7 @@
   
   .swiper-button-next {
     position: absolute;
-    right: 500px;
+    right: 26%;
     background-color: #fff;
     opacity: 0.8;
     color: black;

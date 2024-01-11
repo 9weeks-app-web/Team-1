@@ -29,10 +29,10 @@ function ProjectPage() {
             ))}
           </CardGrid>
           <StaticBanner
-            title="포트폴리오 제작이 막막하다면? 포트폴리오 Q&A에서 고민을 나눠보세요!"
-            buttonText="포트폴리오 Q&A 바로가기"
+            title="프로젝트에 필요한 팀원과 멘토를 찾기 어려우신가요? 스팩폴리오와 함께 찾아보세요!"
+            buttonText="팀원 · 멘토 찾기"
             icon={<QA />}
-            moveUrl="/portfolio"
+            moveUrl="/recruit"
           />
           <CardGrid columnGap="cg-20" rowGap="rg-16">
             {DUMMY_PROJECTS.filter((_, idx) => idx > 11).map((el) => (

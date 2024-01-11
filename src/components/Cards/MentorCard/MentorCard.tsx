@@ -42,7 +42,9 @@ function MentorCard(props: IMentorCardProps) {
           </p>
         </div>
         <p className="info-line">
-          <span className="info-line-content">{mentor.introduction}</span>
+          <span className="info-line-content twoLineEllipsis">
+            {mentor.introduction}
+          </span>
         </p>
       </div>
       <div className="card__overlay">

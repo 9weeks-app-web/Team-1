@@ -8,7 +8,7 @@ function HomeProjectList() {
   return (
     <div>
       <CardGrid rowGap="rg-16" columnGap="cg-16">
-        {DUMMY_PROJECTS.map((el) => (
+        {DUMMY_PROJECTS.filter((_, idx) => idx < 8).map((el) => (
           <ProjectCard project={el} key={el.id} />
         ))}
       </CardGrid>

@@ -50,11 +50,13 @@ function ProjectDetailPage() {
               </div>
               <div className="flex-row gap-20">
                 <span>
-                  <b>진행방식</b>
+                  <b>모집 직군</b>
                 </span>
                 <div className="flex-row gap-12">
-                  <Chip title="온라인" disabled />
-                  <Chip title="오프라인" disabled />
+                  <Chip title="기획" disabled />
+                  <Chip title="디자인" disabled />
+                  <Chip title="Front-end" disabled />
+                  <Chip title="Back-end" disabled />
                 </div>
               </div>
             </div>
@@ -106,7 +108,7 @@ function ProjectDetailPage() {
                 <div className="flex-column gap-20">
                   <span>이메일 team01@sniperfactory.com</span>
                   <span>지원하기 https://forms.gle/fASvrj5s2PL3QohPA</span>
-                  <span>연락방법 https://open.kakao.com/o/ghgf12gZf</span>
+                  <span>오픈채팅방 https://open.kakao.com/o/ghgf12gZf</span>
                 </div>
               </div>
             </div>

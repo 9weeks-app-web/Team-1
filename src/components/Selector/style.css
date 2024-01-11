@@ -1,4 +1,5 @@
 .selector {
+  position: relative;
   max-width: 100px;
   border-radius: 8px;
   border: 1px solid #d9d9d9;
@@ -12,3 +13,4 @@
   line-height: 140%; /* 22.4px */
   letter-spacing: 0.032px;
 }
+
