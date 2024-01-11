@@ -90,6 +90,7 @@ form .login-field-title, .login-field-title-pwd {
   margin-top: 8px;
   font-size: 15px;
   border: 1px solid #E6E6E6;
+  padding: 0 10px;
 }
 .form-btn {
   box-sizing: border-box;
