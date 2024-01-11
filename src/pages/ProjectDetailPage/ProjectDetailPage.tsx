@@ -25,9 +25,13 @@ function ProjectDetailPage() {
                 <span>
                   <b>작성자</b>
                 </span>
-                <span className="flex-row">
-                  <Icon icon="account_circle" />
-                  배고픈 오징어
+                <span className="flex-row text-bold">
+                  <img
+                    className="profile-img"
+                    src="https://s3-alpha-sig.figma.com/img/726f/0f5b/bab1da5d63b453d8b153933f0a3e7695?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=M1BPZ7E8syGKWL9oSnjSAGDYVhnCf5YDaX~dhpcrjZo6ClEf-Ti0R2V6aCYzFKTp4z1K1tZw8sScfVVERNHBFWdSaDxZA9nSk-KsjV5pw0o~aEfdwkvr12Fkxx-fzbnbGTeYR-wmYTgTVyTNQhN~04oqtgV-c91qTJxkzQcvMroC-4rG6PhfkndjnMULu4yfS9fkKMl87B16LAzDcIdumxW0-GZpyQyagOiUDKyo08rfNKVMPJSfmRnTqd07jaGHrEPiQfCNmtubWhK~~lfjhqD3RKOdGoWhc12K3FND-2kZO-0bfShpoj79ZunivGl-CRs8WxjTsopXbsuPP5l7xQ__"
+                    alt=""
+                  />
+                  김은아
                 </span>
               </div>
               <div className="flex-row gap-8">

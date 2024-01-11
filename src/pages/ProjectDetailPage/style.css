@@ -11,7 +11,16 @@ b {
   flex-direction: row;
   justify-content: space-between;
 }
+.text-bold{
+  font-weight: bold;
+}
 
+.profile-img{
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  margin-right: 8px;
+}
 .project-detail-inner {
   width: 840px;
 }
