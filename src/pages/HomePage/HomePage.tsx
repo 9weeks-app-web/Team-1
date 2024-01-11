@@ -9,8 +9,11 @@ import HomeMentorList from "components/home/HomeMentorList/HomeMentorList";
 // import HomeCommunityList from "components/home/HomeCommunityList/HomeCommunityList";
 import PageLayout from "components/layout/PageLayout/PageLayout";
 import CommunityShortcut from "components/home/CommunityShortcut/CommunityShortcut";
+import useUser from "hooks/useUser";
 
 function HomePage() {
+  const { user } = useUser();
+
   return (
     <PageLayout>
       <div className="homepage-slider-banner">
@@ -20,7 +23,11 @@ function HomePage() {
         {/* 오늘의 스팩폴리오 */}
         <div className="section">
           <HomeAreaTitle
-            text="오늘의 스팩폴리오 Pick!"
+            text={
+              user
+                ? `${user.displayName}님이 좋아할만한 포트폴리오`
+                : "오늘의 스팩폴리오 Pick!"
+            }
             renderViewAll
             viewAllUrl="/portfolio"
           />
@@ -30,7 +37,11 @@ function HomePage() {
         {/* 핫한 프로젝트 모집 공고 */}
         <div className="section">
           <HomeAreaTitle
-            text="핫한 프로젝트 모집 공고"
+            text={
+              user
+                ? `${user.displayName}님 맞춤! 프로젝트 모집 공고`
+                : "핫한 프로젝트 모집 공고"
+            }
             renderViewAll
             viewAllUrl="/project"
           />
@@ -50,7 +61,7 @@ function HomePage() {
         {/* 지금 뜨는 커뮤니티 게시글 */}
         <div className="section">
           <HomeAreaTitle
-            text="커뮤니티 바로가기"
+            text="SFAC 커뮤니티 바로가기"
             renderViewAll
             viewAllUrl="/community"
           />
@@ -62,7 +73,11 @@ function HomePage() {
         <div className="section">
           {/* 칩 넣기 */}
           <HomeAreaTitle
-            text="이 주의 BEST 멤버"
+            text={
+              user
+                ? `${user.displayName}님과 시너지 Up! 멤버`
+                : "이번 주 BEST 멤버"
+            }
             renderViewAll
             viewAllUrl="/project"
           />
