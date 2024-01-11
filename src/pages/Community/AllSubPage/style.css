@@ -10,7 +10,6 @@
     height: 222px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
@@ -31,15 +30,12 @@
 .now-floating-post {
     transition: all 0.2s;
     cursor: pointer;
-    width: 400px;
     height: 50px;
     display: flex;
     align-items: center;
-    gap: 16px;
-    
-
 
     .number{
+        margin-right: 8px;
         border-radius: 8px;
         background-color: #669BFF;
         width: 28px;
