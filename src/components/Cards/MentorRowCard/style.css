@@ -138,7 +138,7 @@
   opacity: 0;
   visibility: none;
   transition: .5s ease;
-  background-color: black;
+	background-color : rgb(0,0,0,0.8);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -174,12 +174,11 @@
   background-color: #fff;
   transition: all 0.2s;
   border: 2px solid white;
-
 }
 .overlay-btn:hover{
   border: 2px solid var(--blue-100);
 }
 
 .mentor-row-card:hover .card__overlay {
-  opacity: 0.8;
+  opacity: 1;
 }

@@ -101,7 +101,7 @@
   opacity: 0;
   visibility: none;
   transition: .5s ease;
-  background-color: black;
+	background-color : rgb(0,0,0,0.8);
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -126,6 +126,10 @@
   }
 }
 
+.mentorcard-container:hover .card__overlay {
+  opacity: 1;
+}
+
 .overlay-btn{
   font-family: Spoqa Han Sans Neo;
   cursor: pointer;
@@ -137,12 +141,8 @@
   background-color: #fff;
   transition: all 0.2s;
   border: 2px solid white;
-
 }
 .overlay-btn:hover{
   border: 2px solid var(--blue-100);
 }
 
-.mentorcard-container:hover .card__overlay {
-  opacity: 0.8;
-}
