@@ -23,11 +23,28 @@
     transition: all 0.2s;   
   }
 
+  .big-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
   .big-card-info-container {
     padding: 32px;
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .big-card-content{
+    overflow: hidden;
+    color: #4D4D4D;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%; /* 28px */
+    letter-spacing: 0.04px;
   }
 
   .big-card-thumbnail-container {
@@ -48,6 +65,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    div {
+      height: 40px;
+      color: #019898;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 140%; /* 25.2px */
+      letter-spacing: 0.036px;
+    }
   }
 
   .big-card-title {
@@ -70,11 +97,26 @@
   }
 
   .big-card-category {
+    margin-top: 30px;
     display: flex;
     justify-content: space-between;
+    overflow: hidden;
+    color: #1A1A1A;
+    text-overflow: ellipsis;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 23.8px */
+    letter-spacing: 0.034px;
   }
 }
 
 .deadline.red {
-  color: var(--ststem-red);
+  color: #F33;
+  text-align: right;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 28px */
+  letter-spacing: 0.04px;
 }
