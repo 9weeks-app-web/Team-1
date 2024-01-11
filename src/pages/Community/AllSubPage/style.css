@@ -2,14 +2,22 @@
     display: flex;
     flex-direction: column;
     gap: 72px;
+    background-color: #f5f8ff;
+    padding: 40px;
 }
 
 .now-floating-post-list {
     height: 222px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 24px;
     flex-wrap: wrap;
+    padding: 15px;
+    border: 1px solid #E6E6E6;
+    background-color: #fff;
+    border-radius: 16px;
 }
 
 .post-inner-first{
@@ -23,11 +31,13 @@
 .now-floating-post {
     transition: all 0.2s;
     cursor: pointer;
-    width: 420px;
+    width: 400px;
     height: 50px;
     display: flex;
     align-items: center;
     gap: 16px;
+    
+
 
     .number{
         border-radius: 8px;

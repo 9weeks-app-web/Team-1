@@ -2,11 +2,15 @@
     position: relative;
     width: 1240px;
     margin: 0 auto;
-    margin-top: 44px;
     display: flex;
 }
 
 
 .overflow-scroll{
     overflow-y: scroll;
+}
+
+
+.community-sidebar{
+    padding-top: 40px;
 }

@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: row;
   gap: 24px;
-
+  border-radius: 8px;
+  align-items: center;
+  
   span {
     color: #727272;
     font-family: Spoqa Han Sans Neo;
@@ -13,13 +15,17 @@
     letter-spacing: 0.032px;
   }
   select {
-    border: none;
+    box-sizing: border-box;
+    padding: 8px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 8px;
+    border: 1px solid #d9d9d9;
     color: #0059ff;
     font-family: Spoqa Han Sans Neo;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
-    line-height: 140%; /* 22.4px */
     letter-spacing: 0.032px;
   }
 }

@@ -3,7 +3,7 @@
 }
 
 .portfolio-page-container {
-  min-height: calc(100vh - 116px);
+  min-height: calc(100vh - 105px);
   position: relative;
   padding: 116px 0 84px 0;
   display: flex;
