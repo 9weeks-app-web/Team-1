@@ -54,6 +54,10 @@
   
   .asideList ul li:hover {
     color: #fff;
+
+    svg path{
+      fill: white;
+    }
   }
   
   .asideList ul li:hover::before {
