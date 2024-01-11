@@ -3,6 +3,7 @@ import "./style.css";
 
 interface ChatUserProfileProps {
   chatId: string;
+  profileP: string;
   userName: string;
   lastTime: string;
   previewMessage: string;
@@ -12,6 +13,7 @@ interface ChatUserProfileProps {
 
 function ChatUserProfile({
   chatId,
+  profileP,
   userName,
   lastTime,
   previewMessage,
@@ -32,7 +34,11 @@ function ChatUserProfile({
         if (e.key === "Enter") handleSelectChat();
       }}
     >
-      <div className="profilePicture" />
+      <img
+        className="profilePicture"
+        src={profileP}
+        alt={`${userName}'s profile`}
+      />
 
       <div className="listUserText">
         <div className="listUserPreview">
@@ -43,7 +49,7 @@ function ChatUserProfile({
           <div className="msgPreview">{previewMessage}</div>
         </div>
       </div>
-      <div className="listNewMsgCount">{newMsgCount}</div>
+      {newMsgCount > 0 && <div className="listNewMsgCount">{newMsgCount}</div>}
     </div>
   );
 }

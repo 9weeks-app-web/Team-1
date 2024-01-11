@@ -3,64 +3,88 @@ import "./style.css";
 import AlarmCard from "components/Alarm";
 import { IMessageData } from "types/alarm";
 import SinglePickChip from "components/Chips/SinglePickChip/SinglePickChip";
-import Profile from "../../assets/img/profile.jpg";
+import alarm1 from "../../assets/img/alarm1.png";
+import alarm2 from "../../assets/img/alarm2.png";
+import alarm3 from "../../assets/img/alarm3.png";
+import alarm4 from "../../assets/img/alarm4.png";
+import alarm5 from "../../assets/img/alarm5.png";
+import alarm6 from "../../assets/img/alarm6.png";
+import alarm7 from "../../assets/img/alarm7.png";
+import alarm8 from "../../assets/img/alarm8.png";
 
 const messagesData: IMessageData[] = [
   {
-    user: "김가영",
-    message: "첫 번째 댓글이에요, 화이팅 입니다. 프로젝트 화이팅!",
+    user: "더킹",
+    read: 1,
+    work: "외 2명이 회원님의 게시물을 공유했습니다.",
+    message: "",
     category: "포트폴리오",
-    time: "10분 전",
-    profilePic: Profile,
+    time: "1분 전",
+    profilePic: alarm1,
   },
   {
-    user: "이가영",
-    message: "두 번째 댓글이에요, 화이팅 입니다. 프로젝트 화이팅!",
+    user: "어침조",
+    read: 1,
+    work: "이 회원님의 게시물에 좋아요를 눌렀습니다.",
+    message: "",
+    category: "커뮤니티",
+    time: "2분 전",
+    profilePic: alarm2,
+  },
+  {
+    user: "dummy",
+    read: 0,
+    work: "이 댓글을 남겼습니다.",
+    message: "포트폴리오 멋져요!",
     category: "포트폴리오",
-    time: "22분 전",
-    profilePic: Profile,
+    time: "5분 전",
+    profilePic: alarm3,
   },
   {
-    user: "김쫑",
-    message: "프로젝트 화이팅!",
-    category: "프로젝트",
-    time: "40분 전",
-    profilePic: Profile,
+    user: "yall",
+    read: 0,
+    work: "외 5명이 회원님의 게시물을 좋아요를 눌렀습니다.",
+    message: "",
+    category: "포트폴리오",
+    time: "30분 전",
+    profilePic: alarm4,
   },
   {
-    user: "주지훈",
-    message: "좋아요",
-    category: "프로젝트",
+    user: "크리스탈",
+    read: 0,
+    work: "외 2명이 회원님의 댓글에 좋아요를 눌렀습니다.",
+    message: "",
+    category: "커뮤니티",
+    time: "1시간 전",
+    profilePic: alarm5,
+  },
+  {
+    user: "더레드",
+    read: 0,
+    work: "외 3명이 회원님의 게시물을 공유했습니다.",
+    message: "",
+    category: "포트폴리오",
+    time: "2시간 전",
+    profilePic: alarm6,
+  },
+  {
+    user: "강동우",
+    read: 0,
+    work: "이 댓글을 남겼습니다.",
+    message: "안목이 좋으시네요.",
+    category: "포트폴리오",
     time: "1일 전",
-    profilePic: Profile,
+    profilePic: alarm7,
   },
   {
-    user: "이수진",
-    message: "화이팅! 많이 배우고 갑니다.",
-    category: "포트폴리오",
-    time: "2일 전",
-    profilePic: Profile,
-  },
-  {
-    user: "김쫑",
-    message: "프로젝트 화이팅!",
-    category: "프로젝트",
-    time: "2일전",
-    profilePic: Profile,
-  },
-  {
-    user: "주지훈",
-    message: "좋아요",
-    category: "프로젝트",
-    time: "2일전",
-    profilePic: Profile,
-  },
-  {
-    user: "이수진",
-    message: "화이팅! 많이 배우고 갑니다.",
-    category: "포트폴리오",
+    user: "조용훈",
+    read: 0,
+    work: "이 댓글을 남겼습니다.",
+    message:
+      "그건 때에 따라 다를 것 같네요. 하지만 실무에서는 보통 제외하는 편입니다.",
+    category: "커뮤니티",
     time: "4일 전",
-    profilePic: Profile,
+    profilePic: alarm8,
   },
 ];
 function Alarm() {
@@ -91,7 +115,7 @@ function Alarm() {
             </div>
             <div className="newAlarmContainer">
               <span>
-                읽지않은 알림 <span className="newAlarm">8</span>개
+                읽지않은 알림 <span className="newAlarm">2</span>개
               </span>
               <span>
                 <input type="checkbox" className="newAlarmCheck" />
@@ -102,6 +126,8 @@ function Alarm() {
               <AlarmCard
                 key={index}
                 user={msg.user}
+                read={msg.read}
+                work={msg.work}
                 message={msg.message}
                 category={msg.category}
                 time={msg.time}

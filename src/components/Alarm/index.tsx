@@ -4,25 +4,31 @@ import "./style.css";
 interface MessageProps {
   user: string;
   message: string;
+  work: string;
   category: string;
   time: string;
   profilePic: string;
+  read: number;
 }
 
 // eslint-disable-next-line react/function-component-definition
 const AlarmCard: React.FC<MessageProps> = ({
   user,
   message,
+  work,
   category,
   time,
   profilePic,
+  read,
 }) => {
   return (
     <div className="alarmMsg">
       <img src={profilePic} alt="Profile" className="profile-pic" />
-      <div className="alarm-content">
+      <div className={read === 1 ? "alarm-content" : "read-content"}>
+        <span className="readState">{read}</span>
         <span className="alarmTitle">
-          <p>{user}님</p>이 댓글을 남겼습니다.
+          <p>{user}님</p>
+          {work}
         </span>
         <span className="alarmMsgSec">{message}</span>
         <span className="alarmCardFooter">
