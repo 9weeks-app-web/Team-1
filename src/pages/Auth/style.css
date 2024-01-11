@@ -196,6 +196,7 @@ form .login-field-title, .login-field-title-pwd {
 }
 .hrLine {
   display: flex;
+  gap: 16px;
   color: #B3B3B3;
   font-size: 14px;
   margin: 44px 0;
@@ -422,4 +423,38 @@ flex-direction: column;
 }
 .form-control-submit {
   margin-top: 44px;
+}
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 46px;
+
+  button{
+    width: 392px;
+    height: 56px;
+    padding: 10px;
+    border-radius: 16px;
+    font-family: Spoqa Han Sans Neo;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .kakao {
+    background: #FEE500;
+
+    svg{
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  .email {
+    background: #E5EEFF;
+  }
 }
