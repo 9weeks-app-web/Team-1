@@ -1,14 +1,15 @@
 import React from "react";
 import MentorCard from "components/Cards/MentorCard/MentorCard";
 import "./style.css";
-import useMember from "hooks/useMember";
+// import useMember from "hooks/useMember";
 import { IMember } from "types/mentor";
 import StaticBanner from "components/Banner/StaticBanner/StaticBanner";
 import { ReactComponent as QA } from "assets/icons/home/QA.svg";
+import { DUMMY_ALLMEMEBER } from "constants/dummy";
 
 function AllOfMemberList() {
-  const members = useMember().results[3].data?.data;
-
+  // const members = useMember().results[3].data?.data;
+  const members = DUMMY_ALLMEMEBER;
   return (
     <div className="montor-list">
       {members &&

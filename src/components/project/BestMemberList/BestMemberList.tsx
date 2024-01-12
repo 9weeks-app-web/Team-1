@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./style.css";
 import MentorRowCard from "components/Cards/MentorRowCard/MentorRowCard";
 import SinglePickChip from "components/Chips/SinglePickChip/SinglePickChip";
-import useMember from "hooks/useMember";
+// import useMember from "hooks/useMember";
 import { IMember } from "types/mentor";
+import { DUMMY_MENTORS, DUMMY_MENTEES } from "constants/dummy";
 
 function NewMemberList() {
   const [selected, setSelected] = useState("멘토");
-  const members = useMember().results[2].data?.data;
+  // const members = useMember().results[2].data?.data;
+  const members = selected === "멘토" ? DUMMY_MENTORS : DUMMY_MENTEES;
 
   return (
     <div className="bestmember-container">
