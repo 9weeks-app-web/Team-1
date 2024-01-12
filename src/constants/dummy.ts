@@ -129,7 +129,7 @@ export const DUMMY_MENTEES: IMember[] = [
     career: "미들 (4-8년)",
     id: 2,
     introduction:
-      "포토샵, 일러스트, xd 등 디자인툴 능숙하게 다루며 html/css/js를 통해 웹사이트를 시각적으로 구현할 수 있고 코드는 콩부를 계속하고 있는 단계입니다.",
+      "포토샵, 일러스트, xd 등 디자인툴 능숙하게 다루며 html/css/js를 통해 웹사이트를 시각적으로 구현할 수 있고 코드는 공부를 계속하고 있는 단계입니다.",
     isMentor: false,
     name: "OSAFE",
     occupation: "웹 디자이너",
